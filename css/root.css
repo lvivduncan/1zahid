@@ -35,8 +35,17 @@
 body{
     background: var(--bg-main);
     font-size: 16px;
+    line-height: 1.4;
 }
 
+p{
+    margin: 0 0 30px;
+}
+
+
+
+/* temp */
 .debug{
     margin: 20px 0;
 }
+/* temp */
