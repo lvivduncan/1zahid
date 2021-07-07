@@ -1,0 +1,83 @@
+/* ////////////////////////
+сайдбар - сіра бокова смуга
+//////////////////////// */
+
+/* display: flex; flex-flow: column -- for button */
+
+.aside{
+    /* padding: 20px 15px; */
+    padding: 30px 20px 30px 16px;
+    background: var(--bg-aside);
+    display: flex; 
+    flex-flow: column;
+}
+
+.aside article{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 13px;
+}
+
+.aside article h3{
+    font-size: 15px;
+    line-height: 20px;
+    padding-bottom: 13px;
+    margin-bottom: 13px;
+    border-bottom: 1px solid var(--gray-3);
+}
+
+.aside article h3 a{
+    color: var(--black);
+    font-weight: 400; /* regular */
+    text-decoration: none;
+    transition: .5s;
+}
+
+.aside time{
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--gray-1);
+}
+
+/* червоним жирним */
+.aside article.red h3 a{
+    font-weight: bold;
+    color: var(--red);
+}
+
+.aside article.red time{
+    font-weight: bold;
+    color: var(--red);
+}
+
+
+/* чорним жирним */
+.aside article.black h3 a{
+    font-weight: bold;
+    color: var(--black);
+}
+
+.aside article.black time{
+    font-weight: bold;
+    color: var(--black);
+}
+
+.aside article h3 a:hover{
+    color: var(--red);
+}
+
+/* //////////////
+реклама | adverty 
+////////////// */
+.aside .reklama{
+    display: block;
+    margin: 0 -20px 20px -16px;
+}
+
+/* ///////////////////////////////////
+кнопка внизу притиснена і поцентрована
+/////////////////////////////////// */
+.aside .button{
+    /* display: inline-block; */
+    margin: auto auto 0;
+}
