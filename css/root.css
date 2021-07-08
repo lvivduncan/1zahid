@@ -19,6 +19,8 @@
     --bg-hr: #eaebed; /* hr */
     --blue: #1570bd; /* meter */
 
+    --border-vidget: #ededed;
+
     --bg-1: #ecedef;
     --bg-2: #e3e5e8;
     --bg-3: #c2c4c6;
@@ -38,6 +40,7 @@ body{
     background: var(--bg-main);
     color: var(--black);
     font-size: 18px;
+    font-weight: 400;
     line-height: 1.4;
 
     overflow-x: hidden;
@@ -55,7 +58,7 @@ img{
 
 
 /* ////////////
-основна шпальта
+основна шпальта (без враппера?)
 //////////// */
 .wrapper{
     width: 1260px;
@@ -66,6 +69,40 @@ img{
     .wrapper{
         width: 95%;
     }
+} 
+
+/* ////////////////////////////////////////
+блок зі сайдбаром (зліва) і мейном (справа)
+//////////////////////////////////////// */
+.content{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-gap: 20px;
+}
+
+/* лівий сайдбар */
+.sidebar{
+    order: 1;
+}
+
+.main{
+    order: 2;
+}
+
+/* ///////////////////////////////////////
+блок з мейном (зліва) і сайдбаром (справа)
+/////////////////////////////////////// */
+.content.reverse{
+    grid-template-columns: 1fr 300px;
+}
+
+.content.reverse .main{
+    order: 1;
+}
+
+/* правий сайдбар */
+.content.reverse .sidebar{
+    order: 2;
 }
 
 /* //////////////////
@@ -80,7 +117,7 @@ img{
     width: 311px;
     height: 749px;
     position: absolute;
-    top: 60px;
+    top: 230px;
     left: 0;
     transform: translateX(-311px);
 
@@ -93,7 +130,7 @@ img{
     width: 310px;
     height: 747px;
     position: absolute;
-    top: 1180px;
+    top: 1360px;
     right: 0;
     transform: translateX(310px);
 
@@ -106,8 +143,19 @@ img{
 .title-48,
 .title-30,
 .title-24,
+.title-21,
 .title-18{
     font-weight: 900;
+    margin: 0 0 20px;
+}
+
+.title-48 a,
+.title-30 a,
+.title-24 a,
+.title-21 a,
+.title-18 a{
+    text-decoration: none;
+    color: var(--gray-1);
 }
 
 /* //////////////
@@ -173,13 +221,15 @@ home - ЛЬВІВЩИНА
 дата повідомлення
 ////////////// */
 time{
+    display: inline-block;
     font-size: 11px;
     line-height: 20px;
     color: var(--gray-1);
     text-transform: uppercase;
+    /* margin: 0 0 20px; */
 }
 /* [video] буде біла або червона дата */
-
+/* margin різні у різних блоках */
 
 
 

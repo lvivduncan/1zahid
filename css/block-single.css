@@ -1,0 +1,34 @@
+/* //////////////////
+великий одинокий блок 
+////////////////// */
+
+.block-single{
+    background: var(--white);
+    padding: 0 20px 50px;
+    margin: 0 0 20px;
+}
+
+.block-single picture{
+    display: block;
+    margin: 0 -20px 30px; 
+}
+
+.block-single .title-30{
+    line-height: 1;
+}
+
+.block-single .title-30 a{
+    color: var(--red);
+}
+
+.block-single .title-30 a:hover{
+    color: var(--black);
+}
+
+.block-single time{
+    margin: 0 0 20px;
+}
+
+.block-single p{
+    margin: 0 0 20px;
+}

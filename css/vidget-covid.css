@@ -1,0 +1,103 @@
+
+.vidget-covid{
+    background: var(--white);
+    outline: 1px solid var(--border-vidget);
+    /* min-height: 118px; */
+
+    padding-top: 19px; 
+    padding-bottom: 14px; 
+
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-gap: 40px; 
+} 
+
+.vidget-covid .heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+}
+
+.vidget-covid .heading::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: -14px;
+    left: 4px;
+
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAAAUCAMAAABGbgSwAAABOFBMVEUAAAC8K0P6+vrd4ONYWVvd4OP8/PxYWVvd4OPe4ePk5+nr7e68K0NYWVv+/v68K0Pd4OPd4OPd4OPd4ONYWVu8K0Pc3uBZWlxZWVu7K0Pj4+S8K0NYWly7K0NaW128K0P7+/vd4OO8K0NYWVu8K0P09PS8K0Pd4ONYWVv///9YWVvv8PC8K0P///9YWVvd4ONYWVu8K0Pp6uu8K0NYWVvd4OPd4ONYWVu8K0Pk5ea8K0P///9YWVvd4ONYWVu8K0Pf4OC8K0NYWVvd4OO8K0P////d4OPd4ONZWVvT1NVYWVtYWVtYWVu8K0NYWVvz8/NYWVtYWVu8K0P+/v68K0Pv8PH////r7Oz///////////+8K0P////////c3+La29xZWVvd4ONaWFv////d4ONYWVu8K0P+/v/2+AyjAAAAY3RSTlMA5PLk5O7h4NRrGAX39vXh4LucTUA+MzInIx0bGQ4GBvX16tTTzcnGxsW7rKyrqqmcmpOPjIp9fHp0bmxsX15dVlBOQTQxJxAPCvrt7OzpyMi5ubi3tKShkIqGW1BMRzklEQo5p0KrAAABT0lEQVRIx92U11LCUBRFgxqqRmyIWMCu2HsXe+9deg3//wfMnMPLvTPZJAyTAfbzmnPW01LkfXYYLlL2EJJzq51GU/1eYoZdL11Ge4jmiYk5jKfLXisFsF9m3EWwNCFjPSWwIDFDOliv5PWHvJaY6UNeA4RMuJBXlpgR6BUWvY6Q1ysz/cjLw8wb8hokZPwZeHWPil5J5OW8J2YXee3wnVXkdcrMjA52JXpdI69IiJgT5LXGd7aR1x4zH8jrXPQKacCrHCDmEnnN851j5LXOzAbyOhS9fM4C2BkxN8jL7yPmAnm986995LWliFtEXgeE3KrAa7IaMOQ1za9iyGvZSsA2TQQsUDtgT3e1AzYnef3bEbBggwM2az5gCyYCNmUhYKlWDJjW2IB9WQiYV0NimfYOWLS5A5awErAfGwL2WEfA4sjr276AOcKSWJMGTKkA3XpiLMjXrDYAAAAASUVORK5CYII=');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 152px 20px;
+    width: 152px;
+    height: 20px;
+}
+
+/* right block */
+.vidget-datas{
+    display: flex;
+}
+
+/* блок з даними */
+.vidget-data{
+    margin-right: 69px; /* 70? */ 
+}
+
+/* назва */
+.vidget-data-name{
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--gray-1);
+    text-transform: uppercase;
+    margin: 0 0 3px; /* 0 0 7px */
+    line-height: 1;
+}
+
+/* число */
+.vidget-data-number{
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--black);
+    line-height: 1;
+    margin: 0 0 10px; /* 0 0 15px */
+}
+
+/* графік + кількість */
+.vidget-data-result{
+    display: flex;
+    align-items: flex-end;
+    height: 30px;
+}
+
+/* елементи графіка */
+.vidget-data-result i{
+    background: var(--red);
+    display: inline-block;
+    width: 5px;
+    min-height: 1px;
+    margin-right: 8px; 
+}
+
+/* кількість */
+.vidget-data-result span{
+    font-size: 16px;
+    color: var(--red);
+    margin-left: 3px; /* 9px */
+    line-height: .8;
+}
+
+/* модифікатор (синій)*/
+.vidget-data-result.blue i{
+    background: var(--blue);
+}
+
+.vidget-data-result.blue span{
+    color: var(--blue);
+}
+
+/* модифікатор (вертикальний)*/
+.vidget-data-result.reverse i{
+    align-self: flex-start;
+}
