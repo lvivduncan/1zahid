@@ -1,0 +1,169 @@
+
+.title-48,
+.title-30,
+.title-24,
+.title-21,
+.title-18,
+.title-15
+{
+    font-weight: 900;
+    margin: 0 0 20px;
+}
+
+.title-48 a,
+.title-30 a,
+.title-24 a,
+.title-21 a,
+.title-18 a,
+.title-15 a
+{
+    text-decoration: none;
+    color: var(--gray-1);
+    transition: .5s;
+}
+
+.title-48 a:hover,
+.title-30 a:hover,
+.title-24 a:hover,
+.title-21 a:hover,
+.title-18 a:hover,
+.title-15 a:hover
+{
+    color: var(--red);
+}
+
+/* //////////////
+article + longrid
+////////////// */
+.title-48
+{
+    font-size: 48px;
+}
+
+/* /////////
+home + video
+///////// */
+.title-30
+{
+    font-size: 30px;
+    line-height: 1;
+}
+
+/* /////////////
+home - ЛЬВІВЩИНА
+///////////// */
+.title-24
+{
+    font-size: 24px;
+    line-height: 1;
+}
+
+.title-21
+{
+    font-size: 21px;
+    line-height: 24px;    
+}
+
+/* червоний */
+.title-21.red
+{
+    color: var(--red);
+}
+
+/* чорний */
+.title-21.black
+{
+    color: var(--black);
+}
+
+/* /////
+category 
+///// */
+.title-18
+{
+    font-size: 18px;
+    line-height: 1.35;
+}
+
+.title-15
+{
+    font-size: 15px;
+    line-height: 1.35;
+}
+
+/* ////////////////
+[заголовок article]
+//////////////// */
+.title-18 a
+{
+    color: var(--gray-1);
+    text-decoration: none;
+}
+
+.title-18 a:hover
+{
+    color: var(--red);
+}
+
+/* /////////
+модифікатори 
+///////// */
+.title-48.red a,
+.title-30.red a,
+.title-24.red a,
+.title-21.red a,
+.title-18.red a,
+.title-15.red a
+{
+    color: var(--red);
+}
+
+.title-48.red a:hover,
+.title-30.red a:hover,
+.title-24.red a:hover,
+.title-21.red a:hover,
+.title-18.red a:hover,
+.title-15.red a:hover
+{
+    color: var(--black);
+}
+
+.title-48.black a,
+.title-30.black a,
+.title-24.black a,
+.title-21.black a,
+.title-18.black a,
+.title-15.black a
+{
+    color: var(--black);
+}
+
+.title-48.black a:hover,
+.title-30.black a:hover,
+.title-24.black a:hover,
+.title-21.black a:hover,
+.title-18.black a:hover,
+.title-15.black a:hover
+{
+    color: var(--red);
+}
+
+.title-48.white a,
+.title-30.white a,
+.title-24.white a,
+.title-21.white a,
+.title-18.white a,
+.title-15.white a
+{
+    color: var(--white);
+}
+
+.title-48.white a:hover,
+.title-30.white a:hover,
+.title-24.white a:hover,
+.title-21.white a:hover,
+.title-18.white a:hover,
+.title-15.white a:hover
+{
+    color: var(--black);
+}

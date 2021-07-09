@@ -2,33 +2,42 @@
 великий одинокий блок 
 ////////////////// */
 
-.block-single{
+.block-single
+{
     background: var(--white);
     padding: 0 20px 50px;
     margin: 0 0 20px;
 }
 
-.block-single picture{
+.block-single picture
+{
     display: block;
-    margin: 0 -20px 30px; 
+    /* margin: 0 -20px 30px;  */
+    margin: 0 -20px 20px; 
 }
 
-.block-single .title-30{
+.block-single .title-30,
+.block-single .title-24
+{
     line-height: 1;
+    /* margin: 0 0 20px; */
+    margin: 0 0 10px;
 }
 
-.block-single .title-30 a{
-    color: var(--red);
+.block-single time
+{
+    /* margin: 0 0 20px; */
+    margin: 0 0 10px; 
 }
 
-.block-single .title-30 a:hover{
-    color: var(--black);
+.block-single p
+{
+    /* margin: 0 0 20px; */
+    margin: 0 0 10px;
 }
 
-.block-single time{
-    margin: 0 0 20px;
-}
-
-.block-single p{
-    margin: 0 0 20px;
+/* зайвий відступ в останнього абзаца */
+.block-single p:last-child
+{
+    margin: 0; 
 }
