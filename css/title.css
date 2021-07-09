@@ -165,5 +165,6 @@ category
 .title-18.white a:hover,
 .title-15.white a:hover
 {
-    color: var(--black);
+    /* color: var(--black); */
+    opacity: .4;
 }

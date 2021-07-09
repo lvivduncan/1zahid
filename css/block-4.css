@@ -1,0 +1,78 @@
+
+/* ///////////////////
+4 анонси у блоці відео
+/////////////////// */
+
+.block-4
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr) 410px;
+    grid-gap: 18px; 
+}
+
+/* ////////////////////////////////////
+4 блоки використовуються тільки у відео 
+//////////////////////////////////// */
+
+.block-4 a
+{
+    display: block;
+    outline: 1px solid var(--border-video);
+    text-decoration: none;
+    transition: .5s;
+}
+
+.block-4 a .title-18
+{
+    color: var(--white);
+    padding: 16px 18px 0;
+    display: block;
+    transition: .5s;
+}
+
+.block-4 a:hover .title-18
+{
+    opacity: .4;
+}
+
+/* ////////////
+4 блок -- стрім
+//////////// */
+.block-4 a:last-child
+{
+    position: relative;
+}
+
+.block-4 a:last-child picture{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+}
+
+.block-4 a:last-child img,
+.block-4 a:last-child source
+{
+    object-fit: cover;
+    height: 100%!important;
+    width: 100%!important;
+}
+
+.block-4 a:last-child .title-18{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
+.block-4 a:last-child .heading{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: var(--white);
+    z-index: 2;
+    height: auto;
+}

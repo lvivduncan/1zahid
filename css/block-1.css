@@ -52,7 +52,7 @@
 
 .block-1 p
 {
-    font-size: 15px;
+    /* font-size: 15px; */
     font-weight: 400; /* regular */
     margin: 0;
 }

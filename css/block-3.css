@@ -6,7 +6,9 @@
 {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 30px;
+    /* grid-gap: 30px; */
+    grid-gap: 0 30px;
+    grid-template-rows: minmax(auto-fit, 70px);
 }
 
 /* вкладений блок */
@@ -42,3 +44,5 @@
     /* margin: 0 0 16px; */
     margin: 0 0 6px;
 }
+
+/* TODO: position: relative;  */
