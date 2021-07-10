@@ -11,6 +11,18 @@
     align-items: center;
 }
 
+/* погода */
+#wheater
+{
+    display: flex;
+    align-items: center;
+}
+
+#wheater picture
+{
+    margin-right: 5px;
+}
+
 /* #header-content{} */
 
 #header-content-top{

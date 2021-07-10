@@ -3,27 +3,27 @@
 основне меню 
 ///////// */
 
-#nav{
+.nav{
     position: relative;
 }
 
-#nav ul{
+.nav ul{
     /* display: block; */
     display: flex;
     gap: 20px;
 }
 
 /* sub */
-#nav ul ul{
+.nav ul ul{
     display: none;
 }
 
-#nav li{
+.nav li{
     display: inline-block;
 }
 
 /* margin: 0 20px; */
-#nav li a{
+.nav li a{
     font-size: 16px;
     color: var(--black);
     font-weight: 900;
@@ -32,11 +32,11 @@
     transition: .5s;
 }
 
-#nav li a:hover{
+.nav li a:hover{
     color: var(--red);
 }
 
-#nav li a.active{
+.nav li a.active{
     color: var(--red);
 }
 
@@ -208,7 +208,7 @@
 
 /* соціконки (margin: 0 20px; width: 135px) */
 .social{
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     gap: 20px;
 }
