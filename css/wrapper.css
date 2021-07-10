@@ -60,6 +60,7 @@
     right: 0;
     transform: translateX(312px) rotateY(180deg);
     opacity: .5;
+    /* z-index: 1; */
 }
 
 .wrapper-background.reverse::after
@@ -69,4 +70,5 @@
     left: 0;
     transform: translateX(-310px) rotateY(180deg);
     opacity: .5;
+    /* z-index: 1; */
 }

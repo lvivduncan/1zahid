@@ -5,6 +5,10 @@
     /* додатковий відступ */
     margin: 75px 0 00;
     min-height: 1000px;
+
+    /* overflow: hidden; */
+    /* position: relative; */
+    /* z-index: 2; */
 }
 
 /* 1 великий блок */

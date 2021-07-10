@@ -8,7 +8,7 @@
     grid-template-columns: repeat(3,1fr);
     /* grid-gap: 30px; */
     grid-gap: 0 30px;
-    grid-template-rows: minmax(auto-fit, 70px);
+    /* grid-template-rows: minmax(auto-fit, 70px); */
 }
 
 /* вкладений блок */
@@ -22,6 +22,8 @@
     background: var(--white);
     padding: 0 20px 20px;
     margin: 0 0 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .block-3 picture
@@ -45,4 +47,24 @@
     margin: 0 0 6px;
 }
 
-/* TODO: position: relative;  */
+/* чорна плашка */
+.block-black .block-3 article
+{
+    background: transparent;
+    outline: 1px solid var(--border-longread);
+}
+
+.block-black .block-3 .title-18 a
+{
+    color: var(--white);
+}
+
+.block-black .block-3 .title-18 a:hover
+{
+    opacity: .5;
+}
+
+.block-black .block-3 time
+{
+    color: var(--white);
+}

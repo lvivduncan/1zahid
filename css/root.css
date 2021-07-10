@@ -11,32 +11,31 @@
 :root
 {
     --red: #bb2538;
-    /* --rose: #c44d5d;  */
     --black: #000;
     --white: #fff;
-    --gray-1: #5e5a5b; /* icons, article bg */
+    --gray-1: #5e5a5b; 
+    /* icons, article bg ... */
+
     --gray-2: #58585a;
-    --gray-3: #e6e6e6; /* aside hr */
-    --bg-aside: #f0f0f2; /* aside bg */
-    --bg-main: #f7f7f8; /* main bg */
-    --bg-hr: #eaebed; /* hr */
-    --blue: #1570bd; /* meter */
+    --gray-3: #e6e6e6; 
+    /* aside hr */
+
+    --bg-aside: #f0f0f2; 
+    /* aside bg */
+
+    --bg-main: #f7f7f8; 
+    /* main bg */
+
+    --bg-hr: #eaebed; 
+    /* hr */
+
+    --blue: #1570bd; 
+    /* meter */
 
     --border-vidget: #ededed;
     --border-klychko: #e5e5e7;
     --border-video: #d06774;
-
-    /* del */
-    --bg-1: #09090a;
-    --bg-2: #e3e5e8;
-    --bg-3: #c2c4c6;
-    --bg-4: #dbb8c0;
-    
-    --line-1: #bc2b43;
-    --line-2: #58595b;
-    --line-3: #dde0e3;
-    --line-4: #fff;
-    /* del */
+    --border-longread: #8a8b8d;
 
     --fb: #515eb3;
     --tw: #6ab8ff;
@@ -52,6 +51,7 @@ body
     line-height: 1.4;
 
     overflow-x: hidden;
+    /* height: 100%; */
 }
 
 p{
