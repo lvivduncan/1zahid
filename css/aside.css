@@ -1,9 +1,11 @@
 /* ////////////////////////
 сайдбар - сіра бокова смуга
 //////////////////////// */
+
+/* сайдбар (хедінг над ним) */
 .aside
 {
-    /* padding: 20px 15px; */
+    height: calc(100% - 70px);
     padding: 30px 20px 30px 16px;
     background: var(--bg-aside);
     display: flex; 
@@ -84,4 +86,15 @@
 .aside .button
 {
     margin: auto auto 0;
+}
+
+/* ////////
+модифікатор
+//////// */
+
+/* сайдбар (хедінг всередині) */
+.aside.inner-heading
+{
+    height: 100%;
+    padding: 0 20px 30px 16px;
 }

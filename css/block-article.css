@@ -1,0 +1,87 @@
+/* ///////////////////////
+article -- основна шпальта
+/////////////////////// */
+
+.block-article
+{
+    display: grid;
+    grid-template-columns: 180px 1fr; /* 200px 1fr */
+    grid-gap: 37px 20px; /* 45px 20px */
+    grid-template-areas: 
+        'article-picture article-picture'
+        'article-aside article-main';
+    grid-template-rows: min-content;
+    background: var(--white);
+}
+
+/* головна картинка */
+#article-picture
+{
+    grid-area: article-picture;
+}
+
+/* допоміжний блок (шаринг) */
+#article-aside
+{
+    grid-area: article-aside;
+    padding: 0 0 0 30px;
+}
+
+/* контент */
+#article-main
+{
+    grid-area: article-main;
+}
+
+#article-main .title-30
+{
+    margin: 0 0 14px; /* 0 0 20px */
+}
+
+#article-main time
+{
+    margin: 0 0 16px; /* 0 0 33px */
+}
+
+#article-main p
+{
+    margin: 0 0 20px; /* 0 0 31px */
+}
+
+/* /////////////////////////////////
+вставка картинки з обтіканням справа
+///////////////////////////////// */
+
+#article-main figure
+{
+    float: left;
+    width: 50%;
+    margin: 0 35px 60px 0; 
+    position: relative;
+    top: 8px;
+}
+
+#article-main figure picture
+{
+    display: block;
+    margin: 0 0 18px; 
+}
+
+#article-main figure figcaption
+{
+    font-size: 13px;
+    font-weight: 300
+}
+
+/* ///////////////////////////
+картинка на весь екран (відео)
+/////////////////////////// */
+#article-main .video
+{
+    margin: 0 0 20px;
+}
+
+#article-main .video a
+{
+    position: relative;
+} 

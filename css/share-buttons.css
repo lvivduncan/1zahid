@@ -1,0 +1,61 @@
+/* /////////////////////////
+3 кнопки у вузькому сайдбарі
+///////////////////////// */
+
+.share-buttons
+{
+    display: block;
+}
+
+.share-buttons a
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 10px;
+    text-decoration: none;
+    color: var(--white);
+    width: 80px;
+    height: 40px;
+    transition: .5s;
+}
+
+.share-buttons a.facebook
+{
+    background: var(--fb);
+}
+
+.share-buttons a.twitter
+{
+    background: var(--tw);
+}
+
+.share-buttons a.telegram
+{
+    background: var(--tg);
+}
+
+.share-buttons a svg
+{
+    margin: 0 10px 0 0;
+    fill: var(--white);
+    width: 18px;
+}
+
+.share-buttons a span
+{
+    font-size: 16px;
+    position: relative;
+}
+
+.share-buttons a span::after
+{
+    content: '+';
+    display: inline-block;
+    margin: 0 0 0 5px;
+}
+
+.share-buttons a:hover
+{
+    background: var(--gray-1);
+}

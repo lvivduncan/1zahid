@@ -6,6 +6,9 @@
 
 @import url('./elements.css');
 
+/* заголовки блоків */
+@import url('./heading.css');
+
 @import url('./header.css');
 
 /* блок-вставка під хедером */
@@ -28,7 +31,10 @@
 
 @import url('./block-4.css');
 
-/* @import url('./block-mod.css'); */
+@import url('./block-article.css');
+
+/* 3 buttons */
+@import url('./share-buttons.css');
 
 @import url('./home-video.css');
 

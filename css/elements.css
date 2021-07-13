@@ -3,27 +3,32 @@
 основне меню 
 ///////// */
 
-.nav{
+.nav
+{
     position: relative;
 }
 
-.nav ul{
+.nav ul
+{
     /* display: block; */
     display: flex;
     gap: 20px;
 }
 
 /* sub */
-.nav ul ul{
+.nav ul ul
+{
     display: none;
 }
 
-.nav li{
+.nav li
+{
     display: inline-block;
 }
 
 /* margin: 0 20px; */
-.nav li a{
+.nav li a
+{
     font-size: 16px;
     color: var(--black);
     font-weight: 900;
@@ -32,37 +37,44 @@
     transition: .5s;
 }
 
-.nav li a:hover{
+.nav li a:hover
+{
     color: var(--red);
 }
 
-.nav li a.active{
+.nav li a.active
+{
     color: var(--red);
 }
 
 /* ///////////
 меню у підвалі
 /////////// */
-#footer-nav{
+#footer-nav
+{
     position: relative;
 }
 
-#footer-nav ul{
+#footer-nav ul
+{
     display: flex;
     gap: 20px;
 }
 
 /* sub */
-#footer-nav ul ul{
+#footer-nav ul ul
+{
     display: none;
 }
 
-#footer-nav li{
+#footer-nav li
+{
     display: inline-block;
 }
 
 /* margin: 0 20px; */
-#footer-nav li a{
+#footer-nav li a
+{
     font-size: 14px;
     color: var(--black);
     font-weight: 900;
@@ -71,11 +83,13 @@
     transition: .5s;
 }
 
-#footer-nav li a:hover{
+#footer-nav li a:hover
+{
     color: var(--red);
 }
 
-#footer-nav li a.active{
+#footer-nav li a.active
+{
     color: var(--red);
 }
 
@@ -83,7 +97,8 @@
 
 
 /* червона */
-.button{
+.button
+{
     height: 40px;
     width: 200px;
     background: var(--red);
@@ -98,18 +113,21 @@
     transition: .5s;
 }
 
-.button:hover{
+.button:hover
+{
     background: var(--white);
     color: var(--red);    
 }
 
 /* біла */
-.button.white{
+.button.white
+{
     background: var(--white);
     color: var(--red);
 }
 
-.button.white:hover{
+.button.white:hover
+{
     background: var(--red);
     color: var(--white);    
 }
@@ -117,89 +135,24 @@
 
 
 
-/* заголовок плашки */
-.heading{
-    text-transform: uppercase!important;
-    font-size: 24px!important;
-    font-weight: 900;
-    color: var(--black);
-
-    /* margin: 0 0 25px; */
-
-    height: 70px;
-    display: flex;
-    align-items: center;
-}
-
-/* червоний заголовок плашки*/
-.heading.red{
-    color: var(--red);
-}
-
-/* сірий заголовок плашки*/
-.heading.gray{
-    color: var(--gray-1);
-}
-
-/* сірий заголовок плашки*/
-.heading.white{
-    color: var(--white);
-}
-
-/* чорний заголовок */
-/* .subtitle.black{
-    color: var(--black);
-} */
-
-
-
-
-
-/* кольорові прямокутники */
-.bg-colored{
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAAAUCAMAAABGbgSwAAABOFBMVEUAAAC8K0P6+vrd4ONYWVvd4OP8/PxYWVvd4OPe4ePk5+nr7e68K0NYWVv+/v68K0Pd4OPd4OPd4OPd4ONYWVu8K0Pc3uBZWlxZWVu7K0Pj4+S8K0NYWly7K0NaW128K0P7+/vd4OO8K0NYWVu8K0P09PS8K0Pd4ONYWVv///9YWVvv8PC8K0P///9YWVvd4ONYWVu8K0Pp6uu8K0NYWVvd4OPd4ONYWVu8K0Pk5ea8K0P///9YWVvd4ONYWVu8K0Pf4OC8K0NYWVvd4OO8K0P////d4OPd4ONZWVvT1NVYWVtYWVtYWVu8K0NYWVvz8/NYWVtYWVu8K0P+/v68K0Pv8PH////r7Oz///////////+8K0P////////c3+La29xZWVvd4ONaWFv////d4ONYWVu8K0P+/v/2+AyjAAAAY3RSTlMA5PLk5O7h4NRrGAX39vXh4LucTUA+MzInIx0bGQ4GBvX16tTTzcnGxsW7rKyrqqmcmpOPjIp9fHp0bmxsX15dVlBOQTQxJxAPCvrt7OzpyMi5ubi3tKShkIqGW1BMRzklEQo5p0KrAAABT0lEQVRIx92U11LCUBRFgxqqRmyIWMCu2HsXe+9deg3//wfMnMPLvTPZJAyTAfbzmnPW01LkfXYYLlL2EJJzq51GU/1eYoZdL11Ge4jmiYk5jKfLXisFsF9m3EWwNCFjPSWwIDFDOliv5PWHvJaY6UNeA4RMuJBXlpgR6BUWvY6Q1ysz/cjLw8wb8hokZPwZeHWPil5J5OW8J2YXee3wnVXkdcrMjA52JXpdI69IiJgT5LXGd7aR1x4zH8jrXPQKacCrHCDmEnnN851j5LXOzAbyOhS9fM4C2BkxN8jL7yPmAnm986995LWliFtEXgeE3KrAa7IaMOQ1za9iyGvZSsA2TQQsUDtgT3e1AzYnef3bEbBggwM2az5gCyYCNmUhYKlWDJjW2IB9WQiYV0NimfYOWLS5A5awErAfGwL2WEfA4sjr276AOcKSWJMGTKkA3XpiLMjXrDYAAAAASUVORK5CYII=');
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 152px 20px;
-}
-
-/* сірі прямокутники */
-/* .bg-gray{} */
-
-/* прозорі кольорові прямокутники */
-/* del */
-.bg-opacity{
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJoAAAAUCAMAAABCm9SNAAAA+VBMVEUAAADo6uzd3+OxsrbSo67n6evRo63b3uOwsrXJrri/rLXh4ebDrLK0oaHBusGxs7fSpK6xsrbn6Ore4OTd4OTa2uTSpK7p6uzd4OTd3+Sys7bn6evc3+Pd3+SwsrXd3+Oxsrbn6Ozm5+nSo6/m5+rn6ezSpK/j4+fh5OiysrfSo66vr7bd4eHW5OTo6ezSpK+xs7bSpK7So67d3uTSo67So6+xs7fd3+OxsrbSo67c3+Pc3uTRo67f4OXRo6+ws7fc3+OysrbVpq7c3OGxsbbb4OXRo7Hc5eXRpK/p6+3j5ejd3uPn5+vh5Obq6u6xtLavsbaws7avsrXEam/SAAAAU3RSTlMAwMDAwLasrKwKGycTBAa5sKmWdFASurm3srGqqaCWjIyDf2tpUEU/NzAvJhYMwKmgn5eVi4KAf3VzaF5cV1NRSEc8OzsxJx2opp2ci3lsaWleXdNMLYwAAAE1SURBVEjHlNTFDsJQEIXhAkVKcXd3d/dgCZbw/g9DMsPqNj2Fs/4z+VYjaXa36q8ToqR9i9v1FkuFqWn6Ew69eXMeaio2n01vclEjy5vAHtykzWA1SlxeC5iTmoYMdlVE2RPJCtxkjWVuv7HMiWRdtygrI1mAmyCShbjJIFmdEsUHZBGXKKsiWVKhZolkC74zQbI9N30Z7CzKVCSLtqjZIdmU77yQ7M3NCMkOoqwVBbKOSs0JyYZ8Z4tkM27mSLYRZZ6kCaxKzQXJUvwSjkiWk2grJNO+jQCSrfmhxYEs9n1oSNaTaBUkG//30Eo/PDTV+KElFOOHNtDIPlOhtEBzHnkFmsawL9AC8LkskJwCTZQVn9MGskDj9Rwt0Egu0JTwuUx40BZoivQr0Nj4SCrQvAayQAMAg5kznCXTIUAAAAAASUVORK5CYII=');
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 154px 20px;
-}
-
-/* білі прямокутники (сірі прозорі?) */
-.bg-white{
-    /* background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJoAAAAUCAMAAABCm9SNAAAAhFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8g2+bRAAAAK3RSTlMA5PLg9jPTJRnHawa6nIrtrKmRfD0O6m9cTkEQCbZfUEoe/Mqjd1bawxYDzCCDGwAAASNJREFUSMfNlMkOgkAQBYdVQFREUBRR2dz4//8zmbm14U2TINjnOrzJVEp8XWH2XxdIJHf3Rt+ZlicZx+pnqvAsmczovy4W9KIOXKMYFzE3iXg2YhaSSRBipXRZjPCtYkL9sqWlX7aAy5Z02QHhvmJWiAkU4yMmkUi6AYjt0WVX+BAlyA4xa4YVGcMKhy5zEG2XkrkwfnyNmB3Diitd5tn6h5wYPx4gZsWw4kCXYXXvbHWPiAkFxwp6vv4hOVZXb4Ur5GWIiQS9LcJjrrrYik2qD5pPh2F1I4a6xx8FDatbjxS0kwraflDQbuMEDVtx+fegFYOC9jIRnswYtPdjuqC1uAP0nghv5wxaM0XQcn3Q6mFBK8YNWgUQ4zwoaO6EQSvpsg+UYnFWGf5aiQAAAABJRU5ErkJggg==');     */
-
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJoAAAAUCAMAAABCm9SNAAAASFBMVEXd4OMAAADd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPhrvs6AAAAGHRSTlOAAHJ6DQdjRjYnXVYZA3Zwak4gEy8+OlSU5U0WAAABAklEQVRIx82U2wrDIBAFNfcYjebW/v+fFpSwYMnZhRZxn+dhxOEonZ9pn09NEenD2jxd67vIWA8Y00fmbJ5PjV9qiwK3JSYgZo5I1yLmiMyOEN/naiPCl8QY3sw1vNmBkMbpTG1C+JCYDTFTYgbE7KmKFSBtpzO1GT4kBXIhZhRUcQqqsDpTswo+JKWLf5yv4pJVQWp8upZPdxBUsYmqyNSc5/OG6XrHV2G0uApSw+m+JOnyVQQtroLUcLqjJF2+irWXVEFq/x00//ug3WoVDtqtVuGg3WoVDhqpcYO2lx00UmPTPQsPGqlVOGik9obfUHzQSA2na8oPGqnBdEP5QaP7AMB+DBFLUXy7AAAAAElFTkSuQmCC');
-
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 154px 20px;
-}
 
 /* вирівнювання по центру */
-.center{
+.center
+{
     display: flex;
     justify-content: center;
 }
 
 /* вирівнювання по лівому краю */
-.left{
+.left
+{
     display: flex;
     justify-content: flex-start;
 }
 
 /* вирівнювання по правому краю */
-.right{
+.right
+{
     display: flex;
     justify-content: flex-end;
 }
@@ -207,59 +160,70 @@
 
 
 /* соціконки (margin: 0 20px; width: 135px) */
-.social{
+.social
+{
     display: inline-flex;
     justify-content: space-between;
     gap: 20px;
 }
 
-.facebook,
-.twitter,
-.telegram,
-.rss{
+.social .facebook, 
+.social .twitter,
+.social .telegram,
+.social .rss
+{
     height: 16px;
     width: 16px;
     display: inline-block;
     transition: .5s;
 }
 
-.facebook{
+.social .facebook
+{
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' fill='%235e5a5b' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11,10h2.6l0.4-3H11V5.3c0-0.9,0.2-1.5,1.5-1.5H14V1.1c-0.3,0-1-0.1-2.1-0.1C9.6,1,8,2.4,8,5v2H5.5v3H8v8h3V10z'%3E%3C/path%3E%3C/svg%3E");
 }
 
-.twitter{
+.social .twitter
+{
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' fill='%235e5a5b' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19,4.74 C18.339,5.029 17.626,5.229 16.881,5.32 C17.644,4.86 18.227,4.139 18.503,3.28 C17.79,3.7 17.001,4.009 16.159,4.17 C15.485,3.45 14.526,3 13.464,3 C11.423,3 9.771,4.66 9.771,6.7 C9.771,6.99 9.804,7.269 9.868,7.539 C6.795,7.38 4.076,5.919 2.254,3.679 C1.936,4.219 1.754,4.86 1.754,5.539 C1.754,6.82 2.405,7.95 3.397,8.61 C2.79,8.589 2.22,8.429 1.723,8.149 L1.723,8.189 C1.723,9.978 2.997,11.478 4.686,11.82 C4.376,11.899 4.049,11.939 3.713,11.939 C3.475,11.939 3.245,11.919 3.018,11.88 C3.49,13.349 4.852,14.419 6.469,14.449 C5.205,15.429 3.612,16.019 1.882,16.019 C1.583,16.019 1.29,16.009 1,15.969 C2.635,17.019 4.576,17.629 6.662,17.629 C13.454,17.629 17.17,12 17.17,7.129 C17.17,6.969 17.166,6.809 17.157,6.649 C17.879,6.129 18.504,5.478 19,4.74'%3E%3C/path%3E%3C/svg%3E");
 }
 
-.telegram{
+.social .telegram
+{
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%235e5a5b' viewBox='0 0 300 300'%3E%3Cpath id='XMLID_497_' d='M5.299,144.645l69.126,25.8l26.756,86.047c1.712,5.511,8.451,7.548,12.924,3.891l38.532-31.412 c4.039-3.291,9.792-3.455,14.013-0.391l69.498,50.457c4.785,3.478,11.564,0.856,12.764-4.926L299.823,29.22 c1.31-6.316-4.896-11.585-10.91-9.259L5.218,129.402C-1.783,132.102-1.722,142.014,5.299,144.645z M96.869,156.711l135.098-83.207 c2.428-1.491,4.926,1.792,2.841,3.726L123.313,180.87c-3.919,3.648-6.447,8.53-7.163,13.829l-3.798,28.146 c-0.503,3.758-5.782,4.131-6.819,0.494l-14.607-51.325C89.253,166.16,91.691,159.907,96.869,156.711z'/%3E%3C/svg%3E");
 }
 
-.rss{
+.social .rss
+{
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%235e5a5b' viewBox='0 0 124 124'%3E%3Ccircle cx='20.3' cy='103.749' r='20'/%3E%3Cpath d='M67,113.95c0,5.5,4.5,10,10,10s10-4.5,10-10c0-42.4-34.5-77-77-77c-5.5,0-10,4.5-10,10s4.5,10,10,10 C41.5,56.95,67,82.55,67,113.95z'/%3E%3Cpath d='M114,123.95c5.5,0,10-4.5,10-10c0-62.8-51.1-113.9-113.9-113.9c-5.5,0-10,4.5-10,10s4.5,10,10,10 c51.8,0,93.9,42.1,93.9,93.9C104,119.45,108.4,123.95,114,123.95z'/%3E%3C/svg%3E");
 }
 
-.facebook:hover{
+.social .facebook:hover
+{
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' fill='%23bb2538' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11,10h2.6l0.4-3H11V5.3c0-0.9,0.2-1.5,1.5-1.5H14V1.1c-0.3,0-1-0.1-2.1-0.1C9.6,1,8,2.4,8,5v2H5.5v3H8v8h3V10z'%3E%3C/path%3E%3C/svg%3E");
 }
 
-.twitter:hover{
+.social .twitter:hover
+{
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' fill='%23bb2538' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19,4.74 C18.339,5.029 17.626,5.229 16.881,5.32 C17.644,4.86 18.227,4.139 18.503,3.28 C17.79,3.7 17.001,4.009 16.159,4.17 C15.485,3.45 14.526,3 13.464,3 C11.423,3 9.771,4.66 9.771,6.7 C9.771,6.99 9.804,7.269 9.868,7.539 C6.795,7.38 4.076,5.919 2.254,3.679 C1.936,4.219 1.754,4.86 1.754,5.539 C1.754,6.82 2.405,7.95 3.397,8.61 C2.79,8.589 2.22,8.429 1.723,8.149 L1.723,8.189 C1.723,9.978 2.997,11.478 4.686,11.82 C4.376,11.899 4.049,11.939 3.713,11.939 C3.475,11.939 3.245,11.919 3.018,11.88 C3.49,13.349 4.852,14.419 6.469,14.449 C5.205,15.429 3.612,16.019 1.882,16.019 C1.583,16.019 1.29,16.009 1,15.969 C2.635,17.019 4.576,17.629 6.662,17.629 C13.454,17.629 17.17,12 17.17,7.129 C17.17,6.969 17.166,6.809 17.157,6.649 C17.879,6.129 18.504,5.478 19,4.74'%3E%3C/path%3E%3C/svg%3E");
 }
 
-.telegram:hover{
+.social .telegram:hover
+{
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23bb2538' viewBox='0 0 300 300'%3E%3Cpath id='XMLID_497_' d='M5.299,144.645l69.126,25.8l26.756,86.047c1.712,5.511,8.451,7.548,12.924,3.891l38.532-31.412 c4.039-3.291,9.792-3.455,14.013-0.391l69.498,50.457c4.785,3.478,11.564,0.856,12.764-4.926L299.823,29.22 c1.31-6.316-4.896-11.585-10.91-9.259L5.218,129.402C-1.783,132.102-1.722,142.014,5.299,144.645z M96.869,156.711l135.098-83.207 c2.428-1.491,4.926,1.792,2.841,3.726L123.313,180.87c-3.919,3.648-6.447,8.53-7.163,13.829l-3.798,28.146 c-0.503,3.758-5.782,4.131-6.819,0.494l-14.607-51.325C89.253,166.16,91.691,159.907,96.869,156.711z'/%3E%3C/svg%3E");
 }
 
-.rss:hover{
+.social .rss:hover
+{
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23bb2538' viewBox='0 0 124 124'%3E%3Ccircle cx='20.3' cy='103.749' r='20'/%3E%3Cpath d='M67,113.95c0,5.5,4.5,10,10,10s10-4.5,10-10c0-42.4-34.5-77-77-77c-5.5,0-10,4.5-10,10s4.5,10,10,10 C41.5,56.95,67,82.55,67,113.95z'/%3E%3Cpath d='M114,123.95c5.5,0,10-4.5,10-10c0-62.8-51.1-113.9-113.9-113.9c-5.5,0-10,4.5-10,10s4.5,10,10,10 c51.8,0,93.9,42.1,93.9,93.9C104,119.45,108.4,123.95,114,123.95z'/%3E%3C/svg%3E");
 }
 
 /* цитата */
-blockquote{
+blockquote
+{
     text-align: center;
-    padding: 70px 10px;
-    margin: 80px 0;
+    padding: 70px 10px 60px; /* padding: 70px 10px; */
+    margin: 75px 0 70px; /* margin: 80px 0; */
     border-top: 1px solid var(--bg-hr);
     border-bottom: 1px solid var(--bg-hr);
     font-size: 18px;
@@ -268,26 +232,30 @@ blockquote{
 }
 
 /* основний текст цитати (може бути абзацем) */
-blockquote p{
+blockquote p
+{
     font-size: 18px;
     color: var(--gray-2);
 }
 
 /* автор */
-blockquote strong{
+blockquote strong
+{
     font-size: 15px;
     font-weight: bold;
 }
 
 /* титул автора */
-blockquote em{
+blockquote em
+{
     font-size: 15px;
     font-style: normal;
     font-weight: 400; /* regular */
 }
 
 /* паралелепіпеди */
-blockquote::before{
+blockquote::before
+{
     content: '';
     display: inline-block;
     width: 79px;
@@ -301,7 +269,8 @@ blockquote::before{
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAAAhCAMAAACvFAaeAAAAyVBMVEUAAAC+N0jd3+TBRVXEUmLKdoPe3+Pd3+TIaXfe3+PNfIfLgIXd3+Pe3+Pd3+TGXmvd3+PJcX7d4OLc3+PLeYje4OLZ2enDl6bd3+Pd3+Pd4OPFXm3HaHXc4OPd3+PJb33e4OTe4OTe3+Pd3+Tc4OXf3+Pe3uPKfY7d3d29NEbAQFDCS1vd3+PGYG7d3+Pd3+Pd4OLGZXLd3+THb3ve4OPc3uPJdYHd4OPe3uLMfIfd4eTd3eLd3ePf39/Y2Ovd3+O7JTi8Kj27Jjlpm9JAAAAAP3RSTlMA/J705F7QsKp0MQ3569bPt4ZhPzYrCwX87+XLsJuPjIF5V0o6IBoVD/74797KyL67uZaTim1tW05GQzUlEA1Gr8ykAAABB0lEQVRIx83UyVLCUBCF4ZMwBxFQSAQBFUWUeZ4hgfd/KFbQfRdUUd13wXmAr3rxV+PO+ZXwugIQj677b0OwJHFJ4J2401rCFYir+qhFtIWEqxP31sIH46YSLhPSXpFg3FjCLRnXROlIXF/C/TDuC4FDXFzCtZ6IqwMx4mIS7pC7FZ6TVYb3bIR39CRcirjcH9IRLSHhJiy8nRFe0W54aQnXZNyLEV5eH15WG94vC8/Vh+dXiRtZDy9vMbyKhfAaIa2M4oOFtzLC87ThbRn3+XDhBT3ihkCXhdeWeAMjvFrkXNYpaT/eHvACqDYzwlNvzriNnvs2wlOvzMOze50L/TIp97KGkDgDiRqhUmR6jssAAAAASUVORK5CYII=');
 }
 
-blockquote::after{
+blockquote::after
+{
     content: '';
     display: inline-block;
     width: 100px;
@@ -314,12 +283,15 @@ blockquote::after{
     z-index: 1;
 }
 
-/* теги */
-.tags{
-    margin: 35px 0;
+/* теги */ /* 88 - 36  */
+.tags
+{
+    /* margin: 35px 0; */
+    margin: 55px 0 35px;
 }
 
-.tags a{
+.tags a
+{
     display: inline-block;
     background: var(--bg-aside);
     color: var(--black);
@@ -327,21 +299,12 @@ blockquote::after{
     font-weight: 400; /* regular */
     margin-right: 12px;
     text-decoration: none;
-    padding: 10px;
+    padding: 6px 11px;
     transition: .5s;
 }
 
-.tags a:hover{
+.tags a:hover
+{
     background: var(--red);
     color: var(--white);
-}
-
-/* сайдбар (хедінг над ним) */
-.aside{
-    height: calc(100% - 70px);
-}
-
-/* сайдбар (хедінг всередині) */
-.aside-inner-heading{
-    
 }
