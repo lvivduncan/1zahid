@@ -1,0 +1,106 @@
+/* ////////////////////////////////////
+вивід категорій + може бути батон внизу
+//////////////////////////////////// */
+
+.category
+{
+    margin: 0 0 70px;
+}
+
+.category .main
+{
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    margin: 70px 0 0;
+    padding: 0 20px 30px 16px;
+}
+
+.category .main .heading
+{
+    margin: -70px 0 0;
+}
+
+/* without image */
+.category .main article
+{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 
+        'category-time category-title'
+        'category-time category-p';
+    grid-template-rows: max-content;
+    grid-gap: 0 20px;
+    padding: 0 0 20px;
+    border-bottom: 1px solid var(--border-category);
+    margin: 20px 0 0;
+}
+
+/* whith image */
+.category .main article.picture
+{
+    grid-template-columns: auto 220px 1fr;
+    grid-template-areas: 
+    'category-time category-picture category-title'
+    'category-time category-picture category-p';
+}
+
+/* require indent for 1 article */
+.category .main article:first-of-type {
+    margin-top: 30px;
+}
+
+/* require indent for last article l*/
+.category .main article:last-of-type {
+    margin-bottom: 60px;
+}
+
+/* date */
+.category .main article time
+{
+    grid-area: category-time;
+    font-size: 12px;
+}
+
+/* image */
+.category .main article picture
+{
+    grid-area: category-picture;
+}
+
+/* title */
+.category .main article .title-18,
+.category .main article .title-21
+{
+    grid-area: category-title;
+}
+
+.category .main article .title-18
+{
+    margin: 0 0 6px;
+}
+
+.category .main article .title-21
+{
+    margin: 0 0 5px;
+}
+
+/* preview */
+.category .main article p
+{
+    grid-area: category-p;
+    margin: 0;
+}
+
+
+/* /////////
+модифікатори
+///////// */
+
+/* заголовок всередині (на майбутнє) */
+.category.inner-heading
+{
+
+}
+
+
