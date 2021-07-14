@@ -250,7 +250,7 @@ blockquote em
 {
     font-size: 15px;
     font-style: normal;
-    font-weight: 400; /* regular */
+    font-weight: 400;
 }
 
 /* паралелепіпеди */
@@ -275,8 +275,7 @@ blockquote::after
     display: inline-block;
     width: 100px;
     height: 40px;
-    background: var(--bg-main);
-
+    background: var(--white);
     position: absolute;
     top: -20px;
     left: calc(50% - 50px);

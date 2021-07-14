@@ -5,11 +5,17 @@
 /* сайдбар (хедінг над ним) */
 .aside
 {
-    height: calc(100% - 70px);
+    /* height: calc(100% - 70px); */
     padding: 30px 20px 30px 16px;
     background: var(--bg-aside);
     display: flex; 
     flex-flow: column;
+    margin-top: 70px;
+}
+
+.aside .heading
+{
+    margin: -100px -20px 0;
 }
 
 .aside article
@@ -17,6 +23,11 @@
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap: 13px;
+}
+
+.aside article:first-of-type
+{
+    margin-top: 30px;
 }
 
 .aside .title-15
@@ -95,6 +106,18 @@
 /* сайдбар (хедінг всередині) */
 .aside.inner-heading
 {
-    height: 100%;
+    /* height: 100%; */
     padding: 0 20px 30px 16px;
+    margin-top: 0;
+}
+
+
+.aside.inner-heading .heading
+{
+    margin: 0;
+}
+
+.aside.inner-heading article:first-of-type
+{
+    margin-top: 0;
 }
