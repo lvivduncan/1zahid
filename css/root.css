@@ -42,7 +42,8 @@
     --tg: #389ce9;
 }
 
-html, body {
+html, body 
+{
     height: 100%;
 }
 
@@ -95,14 +96,15 @@ picture source
 {
     min-height: 100%;
     overflow: hidden;
+    position: relative;
 }
 
-#body .spacer
+#body::after
 {
+    content: '';
+    display: block;
     height: 350px;
-    clear: both;
 }
-
 
 /* ////////////////////////////////////////
 блок зі сайдбаром (зліва) і мейном (справа)
