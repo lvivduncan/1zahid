@@ -5,7 +5,6 @@
 /* сайдбар (хедінг над ним) */
 .aside
 {
-    /* height: calc(100% - 70px); */
     padding: 30px 20px 30px 16px;
     background: var(--bg-aside);
     display: flex; 
@@ -91,14 +90,6 @@
     margin: 0 -20px 20px -16px;
 }
 
-/* ///////////////////////////////////
-кнопка внизу притиснена і поцентрована
-/////////////////////////////////// */
-/* .aside .button
-{
-    margin: auto auto 0;
-} */
-
 /* ////////
 модифікатор
 //////// */
@@ -106,7 +97,6 @@
 /* сайдбар (хедінг всередині) */
 .aside.inner-heading
 {
-    /* height: 100%; */
     padding: 0 20px 30px 16px;
     margin-top: 0;
 }
@@ -118,6 +108,25 @@
 }
 
 .aside.inner-heading article:first-of-type
+{
+    margin-top: 0;
+}
+
+
+/* рожевий сайдбар (video) */
+.aside.red
+{
+    background: var(--pink);
+    padding: 0 20px 30px 16px;
+    margin-top: 0;
+}
+
+.aside.red .heading
+{
+    margin: 0;
+}
+
+.aside.red article:first-of-type
 {
     margin-top: 0;
 }

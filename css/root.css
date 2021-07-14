@@ -15,6 +15,8 @@
     --white: #fff;
     --gray-1: #5e5a5b; 
     /* icons, article bg ... */
+    --pink: #c44c5b;
+    /* #video aside bg */
 
     --gray-2: #58585a;
     --gray-3: #e6e6e6; 
@@ -35,6 +37,11 @@
     --border-vidget: #ededed;
     --border-klychko: #e5e5e7;
     --border-video: #d06774;
+    /* home video */
+
+    --border-pink: #d6828d;
+    /* border video */
+
     --border-longread: #8a8b8d;
     --border-category: #dde0e3;
 

@@ -1,0 +1,98 @@
+#video
+{
+    background: var(--red);
+}
+
+/* top streams for aside */
+.streams
+{
+    color: var(--white);
+}
+
+.streams article
+{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 20px;
+    border-top: 1px solid var(--border-pink);
+    padding: 20px 0 0;
+}
+
+.streams-video
+{
+    
+}
+
+.streams-video a
+{
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: var(--white);
+    margin: 20px 0 0;
+}
+
+.streams-video a::before
+{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    z-index: 2;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 461.001 461.001'%3E%3Cpath style='fill:%23f61c0d;' d='M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728 c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137 C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607 c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z'/%3E%3C/svg%3E");
+}
+
+.streams-video a::after
+{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+    z-index: 1;
+    background: var(--white);
+}
+
+.streams-video .title-18
+{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    transition: .5s;
+    margin: 0 0 5px;
+}
+
+.streams-video a:hover .title-18
+{
+    opacity: .5;
+}
+
+/* /////////////
+відеоролики по 2
+///////////// */
+.videos
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    margin: 15px 0 0;
+}
+
+.videos article
+{
+    color: var(--white);
+    display: grid;
+
+}
+
+
+
+/*
+TODO: video::after, video::before
+*/
