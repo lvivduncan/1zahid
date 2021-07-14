@@ -28,223 +28,449 @@
 </head>
 <body>
 
-    <div class="wrapper wrapper-background">
-        <header id="header">
-            <a href="/" id="logo" title="Перший західний">
-                <img src="images/logo.png" alt="Перший західний">
-            </a>
+    <div id="body">
 
-            <div id="header-content">
-                <div id="header-content-top">
-                    <div id="wheater">
+        <div class="wrapper wrapper-background">
+            <header id="header">
+                <a href="/" id="logo" title="Перший західний">
+                    <img src="images/logo.png" alt="Перший західний">
+                </a>
+
+                <div id="header-content">
+                    <div id="header-content-top">
+                        <div id="wheater">
+                            <picture>
+                                <img src="temp/sun.png" alt="">
+                            </picture>
+                            <small>Львів</small>
+                        </div>
+                        
+                        <a href="/" title="">
+                            <picture>
+                                <img src="images/zahid-1.png" alt="">
+                            </picture>
+                        </a>
+                        <a href="/" title="">
+                            <picture>
+                                <img src="images/radio-1.png" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                    <div id="header-content-bottom">
+                        <nav class="nav">
+                            <ul>
+                                <li><a href="" class="active">Новини</a>
+                                    <ul>
+                                        <li><a href="/" title="">1 lorem</a></li>
+                                        <li><a href="/" title="">2 lorem</a></li>
+                                        <li><a href="/" title="">3 lorem</a></li>
+                                        <li><a href="/" title="">4 lorem</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/" title="">Спецтема</a></li>
+                                <li><a href="/" title="">Львівщина</a></li>
+                                <li><a href="/" title="">Влада</a></li>
+                                <li><a href="/" title="">Картина дня</a></li>
+                                <li><a href="/" title="">Відео</a></li>
+                                <li><a href="/" title="">Інтерв’ю/репортажі</a></li>
+                            </ul>
+                        </nav>
+
+                        <span id="search-button"></span>
+
+                        <span class="social">
+                            <a href="" class="facebook"></a>
+                            <a href="" class="twitter"></a>
+                            <a href="" class="telegram"></a>
+                            <a href="" class="rss"></a>
+                        </span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="vidget-hot">
+                <div class="marker">
+                    Терміново
+                </div>
+
+                <h1 class="title-30 red">
+                    <a href="/" title="">Рада ухвалила другий ключовий закон для земельної реформи</a>
+                </h1>
+
+                <time>Вівторок, 18 Травня 2021</time>
+
+                <p>Верховна Рада на засіданні 18 травня підтримала у другому читанні та в цілому законопроєкт №2195, яким регулюється проведення електронних земельних аукціонів. Документ підтримали 272 депутати, фракціями голосували "проти" лише ОПЗЖ та Батьківщина.</p>
+            </div>
+
+            <div class="vidget-covid">
+                <div class="heading">Covid-19 в Україні</div>
+                <div class="vidget-datas">
+
+                    <div class="vidget-data">
+                        <div class="vidget-data-name">
+                            Підтверджені випадки
+                        </div>
+                        <div class="vidget-data-number">
+                            2 160 095
+                        </div>
+                        <div class="vidget-data-result">
+                            <i></i>
+                            <i style="height: 4px"></i>
+                            <i style="height: 10px"></i>
+                            <i style="height: 14px"></i>
+                            <i style="height: 18px"></i>
+                            <i style="height: 22px"></i>
+                            <i style="height: 16px"></i>
+                            <span>+7 856</span>
+                        </div>
+                    </div>
+
+                    <div class="vidget-data">
+                        <div class="vidget-data-name">
+                            Активні випадки
+                        </div>
+                        <div class="vidget-data-number">
+                            229 282
+                        </div>
+                        <div class="vidget-data-result reverse">
+                            <i style="height: 30px"></i>
+                            <i style="height: 20px"></i>
+                            <i style="height: 10px"></i>
+                            <i style="height: 22px"></i>
+                            <i style="height: 12px"></i>
+                            <i style="height: 2px"></i>
+                            <i></i>
+                            <span>+7 856</span>
+                        </div>
+                    </div>
+
+                    <div class="vidget-data">
+                        <div class="vidget-data-name">
+                            Вилікувалося
+                        </div>
+                        <div class="vidget-data-number">
+                            1 882 344
+                        </div>
+                        <div class="vidget-data-result blue">
+                            <i style="height: 30px"></i>
+                            <i style="height: 10px"></i>
+                            <i style="height: 12px"></i>
+                            <i style="height: 20px"></i>
+                            <i style="height: 24px"></i>
+                            <i style="height: 20px"></i>
+                            <i style="height: 24px"></i>
+                            <span>+7 856</span>
+                        </div>
+                    </div>
+
+                    <div class="vidget-data">
+                        <div class="vidget-data-name">
+                            Померло
+                        </div>
+                        <div class="vidget-data-number">
+                            48 469
+                        </div>
+                        <div class="vidget-data-result">
+                            <i style="height: 10px"></i>
+                            <i style="height: 12px"></i>
+                            <i style="height: 14px"></i>
+                            <i style="height: 16px"></i>
+                            <i style="height: 18px"></i>
+                            <i style="height: 20px"></i>
+                            <i style="height: 22px"></i>
+                            <span>+7 856</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="sidebar">
+                    <div class="heading bg-opacity">
+                        Новини
+                    </div>
+
+                    <aside class="aside">
+                        <article>
+                            <time>00:18</time>
+                            <h3 class="title-15"><a href="/" title="">У МОЗ розповіли, коли в Україну надійде наступна партія вакцини Pfizer/BioNTech</a></h3>
+                        </article>
+        
+                        <article>
+                            <time>00:33</time>
+                            <h3 class="title-15"><a href="/" title="">Рада ухвалила другий ключовий закон для земельної реформи</a></h3>
+                        </article>
+        
+                        <a href="" class="reklama">
+                            <img src="temp/reklama-adverty.jpg" alt="">
+                        </a>
+        
+                        <article>
+                            <time>01:11</time>
+                            <h3 class="title-15"><a href="/" title="">Північна Македонія висилає російського дипломата</a></h3>
+                        </article>
+        
+                        <article class="red">
+                            <time>01:11</time>
+                            <h3 class="title-15"><a href="/" title="">Північна Македонія висилає російського дипломата</a></h3>
+                        </article>
+        
+                        <article class="black">
+                            <time>01:11</time>
+                            <h3 class="title-15"><a href="/" title="">Північна Македонія висилає російського дипломата</a></h3>
+                        </article>
+        
+                        <!-- притиснено до низу і по центру -->
+                        <a href="" class="button">
+                            Більше статей
+                        </a>
+                    </aside>
+                </div>
+
+                <div class="main">
+                    <div class="heading red bg-colored">
+                        Головне
+                    </div>
+
+                    <div class="block-single">
                         <picture>
-                            <img src="temp/sun.png" alt="">
+                            <img src="temp/block-single.jpg" alt="">
                         </picture>
-                        <small>Львів</small>
+
+                        <div class="title-30 red">
+                            <a href="/" title="">Рада ухвалила другий ключовий закон для земельної реформи</a>
+                        </div>
+
+                        <time>Вівторок, 18 Травня 2021</time>
+
+                        <p>Верховна Рада на засіданні 18 травня підтримала у другому читанні та в цілому законопроєкт №2195, яким регулюється проведення електронних земельних аукціонів</p>
+
+                        <p>Документ підтримали 272 депутати, фракціями голосували "проти" лише ОПЗЖ та Батьківщина.</p>
+                    </div>
+
+                    <div class="block-3">
+                        <article>
+                            <picture>
+                                <img src="temp/block-3-1.jpg" alt="">
+                            </picture>
+                            <h3 class="title-18"><a href="/" title="">Прокурор Києва про обшуки: вже встановлені збитки на 43 млн грн</a></h3>
+                            <time>Вівторок, 18 Травня 2021</time>
+                        </article>
+                        <article>
+                            <picture>
+                                <img src="temp/block-3-2.jpg" alt="">
+                            </picture>
+                            <h3 class="title-18"><a href="/" title="">Новини 18 травня: звільнення міністрів, обшуки у будинку Кличка</a></h3>
+                            <time>Вівторок, 18 Травня 2021</time>
+                        </article>
+                        <article>
+                            <picture>
+                                <img src="temp/block-3-3.jpg" alt="">
+                            </picture>
+                            <h3 class="title-18"><a href="/" title="">"Потенційна загроза енергобезпеці": Міненерго вимагає заборонити імпорт  електроенергії з РФ та Білорусі</a></h3>
+                            <time>Вівторок, 18 Травня 2021</time>
+                        </article>
+                    </div>
+                
+                    <div class="content reverse">
+                        <div class="sidebar">
+                            <div class="heading bg-gray">
+                                Влада
+                            </div>
+                            
+                            <div class="block-1">
+                                <article>
+                                    <picture>
+                                        <img src="temp/klychko.jpg" alt="">
+                                    </picture>
+                
+                                    <h3 class="title-18 ">
+                                        <a href="/" title="">Кличко не виключає, що влада боїться його президентських амбіцій</a>
+                                    </h3>
+                
+                                    <time>Вівторок, 18 Травня 2021</time>
+                
+                                    <p>Міський голова Києва Віталій Кличко не виключає, що обшуки в будинку, де він живе, пов'язані з тим, що влада боїться його</p>                                  
+                                </article>
+
+                                <a href="" style="display: block; margin: 20px 0">
+                                    <img src="temp/reklama-adverty.jpg" width="100%" alt="">
+                                </a>
+
+                                <article class="mb-0" style="display: none;">
+                                    <picture>
+                                        <img src="temp/klychko.jpg" alt="">
+                                    </picture>
+                
+                                    <h3 class="title-18 ">
+                                        <a href="/" title="">Кличко не виключає, що влада боїться його президентських амбіцій</a>
+                                    </h3>
+                
+                                    <time>Вівторок, 18 Травня 2021</time>
+                
+                                    <p>Міський голова Києва Віталій Кличко не виключає, що обшуки в будинку, де він живе, пов'язані з тим, що влада боїться його</p>                                  
+                                </article>
+
+                            </div>
+                        </div>
+
+                        <div class="main">
+                            <div class="heading bg-colored">
+                                Львівщина
+                            </div>
+
+                            <div class="block-single">
+                                <picture>
+                                    <img src="temp/block-single.jpg" alt="">
+                                </picture>
+            
+                                <div class="title-24 red">
+                                    <a href="/" title="">Рада ухвалила другий ключовий закон для земельної реформи</a>
+                                </div>
+            
+                                <time>Вівторок, 18 Травня 2021</time>
+            
+                                <p>Верховна Рада на засіданні 18 травня підтримала у другому читанні та в цілому законопроєкт №2195, яким регулюється проведення електронних земельних аукціонів</p>
+                                <p>Документ підтримали 272 депутати, фракціями голосували "проти" лише ОПЗЖ та Батьківщина.</p>
+                            </div>
+
+                            <div class="block-2 mb-0">
+                                <article>
+                                    <picture>
+                                        <img src="temp/block-3-1.jpg" alt="">
+                                    </picture>
+                                    <h3 class="title-18"><a href="/" title="">Прокурор Києва про обшуки: вже встановлені збитки на 43 млн грн</a></h3>
+                                    <time>Вівторок, 18 Травня 2021</time>
+                                </article>
+                                <article>
+                                    <picture>
+                                        <img src="temp/block-3-2.jpg" alt="">
+                                    </picture>
+                                    <h3 class="title-18"><a href="/" title="">Новини 18 травня: звільнення міністрів, обшуки у будинку Кличка</a></h3>
+                                    <time>Вівторок, 18 Травня 2021</time>
+                                </article>        
+                            </div>
+
+                        </div>
                     </div>
                     
-                    <a href="/" title="">
-                        <picture>
-                            <img src="images/zahid-1.png" alt="">
-                        </picture>
-                    </a>
-                    <a href="/" title="">
-                        <picture>
-                            <img src="images/radio-1.png" alt="">
-                        </picture>
-                    </a>
-                </div>
-                <div id="header-content-bottom">
-                    <nav class="nav">
-                        <ul>
-                            <li><a href="" class="active">Новини</a>
-                                <ul>
-                                    <li><a href="/" title="">1 lorem</a></li>
-                                    <li><a href="/" title="">2 lorem</a></li>
-                                    <li><a href="/" title="">3 lorem</a></li>
-                                    <li><a href="/" title="">4 lorem</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="/" title="">Спецтема</a></li>
-                            <li><a href="/" title="">Львівщина</a></li>
-                            <li><a href="/" title="">Влада</a></li>
-                            <li><a href="/" title="">Картина дня</a></li>
-                            <li><a href="/" title="">Відео</a></li>
-                            <li><a href="/" title="">Інтерв’ю/репортажі</a></li>
-                        </ul>
-                    </nav>
-
-                    <span id="search-button"></span>
-
-                    <span class="social">
-                        <a href="" class="facebook"></a>
-                        <a href="" class="twitter"></a>
-                        <a href="" class="telegram"></a>
-                        <a href="" class="rss"></a>
-                    </span>
                 </div>
             </div>
-        </header>
 
-        <div class="vidget-hot">
-            <div class="marker">
-                Терміново
+            <div style="margin: 20px 0; text-align: center;">
+                <a href="/" title=""><img src="temp/banner.jpg" alt=""></a>
             </div>
 
-            <h1 class="title-30 red">
-                <a href="/" title="">Рада ухвалила другий ключовий закон для земельної реформи</a>
-            </h1>
-
-            <time>Вівторок, 18 Травня 2021</time>
-
-            <p>Верховна Рада на засіданні 18 травня підтримала у другому читанні та в цілому законопроєкт №2195, яким регулюється проведення електронних земельних аукціонів. Документ підтримали 272 депутати, фракціями голосували "проти" лише ОПЗЖ та Батьківщина.</p>
-        </div>
-
-        <div class="vidget-covid">
-            <div class="heading">Covid-19 в Україні</div>
-            <div class="vidget-datas">
-
-                <div class="vidget-data">
-                    <div class="vidget-data-name">
-                        Підтверджені випадки
-                    </div>
-                    <div class="vidget-data-number">
-                        2 160 095
-                    </div>
-                    <div class="vidget-data-result">
-                        <i></i>
-                        <i style="height: 4px"></i>
-                        <i style="height: 10px"></i>
-                        <i style="height: 14px"></i>
-                        <i style="height: 18px"></i>
-                        <i style="height: 22px"></i>
-                        <i style="height: 16px"></i>
-                        <span>+7 856</span>
-                    </div>
+            <div class="block-3">
+                <div class="heading bg-gray">
+                    Спецтема
+                </div>
+                <div class="heading bg-gray">
+                    Інтерв’ю
+                </div>   
+                <div class="heading bg-gray">
+                    Репортаж
                 </div>
 
-                <div class="vidget-data">
-                    <div class="vidget-data-name">
-                        Активні випадки
-                    </div>
-                    <div class="vidget-data-number">
-                        229 282
-                    </div>
-                    <div class="vidget-data-result reverse">
-                        <i style="height: 30px"></i>
-                        <i style="height: 20px"></i>
-                        <i style="height: 10px"></i>
-                        <i style="height: 22px"></i>
-                        <i style="height: 12px"></i>
-                        <i style="height: 2px"></i>
-                        <i></i>
-                        <span>+7 856</span>
-                    </div>
-                </div>
-
-                <div class="vidget-data">
-                    <div class="vidget-data-name">
-                        Вилікувалося
-                    </div>
-                    <div class="vidget-data-number">
-                        1 882 344
-                    </div>
-                    <div class="vidget-data-result blue">
-                        <i style="height: 30px"></i>
-                        <i style="height: 10px"></i>
-                        <i style="height: 12px"></i>
-                        <i style="height: 20px"></i>
-                        <i style="height: 24px"></i>
-                        <i style="height: 20px"></i>
-                        <i style="height: 24px"></i>
-                        <span>+7 856</span>
-                    </div>
-                </div>
-
-                <div class="vidget-data">
-                    <div class="vidget-data-name">
-                        Померло
-                    </div>
-                    <div class="vidget-data-number">
-                        48 469
-                    </div>
-                    <div class="vidget-data-result">
-                        <i style="height: 10px"></i>
-                        <i style="height: 12px"></i>
-                        <i style="height: 14px"></i>
-                        <i style="height: 16px"></i>
-                        <i style="height: 18px"></i>
-                        <i style="height: 20px"></i>
-                        <i style="height: 22px"></i>
-                        <span>+7 856</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="content">
-            <div class="sidebar">
-                <div class="heading bg-opacity">
-                    Новини
-                </div>
-
-                <aside class="aside">
-                    <article>
-                        <time>00:18</time>
-                        <h3 class="title-15"><a href="/" title="">У МОЗ розповіли, коли в Україну надійде наступна партія вакцини Pfizer/BioNTech</a></h3>
-                    </article>
-    
-                    <article>
-                        <time>00:33</time>
-                        <h3 class="title-15"><a href="/" title="">Рада ухвалила другий ключовий закон для земельної реформи</a></h3>
-                    </article>
-    
-                    <a href="" class="reklama">
-                        <img src="temp/reklama-adverty.jpg" alt="">
-                    </a>
-    
-                    <article>
-                        <time>01:11</time>
-                        <h3 class="title-15"><a href="/" title="">Північна Македонія висилає російського дипломата</a></h3>
-                    </article>
-    
-                    <article class="red">
-                        <time>01:11</time>
-                        <h3 class="title-15"><a href="/" title="">Північна Македонія висилає російського дипломата</a></h3>
-                    </article>
-    
-                    <article class="black">
-                        <time>01:11</time>
-                        <h3 class="title-15"><a href="/" title="">Північна Македонія висилає російського дипломата</a></h3>
-                    </article>
-    
-                    <!-- притиснено до низу і по центру -->
-                    <a href="" class="button">
-                        Більше статей
-                    </a>
-                </aside>
-            </div>
-
-            <div class="main">
-                <div class="heading red bg-colored">
-                    Головне
-                </div>
-
-                <div class="block-single">
+                <article>
                     <picture>
-                        <img src="temp/block-single.jpg" alt="">
+                        <img src="temp/block-3-1.jpg" alt="">
                     </picture>
-
-                    <div class="title-30 red">
-                        <a href="/" title="">Рада ухвалила другий ключовий закон для земельної реформи</a>
-                    </div>
-
+                    <h3 class="title-18"><a href="/" title="">Прокурор Києва про обшуки: вже встановлені збитки на 43 млн грн</a></h3>
                     <time>Вівторок, 18 Травня 2021</time>
+                </article>                
 
-                    <p>Верховна Рада на засіданні 18 травня підтримала у другому читанні та в цілому законопроєкт №2195, яким регулюється проведення електронних земельних аукціонів</p>
+                <article>
+                    <picture>
+                        <img src="temp/block-3-2.jpg" alt="">
+                    </picture>
+                    <h3 class="title-18"><a href="/" title="">Новини 18 травня: звільнення міністрів, обшуки у будинку Кличка</a></h3>
+                    <time>Вівторок, 18 Травня 2021</time>
+                </article>
 
-                    <p>Документ підтримали 272 депутати, фракціями голосували "проти" лише ОПЗЖ та Батьківщина.</p>
+                <article>
+                    <picture>
+                        <img src="temp/block-3-3.jpg" alt="">
+                    </picture>
+                    <h3 class="title-18"><a href="/" title="">"Потенційна загроза енергобезпеці": Міненерго вимагає заборонити імпорт  електроенергії з РФ та Білорусі</a></h3>
+                    <time>Вівторок, 18 Травня 2021</time>
+                </article>
+            </div>   
+
+        </div>
+        <!-- .wrapper -->
+
+        <!-- red video -->
+        <div class="home-video">
+            <div class="wrapper wrapper-background reverse">
+                <div class="heading white bg-gray">
+                    Відео
+                </div>
+
+                <div class="video-single">
+                    <a href="/" title="Рада ухвалила другий ключовий закон для земельної реформи">
+                        <picture>
+                            <img src="temp/video-1.jpg" alt="">
+                        </picture>                    
+                    </a>
+
+                    <div class="video-single-content">
+                        <div class="title-30 white">
+                            <a href="/" title="Рада ухвалила другий ключовий закон для земельної реформи">Рада ухвалила другий ключовий закон для земельної реформи</a>
+                        </div>
+                        <p>Верховна Рада на засіданні 18 травня підтримала у другому читанні та в цілому законопроєкт №2195, яким регулюється проведення електронних земельних аукціонів. Документ підтримали 272 депутати, фракціями голосували "проти" лише ОПЗЖ та Батьківщина.
+                            </p>                    
+                    </div>
+                </div>
+
+                <div class="block-4">
+                    <a href="/" title="">
+                        <picture>
+                            <img src="temp/block-3-1.jpg" alt="">
+                        </picture>
+                        <span class="title-18">Прокурор Києва про обшуки: вже встановлені збитки на 43 млн грн </span>
+                    </a>
+                    <a href="/" title="">
+                        <picture>
+                            <img src="temp/block-3-2.jpg" alt="">
+                        </picture>
+                        <span class="title-18">Новини 18 травня: звільнення міністрів, обшуки у будинку Кличка </span>
+                    </a>
+                    <a href="/" title="">
+                        <picture>
+                            <img src="temp/block-3-3.jpg" alt="">
+                        </picture>
+                        <span class="title-18">"Потенційна загроза енергобезпеці": Міненерго вимагає </span>
+                    </a>
+
+                    <a href="/" title="">
+                        <div class="heading">
+                            Стрім
+                        </div>
+
+                        <picture>
+                            <img src="temp/klychko.jpg" alt="">
+                        </picture>                    
+
+                        <span class="title-18">Кличко не виключає, що влада боїться його президентських амбіцій</span>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- .home-video -->
+
+        <div class="block-white">
+            <div class="wrapper white-background">
+
+                <div style="margin: 20px 0; text-align: center;">
+                    <a href="/" title=""><img src="temp/banner.jpg" alt=""></a>
+                </div>
+
+                <div class="heading bg-colored ">
+                    Перший західний рекомендує
                 </div>
 
                 <div class="block-3">
@@ -270,269 +496,49 @@
                         <time>Вівторок, 18 Травня 2021</time>
                     </article>
                 </div>
-               
-                <div class="content reverse">
-                    <div class="sidebar">
-                        <div class="heading bg-gray">
-                            Влада
-                        </div>
-                        
-                        <div class="block-1">
-                            <article>
-                                <picture>
-                                    <img src="temp/klychko.jpg" alt="">
-                                </picture>
-            
-                                <h3 class="title-18 ">
-                                    <a href="/" title="">Кличко не виключає, що влада боїться його президентських амбіцій</a>
-                                </h3>
-            
-                                <time>Вівторок, 18 Травня 2021</time>
-            
-                                <p>Міський голова Києва Віталій Кличко не виключає, що обшуки в будинку, де він живе, пов'язані з тим, що влада боїться його</p>                                  
-                            </article>
 
-                            <a href="" style="display: block; margin: 20px 0">
-                                <img src="temp/reklama-adverty.jpg" width="100%" alt="">
-                            </a>
-
-                            <article class="mb-0" style="display: none;">
-                                <picture>
-                                    <img src="temp/klychko.jpg" alt="">
-                                </picture>
-            
-                                <h3 class="title-18 ">
-                                    <a href="/" title="">Кличко не виключає, що влада боїться його президентських амбіцій</a>
-                                </h3>
-            
-                                <time>Вівторок, 18 Травня 2021</time>
-            
-                                <p>Міський голова Києва Віталій Кличко не виключає, що обшуки в будинку, де він живе, пов'язані з тим, що влада боїться його</p>                                  
-                            </article>
-
-                        </div>
-                    </div>
-
-                    <div class="main">
-                        <div class="heading bg-colored">
-                            Львівщина
-                        </div>
-
-                        <div class="block-single">
-                            <picture>
-                                <img src="temp/block-single.jpg" alt="">
-                            </picture>
-        
-                            <div class="title-24 red">
-                                <a href="/" title="">Рада ухвалила другий ключовий закон для земельної реформи</a>
-                            </div>
-        
-                            <time>Вівторок, 18 Травня 2021</time>
-        
-                            <p>Верховна Рада на засіданні 18 травня підтримала у другому читанні та в цілому законопроєкт №2195, яким регулюється проведення електронних земельних аукціонів</p>
-                            <p>Документ підтримали 272 депутати, фракціями голосували "проти" лише ОПЗЖ та Батьківщина.</p>
-                        </div>
-
-                        <div class="block-2 mb-0">
-                            <article>
-                                <picture>
-                                    <img src="temp/block-3-1.jpg" alt="">
-                                </picture>
-                                <h3 class="title-18"><a href="/" title="">Прокурор Києва про обшуки: вже встановлені збитки на 43 млн грн</a></h3>
-                                <time>Вівторок, 18 Травня 2021</time>
-                            </article>
-                            <article>
-                                <picture>
-                                    <img src="temp/block-3-2.jpg" alt="">
-                                </picture>
-                                <h3 class="title-18"><a href="/" title="">Новини 18 травня: звільнення міністрів, обшуки у будинку Кличка</a></h3>
-                                <time>Вівторок, 18 Травня 2021</time>
-                            </article>        
-                        </div>
-
-                    </div>
-                </div>
-                
             </div>
         </div>
 
-        <div style="margin: 20px 0; text-align: center;">
+        <div class="block-black">
+            <div class="wrapper black-background">
+                <div class="heading white bg-gray">
+                    Лонгріди
+                </div>
+
+                <div class="block-3">
+                    <article>
+                        <picture>
+                            <img src="temp/block-3-1.jpg" alt="">
+                        </picture>
+                        <h3 class="title-18"><a href="/" title="">Прокурор Києва про обшуки: вже встановлені збитки на 43 млн грн</a></h3>
+                        <time>Вівторок, 18 Травня 2021</time>
+                    </article>
+                    <article>
+                        <picture>
+                            <img src="temp/block-3-2.jpg" alt="">
+                        </picture>
+                        <h3 class="title-18"><a href="/" title="">Новини 18 травня: звільнення міністрів, обшуки у будинку Кличка</a></h3>
+                        <time>Вівторок, 18 Травня 2021</time>
+                    </article>
+                    <article>
+                        <picture>
+                            <img src="temp/block-3-3.jpg" alt="">
+                        </picture>
+                        <h3 class="title-18"><a href="/" title="">"Потенційна загроза енергобезпеці": Міненерго вимагає заборонити імпорт  електроенергії з РФ та Білорусі</a></h3>
+                        <time>Вівторок, 18 Травня 2021</time>
+                    </article>
+                </div> 
+            </div>
+        </div>
+
+        <div style="margin: 20px auto; text-align: center;">
             <a href="/" title=""><img src="temp/banner.jpg" alt=""></a>
         </div>
 
-        <div class="block-3">
-            <div class="heading bg-gray">
-                Спецтема
-            </div>
-            <div class="heading bg-gray">
-                Інтерв’ю
-            </div>   
-            <div class="heading bg-gray">
-                Репортаж
-            </div>
-
-            <article>
-                <picture>
-                    <img src="temp/block-3-1.jpg" alt="">
-                </picture>
-                <h3 class="title-18"><a href="/" title="">Прокурор Києва про обшуки: вже встановлені збитки на 43 млн грн</a></h3>
-                <time>Вівторок, 18 Травня 2021</time>
-            </article>                
-
-            <article>
-                <picture>
-                    <img src="temp/block-3-2.jpg" alt="">
-                </picture>
-                <h3 class="title-18"><a href="/" title="">Новини 18 травня: звільнення міністрів, обшуки у будинку Кличка</a></h3>
-                <time>Вівторок, 18 Травня 2021</time>
-            </article>
-
-            <article>
-                <picture>
-                    <img src="temp/block-3-3.jpg" alt="">
-                </picture>
-                <h3 class="title-18"><a href="/" title="">"Потенційна загроза енергобезпеці": Міненерго вимагає заборонити імпорт  електроенергії з РФ та Білорусі</a></h3>
-                <time>Вівторок, 18 Травня 2021</time>
-            </article>
-        </div>   
-
+        <div class="spacer"></div>
     </div>
-    <!-- .wrapper -->
-
-    <!-- red video -->
-    <div class="home-video">
-        <div class="wrapper wrapper-background reverse">
-            <div class="heading white bg-gray">
-                Відео
-            </div>
-
-            <div class="video-single">
-                <a href="/" title="Рада ухвалила другий ключовий закон для земельної реформи">
-                    <picture>
-                        <img src="temp/video-1.jpg" alt="">
-                    </picture>                    
-                </a>
-
-                <div class="video-single-content">
-                    <div class="title-30 white">
-                        <a href="/" title="Рада ухвалила другий ключовий закон для земельної реформи">Рада ухвалила другий ключовий закон для земельної реформи</a>
-                    </div>
-                    <p>Верховна Рада на засіданні 18 травня підтримала у другому читанні та в цілому законопроєкт №2195, яким регулюється проведення електронних земельних аукціонів. Документ підтримали 272 депутати, фракціями голосували "проти" лише ОПЗЖ та Батьківщина.
-                        </p>                    
-                </div>
-            </div>
-
-            <div class="block-4">
-                <a href="/" title="">
-                    <picture>
-                        <img src="temp/block-3-1.jpg" alt="">
-                    </picture>
-                    <span class="title-18">Прокурор Києва про обшуки: вже встановлені збитки на 43 млн грн </span>
-                </a>
-                <a href="/" title="">
-                    <picture>
-                        <img src="temp/block-3-2.jpg" alt="">
-                    </picture>
-                    <span class="title-18">Новини 18 травня: звільнення міністрів, обшуки у будинку Кличка </span>
-                </a>
-                <a href="/" title="">
-                    <picture>
-                        <img src="temp/block-3-3.jpg" alt="">
-                    </picture>
-                    <span class="title-18">"Потенційна загроза енергобезпеці": Міненерго вимагає </span>
-                </a>
-
-                <a href="/" title="">
-                    <div class="heading">
-                        Стрім
-                    </div>
-
-                    <picture>
-                        <img src="temp/klychko.jpg" alt="">
-                    </picture>                    
-
-                    <span class="title-18">Кличко не виключає, що влада боїться його президентських амбіцій</span>
-                </a>
-
-            </div>
-
-        </div>
-    </div>
-    <!-- .home-video -->
-
-    <div class="block-white">
-        <div class="wrapper white-background">
-
-            <div style="margin: 20px 0; text-align: center;">
-                <a href="/" title=""><img src="temp/banner.jpg" alt=""></a>
-            </div>
-
-            <div class="heading bg-colored ">
-                Перший західний рекомендує
-            </div>
-
-            <div class="block-3">
-                <article>
-                    <picture>
-                        <img src="temp/block-3-1.jpg" alt="">
-                    </picture>
-                    <h3 class="title-18"><a href="/" title="">Прокурор Києва про обшуки: вже встановлені збитки на 43 млн грн</a></h3>
-                    <time>Вівторок, 18 Травня 2021</time>
-                </article>
-                <article>
-                    <picture>
-                        <img src="temp/block-3-2.jpg" alt="">
-                    </picture>
-                    <h3 class="title-18"><a href="/" title="">Новини 18 травня: звільнення міністрів, обшуки у будинку Кличка</a></h3>
-                    <time>Вівторок, 18 Травня 2021</time>
-                </article>
-                <article>
-                    <picture>
-                        <img src="temp/block-3-3.jpg" alt="">
-                    </picture>
-                    <h3 class="title-18"><a href="/" title="">"Потенційна загроза енергобезпеці": Міненерго вимагає заборонити імпорт  електроенергії з РФ та Білорусі</a></h3>
-                    <time>Вівторок, 18 Травня 2021</time>
-                </article>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="block-black">
-        <div class="wrapper black-background">
-            <div class="heading white bg-gray">
-                Лонгріди
-            </div>
-
-            <div class="block-3">
-                <article>
-                    <picture>
-                        <img src="temp/block-3-1.jpg" alt="">
-                    </picture>
-                    <h3 class="title-18"><a href="/" title="">Прокурор Києва про обшуки: вже встановлені збитки на 43 млн грн</a></h3>
-                    <time>Вівторок, 18 Травня 2021</time>
-                </article>
-                <article>
-                    <picture>
-                        <img src="temp/block-3-2.jpg" alt="">
-                    </picture>
-                    <h3 class="title-18"><a href="/" title="">Новини 18 травня: звільнення міністрів, обшуки у будинку Кличка</a></h3>
-                    <time>Вівторок, 18 Травня 2021</time>
-                </article>
-                <article>
-                    <picture>
-                        <img src="temp/block-3-3.jpg" alt="">
-                    </picture>
-                    <h3 class="title-18"><a href="/" title="">"Потенційна загроза енергобезпеці": Міненерго вимагає заборонити імпорт  електроенергії з РФ та Білорусі</a></h3>
-                    <time>Вівторок, 18 Травня 2021</time>
-                </article>
-            </div> 
-        </div>
-    </div>
-
-    <div style="margin: 20px auto; text-align: center;">
-        <a href="/" title=""><img src="temp/banner.jpg" alt=""></a>
-    </div>
+    <!-- #body -->
 
     <footer id="footer">
         <div class="wrapper">

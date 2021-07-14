@@ -20,6 +20,7 @@
 .wrapper-background
 {
     position: relative;
+    min-height: 920px;
 }
 
 .wrapper-background::before
