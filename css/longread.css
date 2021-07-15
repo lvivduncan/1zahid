@@ -1,1 +1,163 @@
 
+/* /////////
+модифікатори 
+///////// */
+#longread
+{
+    padding: 40px 0;
+    /*  */
+    margin: auto;
+    background: var(--white);
+}
+
+
+/* вузький блок */
+#longread .think
+{
+    width: 680px;
+    margin: auto;
+}
+
+/* цитата */
+.blockquote
+{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-gap: 50px;
+    width: 1080px;
+
+    text-align: center;
+    padding: 70px 10px 60px;
+    margin: 75px auto 70px;
+    border-top: 1px solid var(--bg-hr);
+    border-bottom: 1px solid var(--bg-hr);
+
+    position: relative;
+}
+
+.blockquote::before
+{
+    content: '';
+    display: inline-block;
+    width: 79px;
+    height: 33px;
+
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 40px);
+    z-index: 2;
+
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAAAhCAMAAACvFAaeAAAAyVBMVEUAAAC+N0jd3+TBRVXEUmLKdoPe3+Pd3+TIaXfe3+PNfIfLgIXd3+Pe3+Pd3+TGXmvd3+PJcX7d4OLc3+PLeYje4OLZ2enDl6bd3+Pd3+Pd4OPFXm3HaHXc4OPd3+PJb33e4OTe4OTe3+Pd3+Tc4OXf3+Pe3uPKfY7d3d29NEbAQFDCS1vd3+PGYG7d3+Pd3+Pd4OLGZXLd3+THb3ve4OPc3uPJdYHd4OPe3uLMfIfd4eTd3eLd3ePf39/Y2Ovd3+O7JTi8Kj27Jjlpm9JAAAAAP3RSTlMA/J705F7QsKp0MQ3569bPt4ZhPzYrCwX87+XLsJuPjIF5V0o6IBoVD/74797KyL67uZaTim1tW05GQzUlEA1Gr8ykAAABB0lEQVRIx83UyVLCUBCF4ZMwBxFQSAQBFUWUeZ4hgfd/KFbQfRdUUd13wXmAr3rxV+PO+ZXwugIQj677b0OwJHFJ4J2401rCFYir+qhFtIWEqxP31sIH46YSLhPSXpFg3FjCLRnXROlIXF/C/TDuC4FDXFzCtZ6IqwMx4mIS7pC7FZ6TVYb3bIR39CRcirjcH9IRLSHhJiy8nRFe0W54aQnXZNyLEV5eH15WG94vC8/Vh+dXiRtZDy9vMbyKhfAaIa2M4oOFtzLC87ThbRn3+XDhBT3ihkCXhdeWeAMjvFrkXNYpaT/eHvACqDYzwlNvzriNnvs2wlOvzMOze50L/TIp97KGkDgDiRqhUmR6jssAAAAASUVORK5CYII=');
+}
+
+.blockquote::after
+{
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background: var(--white);
+    position: absolute;
+    top: -20px;
+    left: calc(50% - 50px);
+    z-index: 1;
+}
+
+
+.blockquote .author
+{
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.blockquote .author-image
+{
+    
+}
+
+.blockquote .author-image picture
+{
+    /* display: block; */
+    /* border-radius: 50%;  */
+    width: 100px;
+    height: 100px;
+}
+
+.blockquote .author-image picture source,
+.blockquote .author-image picture img
+{
+    border-radius: 50%; 
+    width: 100px;
+    height: 100px;  
+}
+
+.blockquote .author-name
+{
+    
+}
+
+.blockquote .author-desc
+{
+    
+}
+
+
+blockquote
+{
+    border: none;
+/*     text-align: center;
+    padding: 70px 10px 60px;
+    margin: 75px 0 70px;
+    border-top: 1px solid var(--bg-hr);
+    border-bottom: 1px solid var(--bg-hr); */
+
+    font-size: 18px;
+    color: var(--gray-2);
+    position: relative;
+}
+
+/* основний текст цитати (може бути абзацем) */
+blockquote p
+{
+    font-size: 18px;
+    color: var(--gray-2);
+}
+
+/* автор */
+blockquote strong
+{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* титул автора */
+blockquote em
+{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* паралелепіпеди */
+blockquote::before,
+blockquote::after
+{
+    display: none;
+}
+
+
+/* фото-скрол */
+
+
+
+/* цифрові скіли */
+
+
+
+/* 3 фото */
+
+
+
+
+
