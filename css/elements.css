@@ -133,10 +133,18 @@
 }
 
 /* кнопка "ще новини" ззовні */
+.button-outer
+{
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
 .button-outer .button
 {
-    margin-top: 40px;
-    margin-bottom: -100px;
+    position: absolute;
+    bottom: -130px; 
+    left: calc(50% - 100px);
 }
 
 

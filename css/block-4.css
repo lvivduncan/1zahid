@@ -77,7 +77,7 @@
     height: auto;
 }
 
-.block-4 a:last-child::before
+/* .block-4 a:last-child::before
 {
     content: '';
     display: block;
@@ -101,4 +101,4 @@
     left: calc(50% - 10px);
     z-index: 1;
     background: var(--white);
-}
+} */
