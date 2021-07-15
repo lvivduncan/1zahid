@@ -73,3 +73,13 @@
     opacity: .5;
     /* z-index: 1; */
 }
+
+/* //////////////////////
+вузька шпальта -- лонгрід
+////////////////////// */
+.wrapper-longread
+{
+    width: 680px;
+    position: relative;
+    z-index: 3;
+}
