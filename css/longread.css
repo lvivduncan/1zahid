@@ -1,36 +1,250 @@
 
-/* /////////
-модифікатори 
-///////// */
+
 #longread
 {
-    padding: 40px 0;
-    /*  */
+    padding: 0 0 40px;
     margin: auto;
     background: var(--white);
 }
 
 
 /* вузький блок */
-#longread .think
+.think-block
 {
     width: 680px;
-    margin: auto;
+    margin: 20px auto;
+}
+
+.think-block p:last-child
+{
+    margin: 0;
 }
 
 
+/* ////////////////
+background longread
+//////////////// */
+.bg-content-white
+{
+    background: var(--white);
+    position: relative;
+    display: grid;
+    place-items: center;
+    z-index: 1;
+    overflow: hidden;
+    min-height: 270px;
+}
 
-/* фото-скрол */
+.bg-content
+{
+    position: relative;
+    display: grid;
+    place-items: center;
+    z-index: 1;
+    overflow: hidden;
+
+    min-height: 270px;
+    
+    background-attachment: fixed!important;
+    background-size: cover!important;    
+}
+
+.bg-content picture,
+.bg-content video
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;    
+}
+
+.bg-content img,
+.bg-content source
+{
+    width: 100%;
+    height: 100%!important;
+    object-fit: cover;
+}
+
+/* //////////////////////////////
+обгортка потрібна для відеоролика
+////////////////////////////// */
+.video-background
+{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding-top: 56.25%;
+    width: 100%;
+    transform: translateY(-50%);
+    transition: 2s opacity ease;
+    opacity: 1;
+}
+
+.video-background iframe
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+}
+
+/* ////////////////
+модифікатор кольору 
+//////////////// */
+.bg-content.bg-opacity .think-block
+{
+    /* background: rgba(0,0,0, .3); */
+    background: rgba(255,255,255,.5);
+    color: var(--black);
+    padding: 40px 20px;
+}
+
+/* /////////////////
+заголовок в лонгріді
+///////////////// */
+.title
+{
+
+}
+
+.bg-content-white .title
+{
+    color: var(--black);
+}
+
+.title .title-48
+{
+    position: relative;
+    border-bottom: 1px solid var(--bg-hr);
+    text-align: center;
+    padding-bottom: 7px;
+    margin-bottom: 47px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.title .title-48::after
+{
+    content: '';
+    display: block;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFIAAAAgCAMAAAC2GN9jAAAAkFBMVEUAAADd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4ONygpQbAAAAL3RSTlMA8LYkaalIMxL0jE4ZBgLhxcCjWmQuKwza19LKh4N7d2s9H/nq5d6xmFNvX7qdRKGmbIoAAAFXSURBVEjHzdXJdoJQEATQUlEcEBVxwDlOOCTp//+7bCJNkdPkHQ4L765X8IrqB2wdUQ8szjpFQKTTZYG7qAFMc1F9YKXTBNjodDrCF3WAqduQTBto6rQM4Yn6wPGk0wamcCmZNXDTqdGlSKZYXOjhpolkRkPsRM0xE7UH1jqNYWvn3ipAzOfs5UKmSJIQpr6oWeGcwxGd84siMR1EdcrPyZGYBqJi+vQ3IKWQn6K+YfKFOrHUqUmR9AJ6+BOmIJd+RJ9+BTxE+fTwLUzDK61JpNP5z+K1/FYGtrFkriG2olrG4v2nTVnF5uL14WrjXEhXHmU1F7VzXjz7hvQKhewmVEhHM74hEyrkYNV8SQMQ5xuSC4kQFrcbclwsZDWTkkJWE5UUspotLS8XspqYCnmnQlbT4eWd7r2Xqu/Iv+w6cCFrkVAh6/BJy1uHlApZh730Gr8uPt7UDyMPreFQ8LHdAAAAAElFTkSuQmCC');
+    width: 82px;
+    height: 32px;
+    position: absolute;
+    left: calc(50% - 41px);
+    bottom: -33px;
+}
+
+/* ///////////////////////////
+короткий підпис під заголовком
+/////////////////////////// */
+.desc
+{
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    color: var(--white);
+}
+
+.bg-content-white .desc
+{
+    color: var(--black);
+}
+
+/* текстовий контент у блоці з фото */
+.bg-content .think-block{
+    margin-top: 230px;
+    margin-bottom: 230px;
+    color: var(--white);
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ////////
+фото + text
+//////// */
+.photo-text
+{
+    width: 1100px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 48px;
+}
+
+/* лівий блок */
+/* фото */
+.photo-text figure
+{
+
+}
+/* опис під фото */
+.photo-text figcaption
+{
+    font-size: 15px;
+    display: block;
+    padding: 11px 0 0;
+}
+/* правий блок */
 
 
 
-/* цифрові скіли */
+
+/* ////////
+фото скролл
+//////// */
+.scroll-block
+{
+    width: 940px;
+    margin: 20px auto;
+}
+
+
+/* //////////
+цифрові скіли
+////////// */
 
 
 
-/* 3 фото */
+/* ///
+3 фото
+/// */
 
 
 
 
 
+/* ///
+списки 
+/// */
+#longread ul,
+#longread ol
+{
+    width: 680px;
+    margin: 20px auto;
+}
+
+#longread li
+{
+    margin: 10px 0;
+    display: block;
+    position: relative;
+}
+
+#longread ul li::before
+{
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 1px;
+    background: var(--black);
+    position: absolute;
+    top: 13px;
+    left: -20px;
+}
