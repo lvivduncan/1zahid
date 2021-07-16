@@ -244,69 +244,6 @@
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23bb2538' viewBox='0 0 124 124'%3E%3Ccircle cx='20.3' cy='103.749' r='20'/%3E%3Cpath d='M67,113.95c0,5.5,4.5,10,10,10s10-4.5,10-10c0-42.4-34.5-77-77-77c-5.5,0-10,4.5-10,10s4.5,10,10,10 C41.5,56.95,67,82.55,67,113.95z'/%3E%3Cpath d='M114,123.95c5.5,0,10-4.5,10-10c0-62.8-51.1-113.9-113.9-113.9c-5.5,0-10,4.5-10,10s4.5,10,10,10 c51.8,0,93.9,42.1,93.9,93.9C104,119.45,108.4,123.95,114,123.95z'/%3E%3C/svg%3E");
 }
 
-/* цитата */
-blockquote
-{
-    text-align: center;
-    padding: 70px 10px 60px; /* padding: 70px 10px; */
-    margin: 75px 0 70px; /* margin: 80px 0; */
-    border-top: 1px solid var(--bg-hr);
-    border-bottom: 1px solid var(--bg-hr);
-    font-size: 18px;
-    color: var(--gray-2);
-    position: relative;
-}
-
-/* основний текст цитати (може бути абзацем) */
-blockquote p
-{
-    font-size: 18px;
-    color: var(--gray-2);
-}
-
-/* автор */
-blockquote strong
-{
-    font-size: 15px;
-    font-weight: bold;
-}
-
-/* титул автора */
-blockquote em
-{
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-}
-
-/* паралелепіпеди */
-blockquote::before
-{
-    content: '';
-    display: inline-block;
-    width: 79px;
-    height: 33px;
-
-    position: absolute;
-    top: -15px;
-    left: calc(50% - 40px);
-    z-index: 2;
-
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAAAhCAMAAACvFAaeAAAAyVBMVEUAAAC+N0jd3+TBRVXEUmLKdoPe3+Pd3+TIaXfe3+PNfIfLgIXd3+Pe3+Pd3+TGXmvd3+PJcX7d4OLc3+PLeYje4OLZ2enDl6bd3+Pd3+Pd4OPFXm3HaHXc4OPd3+PJb33e4OTe4OTe3+Pd3+Tc4OXf3+Pe3uPKfY7d3d29NEbAQFDCS1vd3+PGYG7d3+Pd3+Pd4OLGZXLd3+THb3ve4OPc3uPJdYHd4OPe3uLMfIfd4eTd3eLd3ePf39/Y2Ovd3+O7JTi8Kj27Jjlpm9JAAAAAP3RSTlMA/J705F7QsKp0MQ3569bPt4ZhPzYrCwX87+XLsJuPjIF5V0o6IBoVD/74797KyL67uZaTim1tW05GQzUlEA1Gr8ykAAABB0lEQVRIx83UyVLCUBCF4ZMwBxFQSAQBFUWUeZ4hgfd/KFbQfRdUUd13wXmAr3rxV+PO+ZXwugIQj677b0OwJHFJ4J2401rCFYir+qhFtIWEqxP31sIH46YSLhPSXpFg3FjCLRnXROlIXF/C/TDuC4FDXFzCtZ6IqwMx4mIS7pC7FZ6TVYb3bIR39CRcirjcH9IRLSHhJiy8nRFe0W54aQnXZNyLEV5eH15WG94vC8/Vh+dXiRtZDy9vMbyKhfAaIa2M4oOFtzLC87ThbRn3+XDhBT3ihkCXhdeWeAMjvFrkXNYpaT/eHvACqDYzwlNvzriNnvs2wlOvzMOze50L/TIp97KGkDgDiRqhUmR6jssAAAAASUVORK5CYII=');
-}
-
-blockquote::after
-{
-    content: '';
-    display: inline-block;
-    width: 100px;
-    height: 40px;
-    background: var(--white);
-    position: absolute;
-    top: -20px;
-    left: calc(50% - 50px);
-    z-index: 1;
-}
 
 /* теги */ /* 88 - 36  */
 .tags
@@ -332,4 +269,130 @@ blockquote::after
 {
     background: var(--red);
     color: var(--white);
+}
+
+
+/* ////////////////
+background longread
+//////////////// */
+
+.bg-image,
+.bg-fixed,
+.bg-video
+{
+    position: relative;
+    display: grid;
+    place-items: center;
+    z-index: 1;
+}
+
+.bg-fixed
+{
+    background-attachment: fixed!important;
+    background-size: cover!important;
+}
+
+.bg-image picture,
+.bg-fixed picture,
+.bg-video picture,
+.bg-image video,
+.bg-fixed video,
+.bg-video video,
+.bg-image iframe,
+.bg-fixed iframe,
+.bg-video iframe
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+}
+
+.bg-image img,
+.bg-fixed img,
+.bg-video img,
+.bg-image source,
+.bg-fixed source,
+.bg-video source
+{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+.bg-fixed img,
+.bg-fixed source
+{
+    background-attachment: fixed!important;
+    background-size: cover!important; 
+}
+
+
+.bg-image
+{
+    
+}
+
+
+
+.bg-video
+{
+     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.video-background
+{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding-top: 56.25%;
+    width: 100%;
+    /* -webkit-transform: translateY(-50%); */
+    /* -ms-transform: translateY(-50%); */
+    transform: translateY(-50%);
+    /* -webkit-transition: 2s opacity ease; */
+    transition: 2s opacity ease;
+    opacity: 1;
+}
+
+/* .video-foreground, */
+.video-background iframe
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+}
+
+@media (min-aspect-ratio: 16/9)
+{
+    .video-foreground
+    {
+        height: 300%;
+        top: -100%;
+    }
+}
+@media (max-aspect-ratio: 16/9)
+{
+    .video-foreground
+    {
+        width: 300%;
+        left: -100%;
+    }
 }

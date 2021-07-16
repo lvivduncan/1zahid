@@ -253,17 +253,35 @@ category
     position: relative;
 }
 
+
+.title.bg-image .title-picture
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .title.bg-image picture
 {
     position: absolute;
-    /* top: 0; */
-    /* left: 0; */
-    /* bottom: 0; */
-    /* right: 0; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     /* z-index: 1; */
 
     /* height: 100%; */
     /* width: 100%;     */
+
+    /* object-fit: cover;
+    width: 100%;
+    height: 100%; */
 }
 
 .title.bg-image picture source,
@@ -294,3 +312,4 @@ category
     display: grid;
     place-items: center;
 } */
+
