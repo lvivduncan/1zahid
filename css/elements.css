@@ -275,85 +275,39 @@
 /* ////////////////
 background longread
 //////////////// */
-
-.bg-image,
-.bg-fixed,
-.bg-video
+.bg-content
 {
     position: relative;
     display: grid;
     place-items: center;
     z-index: 1;
-}
-
-.bg-fixed
-{
+    overflow: hidden;
+    
     background-attachment: fixed!important;
-    background-size: cover!important;
+    background-size: cover!important;    
 }
 
-.bg-image picture,
-.bg-fixed picture,
-.bg-video picture,
-.bg-image video,
-.bg-fixed video,
-.bg-video video,
-.bg-image iframe,
-.bg-fixed iframe,
-.bg-video iframe
+.bg-content picture,
+.bg-content video
 {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    
+    height: 100%;    
+}
+
+.bg-content img,
+.bg-content source
+{
+    width: 100%;
+    height: 100%!important;
     object-fit: cover;
 }
 
-.bg-image img,
-.bg-fixed img,
-.bg-video img,
-.bg-image source,
-.bg-fixed source,
-.bg-video source
-{
-    width: 100%;
-    height: 100%;
-    /* object-fit: cover; */
-}
-
-.bg-fixed img,
-.bg-fixed source
-{
-    background-attachment: fixed!important;
-    background-size: cover!important; 
-}
-
-
-.bg-image
-{
-    
-}
-
-
-
-.bg-video
-{
-     
-}
-
-
-
-
-
-
-
-
-
-
-
-
+/* //////////////////////////////
+обгортка потрібна для відеоролика
+////////////////////////////// */
 .video-background
 {
     position: absolute;
@@ -361,15 +315,11 @@ background longread
     left: 0;
     padding-top: 56.25%;
     width: 100%;
-    /* -webkit-transform: translateY(-50%); */
-    /* -ms-transform: translateY(-50%); */
     transform: translateY(-50%);
-    /* -webkit-transition: 2s opacity ease; */
     transition: 2s opacity ease;
     opacity: 1;
 }
 
-/* .video-foreground, */
 .video-background iframe
 {
     position: absolute;
@@ -380,60 +330,7 @@ background longread
     pointer-events: none; 
 }
 
-@media (min-aspect-ratio: 16/9)
-{
-    .video-foreground
-    {
-        height: 300%;
-        top: -100%;
-    }
-}
-@media (max-aspect-ratio: 16/9)
-{
-    .video-foreground
-    {
-        width: 300%;
-        left: -100%;
-    }
-}
 
 
 
 
-
-
-
-
-.bg-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* width: 100vw; */
-    /* height: 100vh; */
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-    z-index: -1;
-}
-
-.bg-video .player {
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* width: 100vw; */
-    /* height: 100vh; */
-    right: 0;
-    bottom: 0;
-    z-index: -2;
-}
-
-.bg-video .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* width: 100vw; */
-    /* height: 100vh; */
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-}
