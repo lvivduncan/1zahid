@@ -9,13 +9,14 @@
 
 
 /* вузький блок */
-.think-block
+.block-think
 {
     width: 680px;
-    margin: 20px auto;
+    /* margin: 20px auto; */
+    margin: 50px auto;
 }
 
-.think-block p:last-child
+.block-think p:last-child
 {
     margin: 0;
 }
@@ -95,7 +96,7 @@ background longread
 /* ////////////////
 модифікатор кольору 
 //////////////// */
-.bg-content.bg-opacity .think-block
+.bg-content.bg-opacity .block-think
 {
     /* background: rgba(0,0,0, .3); */
     background: rgba(255,255,255,.5);
@@ -157,7 +158,7 @@ background longread
 }
 
 /* текстовий контент у блоці з фото */
-.bg-content .think-block{
+.bg-content .block-think{
     margin-top: 230px;
     margin-bottom: 230px;
     color: var(--white);
@@ -169,10 +170,11 @@ background longread
 /* ////////
 фото + text
 //////// */
-.photo-text
+.block-photo-text
 {
     width: 1100px;
-    margin: 20px auto;
+    /* margin: 20px auto; */
+    margin: 50px auto;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 48px;
@@ -180,42 +182,92 @@ background longread
 
 /* лівий блок */
 /* фото */
-.photo-text figure
+.block-photo-text figure
 {
 
 }
+
 /* опис під фото */
-.photo-text figcaption
+.block-photo-text figcaption
 {
     font-size: 15px;
     display: block;
     padding: 11px 0 0;
 }
-/* правий блок */
 
+/* правий блок (півжирний) */
+.block-photo-text strong
+{
+    font-size: 24px;
+    line-height: 1.3;
+}
 
 
 
 /* ////////
 фото скролл
 //////// */
-.scroll-block
+.block-scroll
 {
     width: 940px;
-    margin: 20px auto;
+    /* margin: 20px auto; */
+    margin: 50px auto;
 }
 
 
 /* //////////
 цифрові скіли
 ////////// */
+.block-skill
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    margin: 50px auto;
+    width: 940px;
+}
 
+.block-skill div
+{
+    position: relative;
+    border-left: 1px solid var(--bg-hr);
+    padding-left: 35px;
+}
 
+.block-skill div::before
+{
+    content: '';
+    display: block;
+    height: 82px;
+    width: 31px;
+    position: absolute;
+    top: calc(50% - 41px);
+    left: -31px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAABSCAMAAACbtv+5AAAAmVBMVEUAAADd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPd4OPOd9ooAAAAMnRSTlMA9qJLEvKt7uGVKBwL5tR7YET6zcqykGdYPjYwIg/ax7p2dFxRB/PAm4iCZEgYtqdsLOgcSqIAAAGmSURBVEjHhdTnkoJAEATgNougZ8CcA2ZP7fd/uCv0rN0dcHb/fk0VDbODE/TDg+4FxnPNK2S9oTsLHd3Jrcf543EGHmff4+yV85zmNJ85XrMC3ZyejTqt084G5rHh/J5VO3DMCQR24DcnsLYDvVs2MKLdc5oNjAt24poNzJyeF6G7LaKlHTi7PmRb9Cw63nl9mYEdWNleek/AxulZdp192bPhOnvzT0/5P0ufJ0TPtuPpE6KncMqe0j89he9ojulpfGzY7Wk+sDlpz8n+30VD03PhOqZi0qPYdYQt8WX6riNZiUkPXAeKdmAArIXjbAeqwNZR2XMZCR1Fbs/6zPVWXfTcy/drhbjZPaWzNgVWipMl4Kg5h8BZc56Ai+YsAiXNuUowrSie9gwXwp3JrU0QHaTfxZK4Cw9jMSIniNP3LcPAtwzXvmW4FfdT2XXGxU7XHfNY89kEqCre4BAIvntEboD1Vy/vX5fn8tUL78tz1ZzLBM+m4lykV0HxdESgObnzOB+53tX/T5m64+Fx7DyOSU13hAvdkRx0B6oex8Dj2HgcI49j/Ae7HbjKcM7vZgAAAABJRU5ErkJggg==');
+}
+
+.block-skill p
+{
+    margin: 0;
+}
+
+.block-skill strong
+{
+    font-size: 60px;
+    color: var(--red);
+}
 
 /* ///
 3 фото
 /// */
-
+.block-photo
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    margin: 50px auto;
+    width: 940px;
+}
 
 
 
@@ -230,7 +282,7 @@ background longread
     margin: 20px auto;
 }
 
-#longread li
+#longread ul li
 {
     margin: 10px 0;
     display: block;
@@ -242,9 +294,34 @@ background longread
     content: '';
     display: inline-block;
     width: 14px;
-    height: 1px;
-    background: var(--black);
+    height: 2px;
+    background: var(--red);
     position: absolute;
     top: 13px;
-    left: -20px;
+    left: -34px;
+}
+
+#longread ol
+{
+    counter-reset: cnt;
+}
+  
+#longread ol li
+{
+    margin: 10px 0;
+    list-style: none;
+    position: relative;
+}
+  
+#longread ol li:before
+{
+    counter-increment: cnt;
+    content: counter(cnt);
+
+    display: inline-block;
+    font-weight: 600;
+    color: var(--red);
+    position: absolute;
+    top: 2px;
+    left: -34px;
 }
