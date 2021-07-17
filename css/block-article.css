@@ -20,12 +20,34 @@ article -- основна шпальта
     grid-area: article-picture;
 }
 
-/* допоміжний блок (шаринг) */
+/* допоміжний блок (шаринг + 3 новини) */
 #article-aside
 {
     grid-area: article-aside;
     padding: 0 0 0 30px;
 }
+
+#article-aside ul
+{
+    display: block;
+}
+
+#article-aside li
+{
+    display: block;
+    margin: 0 0 13px; /* 25 -- 38 */
+}
+
+#article-aside li a
+{
+    text-decoration: none;
+    color: var(--black);
+    font-size: 15px;
+    line-height: 1.5;
+    display: block;
+}
+
+
 
 /* контент */
 #article-main
@@ -33,9 +55,10 @@ article -- основна шпальта
     grid-area: article-main;
 }
 
-#article-main .title-30
+#article-main .title-48
 {
     margin: 0 0 14px; /* 0 0 20px */
+    line-height: 1;
 }
 
 #article-main time
