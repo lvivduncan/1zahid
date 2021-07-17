@@ -7,6 +7,21 @@
     background: var(--white);
 }
 
+/* перелік усіх блоків */
+.block-think,
+.bg-content-white,
+.bg-content,
+.block-photo-text,
+.block-scroll,
+.block-skill,
+.block-photo,
+#longread ul,
+#longread ol
+{
+    position: relative;
+}
+
+
 
 /* вузький блок */
 .block-think
@@ -28,7 +43,7 @@ background longread
 .bg-content-white
 {
     background: var(--white);
-    position: relative;
+    /* position: relative; */
     display: grid;
     place-items: center;
     z-index: 1;
@@ -38,7 +53,7 @@ background longread
 
 .bg-content
 {
-    position: relative;
+    /* position: relative; */
     display: grid;
     place-items: center;
     z-index: 1;
@@ -107,10 +122,10 @@ background longread
 /* /////////////////
 заголовок в лонгріді
 ///////////////// */
-.title
+/* .title
 {
 
-}
+} */
 
 .bg-content-white .title
 {
@@ -144,7 +159,20 @@ background longread
 /* ///////////////////////////
 короткий підпис під заголовком
 /////////////////////////// */
-.desc
+.title p
+{
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    color: var(--white);    
+}
+
+.bg-content-white .title p
+{
+    color: var(--black);
+}
+
+/* .desc
 {
     text-align: center;
     position: relative;
@@ -155,7 +183,7 @@ background longread
 .bg-content-white .desc
 {
     color: var(--black);
-}
+} */
 
 /* текстовий контент у блоці з фото */
 .bg-content .block-think{
@@ -212,7 +240,17 @@ background longread
     width: 940px;
     /* margin: 20px auto; */
     margin: 50px auto;
+    overflow: hidden;
 }
+
+.block-scroll-wrapper
+{
+    display: grid;
+
+}
+
+
+
 
 
 /* //////////
@@ -275,21 +313,21 @@ background longread
 /* ///
 списки 
 /// */
-#longread ul,
-#longread ol
+#longread > ul,
+#longread > ol
 {
     width: 680px;
     margin: 20px auto;
 }
 
-#longread ul li
+#longread > ul li
 {
     margin: 10px 0;
     display: block;
     position: relative;
 }
 
-#longread ul li::before
+#longread > ul li::before
 {
     content: '';
     display: inline-block;
@@ -301,19 +339,19 @@ background longread
     left: -34px;
 }
 
-#longread ol
+#longread > ol
 {
     counter-reset: cnt;
 }
   
-#longread ol li
+#longread > ol li
 {
     margin: 10px 0;
     list-style: none;
     position: relative;
 }
   
-#longread ol li:before
+#longread > ol li:before
 {
     counter-increment: cnt;
     content: counter(cnt);
