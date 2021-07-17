@@ -204,6 +204,7 @@ background longread
     font-size: 15px;
     display: block;
     padding: 11px 0 0;
+    color: var(--gray-1);
 }
 
 /* правий блок (півжирний) */
