@@ -1,14 +1,60 @@
-#header{
+#header
+{
     height: 130px;
     display: grid;
     grid-template-columns: 227px 1fr;
     grid-gap: 40px;
 }
 
+@media(max-width:1300px)
+{
+    #header
+    {
+        position: relative;
+        display: flex;
+        height: 80px;
+    }    
+}
+
+#nav-button
+{
+    display: none;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: calc(50% - 7px);
+    right: 10px;
+    cursor: pointer;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%235e5a5b'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/%3E%3C/svg%3E");
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#nav-button.active
+{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%235e5a5b'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/%3E%3C/svg%3E");
+}
+
+@media(max-width:1300px) {
+    #nav-button
+    {
+        display: block;
+    }
+}
+
 /* 227*109 */
-#logo{
+#logo
+{
     display: flex;
     align-items: center;
+}
+
+@media(max-width:1300px) {
+    #logo img
+    {
+        width: 124px;
+    }
 }
 
 /* погода */
@@ -18,41 +64,104 @@
     align-items: center;
 }
 
+@media(max-width:1300px)
+{
+    #wheater
+    {
+        display: none;
+    }
+}
+
 #wheater picture
 {
     margin-right: 5px;
 }
 
-/* #header-content{} */
+@media(max-width:1300px)
+{
+    #header-content
+    {
+        display: none;
+        position: absolute;
+        width: 100%;
+        margin: 70px 0 0;
+        flex-flow: column;
+    }
+    
+    #header-content.active
+    {
+        display: flex;
+    }    
+}
 
-#header-content-top{
+#header-content-top
+{
     display: flex;
     align-items: center;
     margin-top: 25px;
     margin-bottom: 15px;
 }
 
+@media(max-width:1300px)
+{
+    #header-content-top {
+        order: 2;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
 /* розсовує елементи по кутах */
-#wheater{
+#wheater
+{
     margin-right: auto;
 }
 
-#header-content-top a{
+#header-content-top a
+{
     text-decoration: none;
     margin-left: 28px;
 }
 
-#header-content-bottom{
+@media(max-width:1300px)
+{
+    #header-content-top a
+    {        
+        margin-left: 0;
+    }
+}
+
+#header-content-bottom
+{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#header .social{
+@media(max-width:1300px)
+{    
+    .active #header-content-bottom
+    {
+        display: block;
+        text-align: center;
+        order: 1;
+    }
+}
+
+#header .social
+{
     margin-left: 25px;
 }
 
-#search-button{
+@media(max-width:1300px) {
+    #header .social
+    {
+        margin-left: 15px;
+    }
+}
+
+#search-button
+{
     height: 16px;
     width: 16px;
     display: inline-block;
@@ -63,6 +172,71 @@
     background-image: url("data:image/svg+xml,%3Csvg fill='%235e5a5b' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 288.136 288.136'%3E%3Cpath d='M253.094,35.437c-22.634-22.634-52.727-35.099-84.735-35.099s-62.102,12.465-84.735,35.099 c-38.632,38.632-45.319,97.294-20.067,142.865L9.496,232.364c-12.661,12.661-12.661,33.262,0,45.923 c6.133,6.134,14.287,9.511,22.961,9.511s16.828-3.377,22.961-9.511l53.821-53.821c17.824,10.141,38.057,15.539,59.12,15.539 c32.009,0,62.102-12.464,84.735-35.098C299.817,158.183,299.817,82.16,253.094,35.437z M231.882,183.694 c-16.968,16.967-39.527,26.311-63.522,26.311s-46.555-9.344-63.522-26.311c-35.025-35.026-35.025-92.019,0-127.044 c16.968-16.968,39.527-26.312,63.522-26.312s46.555,9.344,63.522,26.312C266.907,91.676,266.907,148.668,231.882,183.694z'/%3E%3C/svg%3E");
 }
 
-#search-button:hover{
+#search-button:hover
+{
     background-image: url("data:image/svg+xml,%3Csvg fill='%23000000' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 288.136 288.136'%3E%3Cpath d='M253.094,35.437c-22.634-22.634-52.727-35.099-84.735-35.099s-62.102,12.465-84.735,35.099 c-38.632,38.632-45.319,97.294-20.067,142.865L9.496,232.364c-12.661,12.661-12.661,33.262,0,45.923 c6.133,6.134,14.287,9.511,22.961,9.511s16.828-3.377,22.961-9.511l53.821-53.821c17.824,10.141,38.057,15.539,59.12,15.539 c32.009,0,62.102-12.464,84.735-35.098C299.817,158.183,299.817,82.16,253.094,35.437z M231.882,183.694 c-16.968,16.967-39.527,26.311-63.522,26.311s-46.555-9.344-63.522-26.311c-35.025-35.026-35.025-92.019,0-127.044 c16.968-16.968,39.527-26.312,63.522-26.312s46.555,9.344,63.522,26.312C266.907,91.676,266.907,148.668,231.882,183.694z'/%3E%3C/svg%3E");
+}
+
+
+/* /////////
+основне меню 
+///////// */
+.nav
+{
+    /* position: relative; */
+}
+
+.nav ul
+{
+    display: flex;
+    gap: 20px;
+}
+
+.nav li
+{
+    display: inline-block;
+}
+
+.nav li a
+{
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.nav li a:hover
+{
+    color: var(--red);
+}
+
+.nav li a.active
+{
+    color: var(--red);
+}
+
+/* //////////
+мобільне меню 
+////////// */
+.active .nav ul
+{
+    display: block;
+}
+
+@media(max-width:1300px) {
+    .active .nav li
+    {
+        margin: 15px;
+    }
+}
+
+@media(max-width:500px) {
+    .active .nav li
+    {
+        display: block;
+        margin: 15px 0;
+        text-align: left;
+    }
 }

@@ -1,4 +1,15 @@
 
+// header mobile menu
+{
+    const button = document.getElementById('nav-button');
+    const hc = document.getElementById('header-content');
+
+    button.addEventListener('click', () => {
+        button.classList.toggle('active');
+        hc.classList.toggle('active');
+    });
+}
+
 // video autoplay
 document.querySelectorAll('[video]') && document.querySelectorAll('[video]').forEach(item => item.play());
 
