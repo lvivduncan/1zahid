@@ -15,6 +15,15 @@
     margin: 0 0 20px;
 }
 
+@media(max-width:1300px)
+{
+    .vidget-hot
+    {
+        padding: 70px 200px 30px 10px;
+        margin: 0 -160px 20px -20px;
+    }
+}
+
 .vidget-hot .marker
 {
     background: var(--red);
@@ -31,6 +40,14 @@
     display: flex;
     align-items: center;
     text-align: center;
+}
+
+@media(max-width:1300px)
+{
+    .vidget-hot .marker
+    {
+        padding: 0 0 0 22px;
+    }
 }
 
 .vidget-hot .marker::before
@@ -58,15 +75,39 @@
     margin: 0 0 9px; 
 }
 
+@media(max-width:1300px) {
+    .vidget-hot time
+    {
+        position: absolute;
+        top: 16px;
+        left: 120px;
+    }
+}
+
 .vidget-hot p
 {
     margin: 0;
+}
+
+@media(max-width:1300px) {
+    .vidget-hot p
+    {
+        display: none;
+    }
 }
 
 .vidget-hot a
 {
     color: var(--red);
     transition: .5s;
+}
+
+@media(max-width:1300px) {
+    .vidget-hot a
+    {
+        padding: 0 20px;
+        display: block;
+    }
 }
 
 .vidget-hot a:hover
