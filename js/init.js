@@ -81,3 +81,14 @@ document.querySelectorAll('[video]') && document.querySelectorAll('[video]').for
         
     });
 }
+
+// right element disabled
+{
+    const wb = document.querySelector('.wrapper-background');
+
+    if(wb.offsetHeight > 1200 && wb.offsetHeight < 1800){
+        wb.classList.add('disabled');
+    } else {
+        wb.classList.remove('disabled');
+    }
+}
