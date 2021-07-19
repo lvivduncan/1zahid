@@ -45,6 +45,12 @@ article -- основна шпальта
     font-size: 15px;
     line-height: 1.5;
     display: block;
+    transition: .5s;
+}
+
+#article-aside li a:hover
+{
+    color: var(--red);
 }
 
 
