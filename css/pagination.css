@@ -1,47 +1,56 @@
 /* посторінкова навігація */
-.pagination{
+.pagination
+{
     text-align: center;
     margin: 20px 0;
 }
 
-.pagination li{
+/* якщо потрібно винести за блок */
+.button-outer .pagination
+{
+    position: absolute;
+    bottom: -130px; 
+    left: calc(50% - 100px);
+}
+
+.pagination li
+{
     display: inline-flex;
     align-items: center;
     justify-content: center;
 }
 
-.pagination li a{
+.pagination li a
+{
     display: inline-block;
     padding: 5px 10px;
-    background: var(--gold);
+    background: var(--red);
+    color: var(--white);
     transition: .5s;
     text-decoration: none;
 }
 
-.pagination li a:hover{
-    color: var(--gold);
-    background: var(--cyan);
+.pagination li a:hover
+{
+    background: var(--blue);
 }
 
-.pagination svg{
+.pagination svg
+{
     height: 14px;
-    fill: var(--cyan)
+    fill: var(--blue)
 }
 
-.pagination li a:hover svg{
-    fill: var(--gold);
-}
-
-/* 1-03-2021 */
-.pagination li.active a {
-    background-color: var(--cyan);
-    color: var(--gold);
+.pagination li.active a
+{
+    background-color: var(--blue);
+    color: var(--white);
     font-weight: bold;
 }
 
-.pagination li.disabled a {
-    background-color: var(--gold-light);
-    color: var(--cyan);
+.pagination li.disabled a
+{
+    color: var(--white);
     font-weight: bold;
     pointer-events: none;
 }
