@@ -198,6 +198,14 @@
     .vidget-data-result
     {
         height: auto;
+        /* justify-content: center; */
+    }
+}
+
+@media(max-width:450px) {
+    .vidget-data-result
+    {
+        /* height: auto; */
         justify-content: center;
     }
 }
