@@ -67,7 +67,6 @@
 .block-3 picture
 {
     display: block;
-    /* margin: 0 -20px 23px;  */
     margin: 0 -20px 16px; 
 
     height: 260px;
@@ -76,9 +75,9 @@
 /* вкладений блок */
 .content .block-3 picture
 {
-    display: block;
-    /* margin: 0 -20px 18px;  */
     margin: 0 -20px 8px; 
+    
+    height: 200px;
 }
 
 .block-3 picture img, 
