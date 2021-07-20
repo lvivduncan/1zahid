@@ -191,7 +191,6 @@
 {
     display: flex;
     align-items: flex-end;
-    justify-content: center;
     height: 30px;
 }
 
@@ -199,6 +198,7 @@
     .vidget-data-result
     {
         height: auto;
+        justify-content: center;
     }
 }
 
