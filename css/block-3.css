@@ -8,7 +8,6 @@
     grid-template-columns: repeat(3,1fr);
     /* grid-gap: 30px; */
     grid-gap: 0 30px;
-    /* grid-template-rows: minmax(auto-fit, 70px); */
 }
 
 /* вкладений блок */
@@ -16,6 +15,26 @@
 {
     grid-gap: 20px;
 }
+
+/* TODO: .content .block-3*/
+
+@media(max-width:996px)
+{
+    .content .block-3
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:776px)
+{
+    .content .block-3
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* TODO: .content .block-3*/
 
 .block-3 article
 {
@@ -25,6 +44,25 @@
     position: relative;
     z-index: 1;
 }
+
+/* TODO: .content .block-3*/
+@media(max-width:996px)
+{
+    .content .block-3 article:nth-child(3)
+    {
+        display: none;
+    }
+}
+
+@media(max-width:776px)
+{
+    .content .block-3 article:nth-child(2)
+    {
+        display: none;
+    }
+}
+
+/* TODO: .content .block-3*/
 
 .block-3 picture
 {

@@ -15,12 +15,21 @@
     margin: 0 0 20px;
 }
 
-@media(max-width:1300px)
+/* @media(max-width:1300px)
 {
     .vidget-hot
     {
         padding: 70px 200px 30px 10px;
         margin: 0 -160px 20px -20px;
+    }
+} */
+
+@media(max-width:996px)
+{
+    .vidget-hot
+    {
+        padding: 70px 200px 30px 10px;
+        margin: 0 -160px 20px -25px;
     }
 }
 

@@ -4,14 +4,12 @@
     background: var(--white);
     outline: 1px solid var(--border-vidget);
     /* min-height: 118px; */
-
-    padding-top: 19px; 
-    padding-bottom: 14px; 
-
+    padding-top: 19px;
+    padding-bottom: 14px;
     display: grid;
-    grid-template-columns: 300px 1fr;
-    grid-gap: 40px; 
-} 
+    grid-template-columns: 320px 1fr;
+    /* grid-gap: 40px; */
+}
 
 @media(max-width:1300px)
 {
@@ -19,10 +17,11 @@
     {
         grid-template-columns: 1fr;
         grid-gap: 0;
-        margin: 0 -20px;
+        /* margin: 0 -20px; */
         padding: 0 20px 50px;
         position: relative;
     }
+
     .vidget-covid::before
     {
         content: '';
@@ -36,6 +35,15 @@
         background-repeat: no-repeat;
         /* background-position: 0 0; */
         background-size: 152px 20px;
+    }
+}
+
+@media(max-width:996px)
+{
+    .vidget-covid
+    {
+        margin: 0 -20px;
+        /* padding: 0 20px; */
     }
 }
 
@@ -53,6 +61,7 @@
     .vidget-covid .heading
     {
         justify-content: left;
+        padding-left: 40px;
     }    
 }
 
@@ -83,7 +92,10 @@
 /* right block */
 .vidget-datas
 {
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 70px;
 }
 
 @media(max-width:1300px)
@@ -108,10 +120,11 @@
 /* блок з даними */
 .vidget-data
 {
-    margin-right: 69px; /* 70? */ 
+    /* margin-right: 69px;*/ 
+    /* 70? */ 
 }
 
-@media(max-width:1300px)
+@media(max-width:996px)
 {
     .vidget-data
     {
@@ -133,7 +146,7 @@
     line-height: 1;
 }
 
-@media(max-width:1300px)
+@media(max-width:996px)
 {
     .vidget-data-name
     {
@@ -162,7 +175,7 @@
     white-space: nowrap;
 }
 
-@media(max-width:1300px)
+@media(max-width:996px)
 {
     .vidget-data-number
     {
@@ -179,7 +192,7 @@
     height: 30px;
 }
 
-@media(max-width:1300px) {
+@media(max-width:996px) {
     .vidget-data-result
     {
         height: auto;
@@ -196,7 +209,7 @@
     margin-right: 8px; 
 }
 
-@media(max-width:1300px) {
+@media(max-width:996px) {
     .vidget-data-result i
     {
         display: none;
@@ -210,6 +223,7 @@
     color: var(--red);
     margin-left: 3px; /* 9px */
     line-height: .8;
+    white-space: nowrap;
 }
 
 /* модифікатор (синій)*/
