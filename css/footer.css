@@ -45,6 +45,11 @@
     grid-area: nav;
 }
 
+#footer-content .nav ul
+{
+    flex-wrap: wrap;
+}
+
 #copy
 {
     grid-area: copy;

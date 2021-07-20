@@ -12,7 +12,6 @@
 .block-single picture
 {
     display: block;
-    /* margin: 0 -20px 30px;  */
     margin: 0 -20px 20px; 
 }
 
@@ -20,19 +19,16 @@
 .block-single .title-24
 {
     line-height: 1;
-    /* margin: 0 0 20px; */
     margin: 0 0 10px;
 }
 
 .block-single time
 {
-    /* margin: 0 0 20px; */
     margin: 0 0 10px; 
 }
 
 .block-single p
 {
-    /* margin: 0 0 20px; */
     margin: 0 0 10px;
 }
 
@@ -40,4 +36,13 @@
 .block-single p:last-child
 {
     margin: 0; 
+}
+
+/* /////////////////
+вставлений заголовок
+///////////////// */
+.block-single .heading
+{
+    background: var(--bg-main);
+    margin: 0 -20px;
 }
