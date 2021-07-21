@@ -7,7 +7,8 @@
     text-transform: uppercase!important;
     font-size: 24px!important;
     font-weight: 900;
-    color: var(--black);
+    /* color: var(--black); */
+    color: var(--gray-1);
     height: 70px;
     display: flex;
     align-items: center;
@@ -20,10 +21,10 @@
     color: var(--red);
 }
 
-/* сірий заголовок плашки*/
-.heading.gray
+/* чорний заголовок плашки*/
+.heading.black
 {
-    color: var(--gray-1);
+    color: var(--black);
 }
 
 /* сірий заголовок плашки*/

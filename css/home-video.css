@@ -7,16 +7,41 @@
     min-height: 1000px;
 }
 
+@media(max-width:996px) {
+    .home-video
+    {
+        min-height: 100px;
+    }
+}
+
+@media(max-width:776px) {
+    .home-video
+    {
+        padding: 0 0 40px;
+    }
+}
+
 /* 1 великий блок */
 .video-single
 {
-    /* outline: 1px solid var(--border-video);  */
     background: var(--red);
     display: grid;
     grid-template-columns: 1fr 430px;
     margin: 0 0 20px;
-    
-    /* video page: grid-gap: 20px */
+}
+
+@media(max-width:776px) {
+    .video-single
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+.video-single picture img, 
+.video-single picture source
+{
+    height: 100%!important;
+    object-fit: cover;
 }
 
 /* .video-single > a
@@ -61,6 +86,14 @@
     /* align-items: center; */
     justify-content: center;
     flex-direction: column;
+}
+
+@media(max-width:776px)
+{
+    .video-single-content
+    {
+        border: none;
+    }
 }
 
 .video-single-content .title-30

@@ -14,15 +14,24 @@
 #footer .wrapper
 {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    /* grid-template-columns: 200px 1fr; */
+    grid-template-columns: 227px 1fr;
     grid-gap: 90px;
 }
 
-#footer-logo
+@media(max-width:1300px) {
+    #footer .wrapper
+    {
+        grid-template-columns: 130px 1fr;
+        grid-gap: 20px;
+    }
+}
+
+/* #footer-logo
 {
     display: flex;
     align-items: center; 
-}
+} */
 
 #footer-content
 {

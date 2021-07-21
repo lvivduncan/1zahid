@@ -108,7 +108,8 @@
     }
 }
 
-@media(max-width:450px) {
+@media(max-width:450px)
+{
     .vidget-datas
     {
         /* display: grid; */
@@ -194,7 +195,8 @@
     height: 30px;
 }
 
-@media(max-width:996px) {
+@media(max-width:996px)
+{
     .vidget-data-result
     {
         height: auto;
@@ -202,7 +204,8 @@
     }
 }
 
-@media(max-width:450px) {
+@media(max-width:450px)
+{
     .vidget-data-result
     {
         /* height: auto; */
@@ -220,7 +223,8 @@
     margin-right: 8px; 
 }
 
-@media(max-width:996px) {
+@media(max-width:996px)
+{
     .vidget-data-result i
     {
         display: none;

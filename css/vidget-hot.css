@@ -84,7 +84,8 @@
     margin: 0 0 9px; 
 }
 
-@media(max-width:1300px) {
+@media(max-width:1300px)
+{
     .vidget-hot time
     {
         position: absolute;
@@ -98,7 +99,8 @@
     margin: 0 170px 0 0;
 }
 
-@media(max-width:1300px) {
+@media(max-width:1300px)
+{
     .vidget-hot p
     {
         display: none;
@@ -111,7 +113,8 @@
     transition: .5s;
 }
 
-@media(max-width:1300px) {
+@media(max-width:1300px)
+{
     .vidget-hot a
     {
         padding: 0 20px;

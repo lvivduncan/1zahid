@@ -17,6 +17,7 @@
 /* блок-вставка ковід */
 @import url('./vidget-covid.css');
 
+/* devices */
 @import url('./home.css');
 
 @import url('./aside.css');
