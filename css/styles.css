@@ -17,9 +17,6 @@
 /* блок-вставка ковід */
 @import url('./vidget-covid.css');
 
-/* devices */
-@import url('./home.css');
-
 @import url('./aside.css');
 
 @import url('./block-single.css');
@@ -54,3 +51,6 @@
 @import url('./footer.css');
 
 @import url('./pagination.css');
+
+/* devices */
+@import url('./media.css');

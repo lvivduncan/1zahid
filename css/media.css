@@ -114,12 +114,12 @@
 
 @media(max-width:996px)
 {
-    #block-10
+    .block-4
     {
         grid-template-columns: repeat(2,1fr) 380px;
     }
 
-    #block-10 a:nth-child(3)
+    .block-4 a:nth-child(3)
     {
         display: none;
     }
@@ -127,17 +127,66 @@
 
 @media(max-width:776px)
 {
-    #block-10
+    .block-4
     {
         grid-template-columns: repeat(2,1fr);
     }
 
-    #block-10 a:nth-child(4)
+    .block-4 a:nth-child(4)
     {
         height: 500px;
         grid-row-start: 2;
         grid-row-end: 3;
         grid-column-start: -3;
         grid-column-end: -1;
+    }
+
+    .block-4 a
+    {
+        outline: none;
+    }
+
+    .block-4 time
+    {
+        display: block;
+    }
+
+    .block-4 a:last-child .title-18
+    {
+        bottom: 20px;
+    }
+}
+
+/* /////////////////////////////////////////////////////
+світлий блок (тільки головна) Перший західний рекомендує
+///////////////////////////////////////////////////// */
+@media(max-width:996px)
+{
+    .white-background::before
+    {
+        display: none;
+    }    
+}
+
+@media(max-width:776px)
+{
+    .block-white .block-3
+    {
+        
+    }
+}
+
+/* ////////////////////////////
+темний блок, головна + лонгріди
+//////////////////////////// */
+@media(max-width:996px)
+{
+    .black-background::before
+    {
+        display: none;
+    }
+    .block-black
+    {
+
     }
 }

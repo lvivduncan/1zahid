@@ -38,7 +38,7 @@
 .block-4 a .title-18
 {
     color: var(--white);
-    padding: 16px 18px 0;
+    margin: 16px 18px 0;
     display: block;
     transition: .5s;
 }
@@ -92,4 +92,11 @@
     color: var(--white);
     z-index: 2;
     height: auto;
+}
+
+.block-4 time
+{
+    color: var(--white);
+    margin: 16px 18px 0;
+    display: none;
 }

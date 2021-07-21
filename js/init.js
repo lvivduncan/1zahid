@@ -94,7 +94,9 @@ document.querySelectorAll('[video]') && document.querySelectorAll('[video]').for
 }
 
 // right element disabled
+// TODO: not video.html
 {
+    // const wb = document.querySelector('*:not(#video) .wrapper-background');
     const wb = document.querySelector('.wrapper-background');
 
     if(wb.offsetHeight > 1200 && wb.offsetHeight < 1800){
