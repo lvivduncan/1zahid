@@ -100,3 +100,76 @@
     margin: 16px 18px 0;
     display: none;
 }
+
+
+/* //////////////////////
+4 відео блоки на головній
+////////////////////// */
+@media(max-width:996px)
+{
+    .block-4
+    {
+        grid-template-columns: repeat(2,1fr) 380px;
+    }
+
+    /* 3 артикль ховаємо назавжди */
+    .block-4 a:nth-child(3)
+    {
+        display: none;
+    }
+}
+
+@media(max-width:776px)
+{
+    .block-4
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /* 4 артикль розтягуємо на всю ширину + кладемо вниз під 2 інших */
+    .block-4 a:nth-child(4)
+    {
+        height: 500px;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: -3;
+        grid-column-end: -1;
+    }
+
+    .block-4 a
+    {
+        outline: none;
+    }
+
+    .block-4 time
+    {
+        display: block;
+    }
+
+    .block-4 a:last-child .title-18
+    {
+        bottom: 20px;
+    }
+}
+
+@media(max-width:450px)
+{
+    .block-4
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .block-4 a:nth-child(4)
+    {
+        height: 400px;
+        grid-row-start: auto;
+        grid-row-end: auto;
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
+
+    .block-4 a .title-18
+    {
+        margin: 16px 0 0;
+    }
+}

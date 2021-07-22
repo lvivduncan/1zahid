@@ -54,13 +54,13 @@
     }
 }
 
-@media(max-width:776px)
+/* @media(max-width:776px)
 {
     .content .block-3 article:nth-child(2)
     {
         display: none;
     }
-}
+} */
 
 /* TODO: .content .block-3*/
 

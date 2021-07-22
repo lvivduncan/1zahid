@@ -30,161 +30,55 @@
 <body>
 
     <div id="body">
-        <div class="wrapper wrapper-background">
-            <header id="header">
-                <a href="/" id="logo" class="logo" title="Перший західний"></a>
 
-                <div id="header-content">
-                    <div id="header-content-top">
-                        <div id="wheater">
-                            <picture>
-                                <img src="temp/sun.png" alt="">
-                            </picture>
-                            <small>Львів</small>
-                        </div>
-                        
-                        <a href="/" title="">
-                            <picture>
-                                <img src="images/zahid-1.png" alt="">
-                            </picture>
-                        </a>
-                        <a href="/" title="">
-                            <picture>
-                                <img src="images/radio-1.png" alt="">
-                            </picture>
-                        </a>
+        <br>
 
-                    </div>
-                    <div id="header-content-bottom">
-                        <nav class="nav">
-                            <ul>
-                                <li><a href="" class="active">Новини</a></li>
-                                <li><a href="/" title="">Спецтема</a></li>
-                                <li><a href="/" title="">Львівщина</a></li>
-                                <li><a href="/" title="">Влада</a></li>
-                                <li><a href="/" title="">Картина дня</a></li>
-                                <li><a href="/" title="">Відео</a></li>
-                                <li><a href="/" title="">Інтерв’ю/репортажі</a></li>
-                            </ul>
-                        </nav>
+        <style>
+            #test
+            {
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-gap: 10px;
+            }
+            
+            #test picture
+            {
+                display: block;
+                width: 100%;
+                height: auto;
+                position: relative;
+                overflow: hidden;
+                padding-top: 56.25%;
+            }
 
-                        <span id="search-button"></span>
+            #test img
+            {
+                display: block;
+                max-width: 100%;
+                max-height: 100%;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
 
-                        <span class="social">
-                            <a href="" class="facebook"></a>
-                            <a href="" class="twitter"></a>
-                            <a href="" class="telegram"></a>
-                            <a href="" class="rss"></a>
-                        </span>
-                    </div>
-                </div>
-                <!-- #header-content -->
+                object-fit: cover;
+            }
+        </style>
 
-                <div id="nav-button"></div>
-                <!-- mobile button -->
+        <div id="test" style="max-width:900px; margin: auto;">
+            <picture>
+                <img src="temp/01.jpg" alt="">
+            </picture>
 
-            </header>
+            <picture>
+                <img src="temp/02.jpg" alt="">
+            </picture>
 
-            <section class="vidget-hot">
-                <div class="marker">
-                    Терміново
-                </div>
-
-                <h1 class="title-30 red">
-                    <a href="/" title="">Рада ухвалила другий ключовий закон для земельної реформи</a>
-                </h1>
-
-                <time>Вівторок, 18 Травня 2021</time>
-
-                <p>Верховна Рада на засіданні 18 травня підтримала у другому читанні та в цілому законопроєкт №2195, яким регулюється проведення електронних земельних аукціонів. Документ підтримали 272 депутати, фракціями голосували "проти" лише ОПЗЖ та Батьківщина.</p>
-            </section>
-
-            <div class="vidget-covid">
-                <div class="heading">Covid-19 в Україні</div>
-                <div class="vidget-datas">
-
-                    <div class="vidget-data">
-                        <div class="vidget-data-name">
-                            Підтверджені випадки
-                        </div>
-                        <div class="vidget-data-number">
-                            2 160 095
-                        </div>
-                        <div class="vidget-data-result">
-                            <i></i>
-                            <i style="height: 4px"></i>
-                            <i style="height: 10px"></i>
-                            <i style="height: 14px"></i>
-                            <i style="height: 18px"></i>
-                            <i style="height: 22px"></i>
-                            <i style="height: 16px"></i>
-                            <span>+7 856</span>
-                        </div>
-                    </div>
-
-                    <div class="vidget-data">
-                        <div class="vidget-data-name">
-                            Активні випадки
-                        </div>
-                        <div class="vidget-data-number">
-                            229 282
-                        </div>
-                        <div class="vidget-data-result reverse">
-                            <i style="height: 30px"></i>
-                            <i style="height: 20px"></i>
-                            <i style="height: 10px"></i>
-                            <i style="height: 22px"></i>
-                            <i style="height: 12px"></i>
-                            <i style="height: 2px"></i>
-                            <i></i>
-                            <span>+7 856</span>
-                        </div>
-                    </div>
-
-                    <div class="vidget-data">
-                        <div class="vidget-data-name">
-                            Вилікувалося
-                        </div>
-                        <div class="vidget-data-number">
-                            1 882 344
-                        </div>
-                        <div class="vidget-data-result blue">
-                            <i style="height: 30px"></i>
-                            <i style="height: 10px"></i>
-                            <i style="height: 12px"></i>
-                            <i style="height: 20px"></i>
-                            <i style="height: 24px"></i>
-                            <i style="height: 20px"></i>
-                            <i style="height: 24px"></i>
-                            <span>+7 856</span>
-                        </div>
-                    </div>
-
-                    <div class="vidget-data">
-                        <div class="vidget-data-name">
-                            Померло
-                        </div>
-                        <div class="vidget-data-number">
-                            48 469
-                        </div>
-                        <div class="vidget-data-result">
-                            <i style="height: 10px"></i>
-                            <i style="height: 12px"></i>
-                            <i style="height: 14px"></i>
-                            <i style="height: 16px"></i>
-                            <i style="height: 18px"></i>
-                            <i style="height: 20px"></i>
-                            <i style="height: 22px"></i>
-                            <span>+7 856</span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
+            <picture>
+                <img src="temp/reklama-adverty.jpg" alt="">
+            </picture>
         </div>
-
-
 
     </div>
     <!-- #body -->

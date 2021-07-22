@@ -2,105 +2,165 @@
 модифікатори для девайсів
 ////////////////////// */
 
-@media(max-width:996px)
-{
-    #block-2
-    {
-        grid-template-columns: repeat(2,1fr);
-    }
 
-    #block-2 article:nth-child(3)
-    {
-        display: none;
-    }
-}
-
-@media(max-width:996px)
-{
-    #block-4 .block-2
-    {
-        grid-template-columns: 1fr;
-    }    
-}
-/* TODO: #block-4 .block-2 >996*/
-
-/*
-
-*/
 @media(max-width:776px)
 {
-    #block-678
+    .content,
+    .content.reverse
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px)
+{
+    #block-hot .content.reverse
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ////////////////////////////////
+перший контент на головній сторінці
+//////////////////////////////// */
+
+/* сайдбар, який має показуватися тільки на мобільних */
+#mobile-aside
+{
+    display: none;
+}
+
+@media(max-width:996px)
+{   
+    #block-hot .block-3
     {
         grid-template-columns: repeat(2,1fr);
     }
 
-    #block-8,
-    #block-8-1
+    #block-hot .block-3 article:nth-child(3)
+    {
+        display: none;
+    }
+
+    #block-hot .block-2
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:600px)
+{
+    #block-hot .block-2
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:450px)
+{
+    #block-hot .block-3,
+    #block-hot .block-2
+    {
+        grid-template-columns: 1fr;
+    }
+
+    #block-hot .block-3 article,
+    #block-hot .block-2 article
+    {
+        margin: 0;
+    }
+}
+
+@media(max-width:776px)
+{
+    #block-hot
+    {
+        grid-template-columns: 1fr;
+    }
+
+    #desktop-aside
+    {
+        display: none;
+    }
+
+    #mobile-aside
+    {
+        display: block;
+    }
+}
+
+
+/* TODO: #block-4 .block-2 >996*/
+
+@media(max-width:776px)
+{
+    #block-abcdef
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    #block-c,
+    #block-f
     {
         display: none;
     }
 }
 
-/* max-width:450px */
+/* abc -- titles, def -- articles */
 @media(max-width:600px)
 {
-    #block-678
+    #block-abcdef
     {
         grid-template-columns: 1fr;
     }
 
-    #block-6
+    #block-a,
+    #block-b,
+    #block-c,
+    #block-d,
+    #block-e,
+    #block-f
     {
         grid-column-start: 1;
         grid-column-end: -1;
+        /* for articles */
+        margin: 0;
+    }
 
+    #block-a
+    {
         grid-row-start: 1;
         grid-row-end: 2;
     } 
 
-    #block-6-1
+    #block-d
     {
-        grid-column-start: 1;
-        grid-column-end: -1;
-
         grid-row-start: 2;
         grid-row-end: 3;
     }
 
-    #block-7
+    #block-b
     {
-        grid-column-start: 1;
-        grid-column-end: -1;
-
         grid-row-start: 3;
         grid-row-end: 4;
     }
 
-    #block-7-1
+    #block-e
     {
-        grid-column-start: 1;
-        grid-column-end: -1;
-
         grid-row-start: 4;
         grid-row-end: 5;
     } 
 
-    #block-8
+    #block-c
     {
         display: flex;
-        grid-column-start: 1;
-        grid-column-end: -1;
-
         grid-row-start: 5;
         grid-row-end: 6;
     }
 
-    #block-8-1
+    #block-f
     {
         display: block;
-        grid-column-start: 1;
-        grid-column-end: -1;
-
         grid-row-start: 6;
         grid-row-end: 7;
     }    
@@ -110,52 +170,6 @@
 
 
 
-
-
-@media(max-width:996px)
-{
-    .block-4
-    {
-        grid-template-columns: repeat(2,1fr) 380px;
-    }
-
-    .block-4 a:nth-child(3)
-    {
-        display: none;
-    }
-}
-
-@media(max-width:776px)
-{
-    .block-4
-    {
-        grid-template-columns: repeat(2,1fr);
-    }
-
-    .block-4 a:nth-child(4)
-    {
-        height: 500px;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        grid-column-start: -3;
-        grid-column-end: -1;
-    }
-
-    .block-4 a
-    {
-        outline: none;
-    }
-
-    .block-4 time
-    {
-        display: block;
-    }
-
-    .block-4 a:last-child .title-18
-    {
-        bottom: 20px;
-    }
-}
 
 /* /////////////////////////////////////////////////////
 світлий блок (тільки головна) Перший західний рекомендує
@@ -172,8 +186,20 @@
 {
     .block-white .block-3
     {
-        
+        grid-template-columns: repeat(2,1fr);
     }
+    
+    /* 1 артикль на всю ширину */
+    .block-white .block-3 article:nth-child(1)
+    {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+    /* 2 і 3 лишаютья поруч під 1 артиклем */
+    
 }
 
 /* ////////////////////////////
@@ -185,8 +211,38 @@
     {
         display: none;
     }
-    .block-black
-    {
 
+    .block-black .block-3
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .block-black .block-3 article:nth-child(3)
+    {
+        display: none;
     }
 }
+
+@media(max-width:776px)
+{
+    .block-black .block-3
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .block-black .block-3 article:nth-child(2)
+    {
+        display: none;
+    }
+
+    .block-black
+    {
+        min-height: 100px;
+    }
+
+    .black-background
+    {
+        padding: 0;
+    }
+}
+
