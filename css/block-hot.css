@@ -1,0 +1,68 @@
+
+
+/* /////////////////////////////
+перший блок на головній сторінці
+///////////////////////////// */
+#hot-block
+{
+    display: grid;
+    grid-gap: 20px;
+
+    grid-template-columns: 300px 1fr 300px;
+
+    grid-template-rows: repeat(2,auto) 1fr auto;
+
+    grid-template-areas: 
+        'hot-aside hot-single hot-single'
+        'hot-aside hot-3 hot-3'
+        'hot-aside hot-1-2 hot-1';
+}
+
+#hot-aside
+{
+
+}
+
+/* #hot-single,
+#hot-3,
+#hot-1-2,
+#hot-1
+{
+    margin: 0 0 auto;
+} */
+
+/* single */
+#hot-single
+{
+    grid-area: hot-single;
+}
+
+/* 3 article */
+#hot-3
+{
+    grid-area: hot-3;
+}
+
+/* aside */
+#hot-aside
+{
+    grid-area: hot-aside;
+}
+
+/* 1 + 2 */
+#hot-1-2
+{
+    grid-area: hot-1-2;
+}
+
+/* 1 (klychko) */
+#hot-1
+{
+    grid-area: hot-1;
+}
+
+
+
+/*
+TODO: after + before background
+*/

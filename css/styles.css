@@ -53,4 +53,9 @@
 @import url('./pagination.css');
 
 /* devices */
-@import url('./media.css');
+/* @import url('./media.css'); */
+
+/* ///////////////////////////////
+на ново зроблений блок на головній
+/////////////////////////////// */
+@import url('./block-hot.css');
