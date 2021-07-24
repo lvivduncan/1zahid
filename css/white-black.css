@@ -91,3 +91,112 @@
         display: none;
     }
 }
+
+
+
+
+
+
+/* ///////////////////
+білий блок (only home)
+/////////////////// */
+@media(max-width:996px)
+{
+    #white-block
+    {
+        min-height: 100px;
+        background: var(--white);
+    }
+
+    #white-block .white-background
+    {
+        min-height: 100px;
+        padding: 0;
+    }
+
+    #white-block .white-background::before
+    {
+        display: none;
+    }
+}
+
+@media(max-width:776px)
+{
+    #white-block .desc
+    {
+        padding: 16px 0 20px;
+    }
+
+    #white-block .block-3
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    /* 1 артикль на всю ширину */
+    #white-block .block-3 article:nth-child(1)
+    {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+    /* 2 і 3 лишаютья поруч під 1 артиклем */
+
+    /* розтягуємо картинку */
+    #white-block .block-3 article:nth-child(1)
+    {
+        margin: 0 -20px;
+        width: calc(100% + 40px);
+    }
+
+    #white-block .block-3 article:nth-child(1) .desc
+    {
+        padding: 16px 20px 20px;
+    }
+    
+}
+
+/* ///////////////
+чорний блок (home)
+/////////////// */
+@media(max-width:776px)
+{
+    .block-black
+    {
+        min-height: 100px;
+    }
+
+    .black-background
+    {
+        padding: 0 0 30px;
+    }
+
+    .black-background::before
+    {
+        display: none;
+    }
+
+    .block-black .block-3
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .block-black .block-3 article:nth-child(3)
+    {
+        display: none;
+    }
+}
+
+@media(max-width:500px)
+{
+    .block-black .block-3
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .block-black .block-3 article:nth-child(2)
+    {
+        display: none;
+    }
+}

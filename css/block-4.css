@@ -22,23 +22,10 @@
     transition: .5s;
 }
 
-.block-4 picture
-{
-    display: block;
-    height: 175px;
-}
-
-.block-4 picture img, 
-.block-4 picture source
-{
-    object-fit: cover;
-    height: 100%!important;
-}
-
 .block-4 a .title-18
 {
     color: var(--white);
-    margin: 16px 18px 0;
+    margin: 0;
     display: block;
     transition: .5s;
 }
@@ -72,13 +59,13 @@
 {
     object-fit: cover;
     height: 100%!important;
-    width: 100%!important;
+    /* width: 100%!important; */
 }
 
 .block-4 a:last-child .title-18
 {
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     left: 20px;
     right: 20px;
     z-index: 2;
@@ -97,7 +84,8 @@
 .block-4 time
 {
     color: var(--white);
-    margin: 16px 18px 0;
+    /* margin: 16px 18px 0; */
+    margin: 10px 0 0;
     display: none;
 }
 
@@ -129,7 +117,7 @@
     /* 4 артикль розтягуємо на всю ширину + кладемо вниз під 2 інших */
     .block-4 a:nth-child(4)
     {
-        height: 500px;
+        height: 320px;
         grid-row-start: 2;
         grid-row-end: 3;
         grid-column-start: -3;
@@ -150,8 +138,23 @@
     {
         bottom: 20px;
     }
+
+    /* прибрати відступи */
+    .block-4 .desc
+    {
+        padding: 20px 0 0;
+    }
 }
 
+@media(max-width:450px)
+{
+    .block-4 a:nth-child(4)
+    {
+        height: 200px;
+    }
+}
+
+/* 
 @media(max-width:450px)
 {
     .block-4
@@ -161,15 +164,10 @@
 
     .block-4 a:nth-child(4)
     {
-        height: 400px;
+        height: 200px;
         grid-row-start: auto;
         grid-row-end: auto;
         grid-column-start: auto;
         grid-column-end: auto;
     }
-
-    .block-4 a .title-18
-    {
-        margin: 16px 0 0;
-    }
-}
+} */

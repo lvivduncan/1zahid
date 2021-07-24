@@ -105,3 +105,11 @@ document.querySelectorAll('[video]') && document.querySelectorAll('[video]').for
         wb.classList.remove('disabled');
     }
 }
+
+// search
+{
+    document.getElementById('search-button').addEventListener('click', function() {
+        this.classList.toggle('active');
+        document.getElementById('search').classList.toggle('active');
+    });
+}

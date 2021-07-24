@@ -3,8 +3,8 @@
 blockquote
 {
     text-align: center;
-    padding: 70px 10px 60px; /* padding: 70px 10px; */
-    margin: 75px 0 70px; /* margin: 80px 0; */
+    padding: 70px 10px 60px;
+    margin: 75px 0 70px;
     border-top: 1px solid var(--bg-hr);
     border-bottom: 1px solid var(--bg-hr);
     font-size: 18px;
@@ -13,11 +13,21 @@ blockquote
     font-style: italic;
 }
 
+@media(max-width:776px)
+{
+    blockquote
+    {
+        padding: 40px 30px 30px;
+        margin: 40px -20px 30px;
+    }
+}
+
 /* основний текст цитати (може бути абзацем) */
 blockquote p
 {
     font-size: 18px;
     color: var(--gray-2);
+    margin: 0!important;
 }
 
 /* автор */
@@ -92,7 +102,6 @@ blockquote::after
     left: calc(50% - 27px);
     z-index: 2;
 
-    /* background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAAAhCAMAAACvFAaeAAAAyVBMVEUAAAC+N0jd3+TBRVXEUmLKdoPe3+Pd3+TIaXfe3+PNfIfLgIXd3+Pe3+Pd3+TGXmvd3+PJcX7d4OLc3+PLeYje4OLZ2enDl6bd3+Pd3+Pd4OPFXm3HaHXc4OPd3+PJb33e4OTe4OTe3+Pd3+Tc4OXf3+Pe3uPKfY7d3d29NEbAQFDCS1vd3+PGYG7d3+Pd3+Pd4OLGZXLd3+THb3ve4OPc3uPJdYHd4OPe3uLMfIfd4eTd3eLd3ePf39/Y2Ovd3+O7JTi8Kj27Jjlpm9JAAAAAP3RSTlMA/J705F7QsKp0MQ3569bPt4ZhPzYrCwX87+XLsJuPjIF5V0o6IBoVD/74797KyL67uZaTim1tW05GQzUlEA1Gr8ykAAABB0lEQVRIx83UyVLCUBCF4ZMwBxFQSAQBFUWUeZ4hgfd/KFbQfRdUUd13wXmAr3rxV+PO+ZXwugIQj677b0OwJHFJ4J2401rCFYir+qhFtIWEqxP31sIH46YSLhPSXpFg3FjCLRnXROlIXF/C/TDuC4FDXFzCtZ6IqwMx4mIS7pC7FZ6TVYb3bIR39CRcirjcH9IRLSHhJiy8nRFe0W54aQnXZNyLEV5eH15WG94vC8/Vh+dXiRtZDy9vMbyKhfAaIa2M4oOFtzLC87ThbRn3+XDhBT3ihkCXhdeWeAMjvFrkXNYpaT/eHvACqDYzwlNvzriNnvs2wlOvzMOze50L/TIp97KGkDgDiRqhUmR6jssAAAAASUVORK5CYII='); */
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAAhBAMAAABguEXNAAAAJ1BMVEX////d4OPh4+bn6ev8/Pzq7O7w8fPk5un5+frt7vD09fb29/jy8/QnWj4XAAAA2UlEQVQoz52Suw3CQBBET3yNITGYPwEgJFLowFCBCQjIsGgAOoAO7A6gA+iA0rB3fMFIKwvYZKR7s8HqneGZeel0zDqLNqO6l825ITEgZPuRsCehqrz5rsSEkO3fJI6EWuhXJIa89kK/JLEihH7XXLLo89oW/bLElJDtJ8ICQugvatrdO3m8PiTuhNAfOxI9XkP/vZGICTXRtyJo0A9zEf+J8zVxQYQ7COWiIW70tTi3QBz68a/iSoXi8PPm6SxVcQavPAkdrInjRxanIYcO1tZClZ326RxU9AGPNDAU9Jx5FAAAAABJRU5ErkJggg==');
 }
 

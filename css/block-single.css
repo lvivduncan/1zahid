@@ -5,15 +5,16 @@
 .block-single
 {
     background: var(--white);
-    padding: 0 20px 50px;
-    margin: 0 0 20px;
+    /* padding: 0 20px 50px; */
+    /* padding: 0 0 50px; */
+    /* margin: 0 0 20px; */
 }
 
-.block-single picture
+/* .block-single picture
 {
     display: block;
     margin: 0 -20px 20px; 
-}
+} */
 
 .block-single .title-30,
 .block-single .title-24
@@ -33,10 +34,10 @@
 }
 
 /* зайвий відступ в останнього абзаца */
-.block-single p:last-child
+/* .block-single p:last-child
 {
     margin: 0; 
-}
+} */
 
 /* /////////////////
 вставлений заголовок
@@ -44,5 +45,5 @@
 .block-single .heading
 {
     background: var(--bg-main);
-    margin: 0 -20px;
+    /* margin: 0 -20px; */
 }

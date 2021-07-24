@@ -2,43 +2,76 @@
 article -- основна шпальта
 /////////////////////// */
 
-.block-article
+#article
 {
     display: grid;
-    grid-template-columns: 180px 1fr; /* 200px 1fr */
-    grid-gap: 37px 20px; /* 45px 20px */
-    grid-template-areas: 
-        'article-picture article-picture'
-        'article-aside article-main';
+    grid-template-columns: 180px 1fr;
+    grid-gap: 0 20px;
+    
     grid-template-rows: min-content;
     background: var(--white);
+
+    grid-template-areas: 
+        'article-picture article-picture'
+        'article-aside article-header'
+        'article-aside article-main'
+}
+
+@media(max-width:776px)
+{
+    #article
+    {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+
+        grid-template-areas: 
+            'article-picture'
+            'article-header'
+            'article-aside'
+            'article-main'
+    }    
 }
 
 /* головна картинка */
-#article-picture
+#article > picture
 {
     grid-area: article-picture;
+    margin: 0 0 30px;
 }
 
 /* допоміжний блок (шаринг + 3 новини) */
-#article-aside
+#article aside
 {
     grid-area: article-aside;
     padding: 0 0 0 30px;
 }
 
-#article-aside ul
+@media(max-width:776px)
+{
+    #article aside
+    {
+        padding: 0 20px;
+        display: flex;
+    }
+
+    #article .share-buttons
+    {
+        margin: 20px 20px 0 0;
+    }
+}
+
+#article aside ul
 {
     display: block;
 }
 
-#article-aside li
+#article aside li
 {
     display: block;
-    margin: 0 0 13px; /* 25 -- 38 */
+    margin: 0 0 13px;
 }
 
-#article-aside li a
+#article aside li a
 {
     text-decoration: none;
     color: var(--black);
@@ -48,40 +81,75 @@ article -- основна шпальта
     transition: .5s;
 }
 
-#article-aside li a:hover
+#article aside li a:hover
 {
     color: var(--red);
 }
 
+/* заголовок */
+#article > header
+{
+    grid-area: article-header;
+}
 
+/* 1 абзац у хедері */
+#article > header p
+{
+    margin: 0;
+}
+
+@media(max-width:776px)
+{
+    #article > header
+    {
+        padding: 0 20px;
+    }
+}
+
+#article header h1
+{
+    margin: 0 0 16px;
+    line-height: 1;
+}
+
+@media(max-width:996px)
+{
+    /* заголовок */
+    #article header h1
+    {
+        font-size: 30px;
+    }
+}
+
+#article header time
+{
+    margin: 0 0 16px;
+}
 
 /* контент */
-#article-main
+#article main
 {
     grid-area: article-main;
 }
 
-#article-main .title-48
+@media(max-width:776px)
 {
-    margin: 0 0 14px; /* 0 0 20px */
-    line-height: 1;
+    #article main
+    {
+        padding: 0 20px;
+    }    
 }
 
-#article-main time
+#article main p
 {
-    margin: 0 0 16px; /* 0 0 33px */
-}
-
-#article-main p
-{
-    margin: 0 0 20px; /* 0 0 31px */
+    margin: 0 0 20px;
 }
 
 /* /////////////////////////////////
 вставка картинки з обтіканням справа
 ///////////////////////////////// */
 
-#article-main figure
+#article main figure
 {
     float: left;
     width: 50%;
@@ -90,13 +158,23 @@ article -- основна шпальта
     top: 8px;
 }
 
-#article-main figure picture
+@media(max-width:776px)
+{
+    #article main figure
+    {
+        float: none;
+        width: calc(100% - 40px);
+        margin: 0 20px 30px;
+    }
+}
+
+#article main figure picture
 {
     display: block;
     margin: 0 0 18px; 
 }
 
-#article-main figure figcaption
+#article main figure figcaption
 {
     font-size: 13px;
     font-weight: 300
@@ -105,12 +183,12 @@ article -- основна шпальта
 /* ///////////////////////////
 картинка на весь екран (відео)
 /////////////////////////// */
-#article-main .video
+#article main .video
 {
     margin: 0 0 20px;
 }
 
-#article-main .video a
+#article main .video a
 {
     position: relative;
 } 

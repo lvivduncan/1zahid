@@ -2,12 +2,20 @@
 вивід категорій + може бути батон внизу
 //////////////////////////////////// */
 
-.category
+#category
 {
     margin: 0 0 100px;
 }
 
-.category .main
+@media(max-width:776px)
+{
+    #category
+    {
+        margin: 70px 0 0;
+    }
+}
+
+#category .main
 {
     background: var(--white);
     display: flex;
@@ -16,19 +24,29 @@
     padding: 0 20px 30px 16px;
 }
 
-.category .main .heading
+@media(max-width:776px)
+{
+    #category .main
+    {
+        margin: 0 0 100px;
+    }
+}
+
+#category .main .heading
 {
     margin: -70px -18px 0;
 }
 
 /* without image */
-.category .main article
+#category .main article
 {
     display: grid;
     grid-template-columns: auto 1fr;
+
     grid-template-areas: 
         'category-time category-title'
         'category-time category-p';
+
     grid-template-rows: max-content;
     grid-gap: 0 20px;
     padding: 0 0 20px;
@@ -36,71 +54,149 @@
     margin: 20px 0 0;
 }
 
+@media(max-width:776px)
+{
+    #category .main article
+    {
+        grid-template-columns: 1fr;
+
+        grid-template-areas: 
+            'category-time'
+            'category-title'
+            'category-p';
+    }
+}
+
 /* whith image */
-.category .main article.picture
+#category .main article.insert-picture
 {
     grid-template-columns: auto 220px 1fr;
+
     grid-template-areas: 
-    'category-time category-picture category-title'
-    'category-time category-picture category-p';
+        'category-time category-picture category-title'
+        'category-time category-picture category-p';
+}
+
+@media(max-width:776px)
+{
+    #category .main article.insert-picture
+    {
+        grid-template-columns: repeat(2,1fr);
+
+        grid-template-areas: 
+            'category-time category-time'
+            'category-picture category-title'
+            'category-picture category-p';
+    }
+}
+
+@media(max-width:399px)
+{
+    #category .main article.insert-picture
+    {
+        grid-template-columns: 1fr;
+
+        grid-template-areas: 
+            'category-time'
+            'category-title'
+            'category-picture'
+            'category-p';
+    }
 }
 
 /* require indent for 1 article */
-.category .main article:first-of-type {
+#category .main article:first-of-type
+{
     margin-top: 30px;
 }
 
 /* require indent for last article l*/
-.category .main article:last-of-type {
+#category .main article:last-of-type
+{
     margin-bottom: 60px;
 }
 
+@media(max-width:776px)
+{
+    #category .main article:last-of-type
+    {
+        margin-bottom: 0;
+    }
+}
+
 /* date */
-.category .main article time
+#category .main article time
 {
     grid-area: category-time;
     font-size: 12px;
 }
 
+@media(max-width:776px)
+{
+    #category .main article time
+    {
+        margin: 0 0 10px;
+    }
+}
+
 /* image */
-.category .main article picture
+#category .main article picture
 {
     grid-area: category-picture;
 }
 
 /* title */
-.category .main article .title-18,
-.category .main article .title-21
+#category .main article .title-18,
+#category .main article .title-21
 {
     grid-area: category-title;
 }
 
-.category .main article .title-18
+#category .main article .title-18
 {
     margin: 0 0 6px;
 }
 
-.category .main article .title-21
+@media(max-width:776px)
+{
+    #category .main article .title-18
+    {
+        font-size: 16px;
+    }
+}
+
+#category .main article .title-21
 {
     margin: 0 0 5px;
 }
 
+@media(max-width:776px)
+{
+    #category .main article .title-21
+    {
+        font-size: 18px;
+    }
+}
+
 /* preview */
-.category .main article p
+#category .main article p
 {
     grid-area: category-p;
     margin: 0;
 }
 
-
-/* /////////
-модифікатори
-///////// */
-
-/* заголовок всередині (на майбутнє) */
-.category.inner-heading
+@media(max-width:776px)
 {
-
+    #category .main article p
+    {
+        font-size: 15px;
+    }
 }
 
-
+@media(max-width:399px)
+{
+    #category .main article.insert-picture p
+    {
+        margin-top: 6px;
+    }
+}

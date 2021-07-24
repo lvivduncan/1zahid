@@ -31,6 +31,8 @@
 
 @import url('./block-article.css');
 
+@import url('./block-page.css');
+
 /* 3 buttons */
 @import url('./share-buttons.css');
 
@@ -52,10 +54,15 @@
 
 @import url('./pagination.css');
 
-/* devices */
+/* del? devices */
 /* @import url('./media.css'); */
 
 /* ///////////////////////////////
 на ново зроблений блок на головній
 /////////////////////////////// */
 @import url('./block-hot.css');
+
+/* /////////////////////////////
+3 блоки з плаваючими заголовками
+///////////////////////////// */
+@import url('./six-block.css');

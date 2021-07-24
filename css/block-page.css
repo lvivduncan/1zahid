@@ -1,0 +1,15 @@
+.block-page
+{
+    /* display: grid; */
+    background: var(--white);
+}
+
+.block-page #article-picture
+{
+    margin: 0 0 20px;
+}
+
+.block-page #article-main
+{
+    padding: 20px;
+}

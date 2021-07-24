@@ -38,7 +38,8 @@
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%235e5a5b'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/%3E%3C/svg%3E");
 }
 
-@media(max-width:1300px) {
+@media(max-width:1300px)
+{
     #nav-button
     {
         display: block;
@@ -55,7 +56,8 @@
     margin: 10px 0 0;
 }
 
-@media(max-width:1300px) {
+@media(max-width:1300px)
+{
     .logo
     {
         width: 124px;
@@ -91,11 +93,12 @@
     {
         display: none;
         position: absolute;
+        top: 0;
         width: calc(100% + 40px);
-        margin: 70px -20px 0;
+        margin: 80px -20px 0;
         padding: 0 20px;
         flex-flow: column;
-        z-index: 2;
+        z-index: 3;
         background: var(--bg-main);
     }
     
@@ -115,14 +118,14 @@
 
 @media(max-width:1300px)
 {
-    #header-content-top {
+    #header-content-top
+    {
         order: 2;
         justify-content: center;
         gap: 30px;
     }
 }
 
-/* розсовує елементи по кутах */
 #wheater
 {
     margin-right: auto;
@@ -147,6 +150,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    position: relative;
 }
 
 @media(max-width:1300px)
@@ -164,7 +169,8 @@
     margin-left: 25px;
 }
 
-@media(max-width:1300px) {
+@media(max-width:1300px)
+{
     #header .social
     {
         margin-left: 15px;
@@ -179,15 +185,131 @@
     transition: .5s;
     cursor: pointer;
     margin-left: auto;
+    position: relative;
+    z-index: 2;
 
     background-image: url("data:image/svg+xml,%3Csvg fill='%235e5a5b' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 288.136 288.136'%3E%3Cpath d='M253.094,35.437c-22.634-22.634-52.727-35.099-84.735-35.099s-62.102,12.465-84.735,35.099 c-38.632,38.632-45.319,97.294-20.067,142.865L9.496,232.364c-12.661,12.661-12.661,33.262,0,45.923 c6.133,6.134,14.287,9.511,22.961,9.511s16.828-3.377,22.961-9.511l53.821-53.821c17.824,10.141,38.057,15.539,59.12,15.539 c32.009,0,62.102-12.464,84.735-35.098C299.817,158.183,299.817,82.16,253.094,35.437z M231.882,183.694 c-16.968,16.967-39.527,26.311-63.522,26.311s-46.555-9.344-63.522-26.311c-35.025-35.026-35.025-92.019,0-127.044 c16.968-16.968,39.527-26.312,63.522-26.312s46.555,9.344,63.522,26.312C266.907,91.676,266.907,148.668,231.882,183.694z'/%3E%3C/svg%3E");
 }
 
-#search-button:hover
+#search-button.active
 {
-    background-image: url("data:image/svg+xml,%3Csvg fill='%23000000' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 288.136 288.136'%3E%3Cpath d='M253.094,35.437c-22.634-22.634-52.727-35.099-84.735-35.099s-62.102,12.465-84.735,35.099 c-38.632,38.632-45.319,97.294-20.067,142.865L9.496,232.364c-12.661,12.661-12.661,33.262,0,45.923 c6.133,6.134,14.287,9.511,22.961,9.511s16.828-3.377,22.961-9.511l53.821-53.821c17.824,10.141,38.057,15.539,59.12,15.539 c32.009,0,62.102-12.464,84.735-35.098C299.817,158.183,299.817,82.16,253.094,35.437z M231.882,183.694 c-16.968,16.967-39.527,26.311-63.522,26.311s-46.555-9.344-63.522-26.311c-35.025-35.026-35.025-92.019,0-127.044 c16.968-16.968,39.527-26.312,63.522-26.312s46.555,9.344,63.522,26.312C266.907,91.676,266.907,148.668,231.882,183.694z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 16 16'%3E%3Cpath d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
 }
 
+@media(max-width:1320px)
+{
+    #search-button.active
+    {
+        position: absolute;
+        top: calc(50% - 8px);
+        right: 30px;
+        z-index: 3;
+    }    
+}
+
+/* ///////////////////
+динамічна форма пошуку
+/////////////////// */
+#search
+{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 140px);
+    height: 25px;
+}
+
+#search.active
+{
+    display: block;
+}
+
+@media(max-width:1320px)
+{
+    #search.active
+    {
+        bottom: 0;
+        right: 0;
+        z-index: 3;
+        width: 100%;
+        height: 100%;
+        background: var(--bg-main);
+        display: flex;
+        align-items: center;
+    }
+}
+
+#search form
+{
+    display: block;
+    width: 100%;
+}
+
+@media(max-width:1320px)
+{
+    #search form
+    {
+        width: calc(100% - 40px);
+        margin: 0 20px;
+    }    
+}
+
+#search input[type="search"]
+{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 5px 5px 5px 30px;
+    
+    position: relative;
+    z-index: 1;
+    
+    font-family: inherit;
+}
+
+@media(max-width:1320px)
+{
+    #search input[type="search"]
+    {
+        padding: 10px 10px 10px 30px;
+        /* outline: 1px solid var(--gray-1); */
+        /* outline: 1px solid var(--bg-main); */
+    }
+}
+
+/* поле пошуку, видаляю хрестик */
+#search input[type="search"]::-webkit-search-decoration,
+#search input[type="search"]::-webkit-search-cancel-button,
+#search input[type="search"]::-webkit-search-results-button,
+#search input[type="search"]::-webkit-search-results-decoration
+{
+    -webkit-appearance:none;
+}
+
+#search input[type="submit"]
+{
+    position: absolute;
+    top: calc(50% - 6px);
+    left: 10px;
+    width: 16px;
+    height: 16px;
+    z-index: 2;
+
+    background: transparent url("data:image/svg+xml,%3Csvg fill='%235e5a5b' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 288.136 288.136'%3E%3Cpath d='M253.094,35.437c-22.634-22.634-52.727-35.099-84.735-35.099s-62.102,12.465-84.735,35.099 c-38.632,38.632-45.319,97.294-20.067,142.865L9.496,232.364c-12.661,12.661-12.661,33.262,0,45.923 c6.133,6.134,14.287,9.511,22.961,9.511s16.828-3.377,22.961-9.511l53.821-53.821c17.824,10.141,38.057,15.539,59.12,15.539 c32.009,0,62.102-12.464,84.735-35.098C299.817,158.183,299.817,82.16,253.094,35.437z M231.882,183.694 c-16.968,16.967-39.527,26.311-63.522,26.311s-46.555-9.344-63.522-26.311c-35.025-35.026-35.025-92.019,0-127.044 c16.968-16.968,39.527-26.312,63.522-26.312s46.555,9.344,63.522,26.312C266.907,91.676,266.907,148.668,231.882,183.694z'/%3E%3C/svg%3E");
+
+    border: none;
+    cursor: pointer;
+    text-indent: -9999px;
+}
+
+@media(max-width:1320px)
+{
+    #search input[type="submit"]
+    {
+        left: 30px;
+    }
+}
 
 /* /////////
 основне меню 
@@ -236,14 +358,16 @@
     display: block;
 }
 
-@media(max-width:1300px) {
+@media(max-width:1300px)
+{
     .active .nav li
     {
         margin: 15px;
     }
 }
 
-@media(max-width:500px) {
+@media(max-width:500px)
+{
     .active .nav li
     {
         display: block;

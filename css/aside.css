@@ -50,7 +50,7 @@
 }
 
 /* червоним жирним */
-.aside article.red h3 a
+.aside article.red h1 a
 {
     font-weight: bold;
     color: var(--red);
@@ -64,7 +64,7 @@
 
 
 /* чорним жирним */
-.aside article.black h3 a
+.aside article.black h1 a
 {
     font-weight: bold;
     color: var(--black);
@@ -76,7 +76,7 @@
     color: var(--black);
 }
 
-.aside article h3 a:hover
+.aside article h1 a:hover
 {
     color: var(--red);
 }

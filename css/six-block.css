@@ -1,0 +1,99 @@
+/*
+заголовки:
+    #six-block :nth-child(1)
+    #six-block :nth-child(2)
+    #six-block :nth-child(3)
+
+артиклi:
+    #six-block :nth-child(4)
+    #six-block :nth-child(5)
+    #six-block :nth-child(6)
+*/
+
+@media(max-width:776px)
+{
+    #six-block
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    #six-block :nth-child(3),
+    #six-block :nth-child(6)
+    {
+        display: none;
+    }
+}
+
+@media(max-width:600px)
+{
+    #six-block
+    {
+        grid-template-columns: 1fr;
+    }
+
+    #six-block :nth-child(1),
+    #six-block :nth-child(2),
+    #six-block :nth-child(3),
+    #six-block :nth-child(4),
+    #six-block :nth-child(5),
+    #six-block :nth-child(6)
+    {
+        grid-column-start: 1;
+        grid-column-end: -1;
+        /* for articles */
+        /* margin: 0; */
+    }
+
+    #six-block :nth-child(4),
+    #six-block :nth-child(5),
+    #six-block :nth-child(6)
+    {
+        margin: 0 -20px;
+        width: calc(100% + 40px);
+    }
+
+    #six-block :nth-child(1)
+    {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    } 
+
+    #six-block :nth-child(4)
+    {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    #six-block :nth-child(2)
+    {
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    #six-block :nth-child(5)
+    {
+        grid-row-start: 4;
+        grid-row-end: 5;
+    } 
+
+    #six-block :nth-child(3)
+    {
+        display: flex;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+
+    #six-block :nth-child(6)
+    {
+        display: block;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+    /* 
+    #six-block article
+    {
+        margin: 0 -20px;
+        width: calc(100% + 40px);
+    } */
+
+}
