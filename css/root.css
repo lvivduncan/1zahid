@@ -13,25 +13,25 @@
     --red: #bb2538;
     --black: #000;
     --white: #fff;
-    --gray-1: #5e5a5b; 
+    --gray-1: #5e5a5b;
     /* icons, article bg ... */
     --pink: #c44c5b;
     /* #video aside bg */
 
     --gray-2: #58585a;
-    --gray-3: #e6e6e6; 
+    --gray-3: #e6e6e6;
     /* aside hr */
 
-    --bg-aside: #f0f0f2; 
+    --bg-aside: #f0f0f2;
     /* aside bg */
 
-    --bg-main: #f7f7f8; 
+    --bg-main: #f7f7f8;
     /* main bg */
 
-    --bg-hr: #eaebed; 
+    --bg-hr: #eaebed;
     /* hr */
 
-    --blue: #1570bd; 
+    --blue: #1570bd;
     /* meter */
 
     --border-vidget: #ededed;
@@ -50,7 +50,7 @@
     --tg: #389ce9;
 }
 
-html, body 
+html, body
 {
     height: 100%;
 }
@@ -77,7 +77,7 @@ h1,h2,h3,h4,h5,h6
     color: var(--black);
     font-size: 18px;
     font-weight: 400;
-    line-height: 1.4; 
+    line-height: 1.4;
 }
 
 img,
@@ -179,7 +179,7 @@ time
 
 
 /* ////////////////////////////////
-видаляємо відступ в останніх постів 
+видаляємо відступ в останніх постів
 //////////////////////////////// */
 div.mb-0 article,
 article.mb-0
@@ -247,7 +247,7 @@ article.mb-0
     height: auto;
     position: relative;
     overflow: hidden;
-    padding-top: 56.25%;   
+    padding-top: 56.25%;
 }
 
 .picture picture
@@ -317,7 +317,7 @@ main figure
 {
     float: left;
     width: 50%;
-    margin: 0 35px 60px 0; 
+    margin: 0 35px 60px 0;
     position: relative;
     top: 8px;
 }
@@ -335,14 +335,15 @@ main figure
 main figure picture
 {
     display: block;
-    margin: 0 0 18px; 
+    margin: 0 0 18px;
 }
 
 main figure figcaption,
-main figure .figure-caption
+.figure-caption,
 {
     font-size: 13px;
     font-weight: 300;
+    margin-top: 18px;
 }
 
 
