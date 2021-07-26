@@ -7,7 +7,7 @@
 {
     padding: 30px 20px 30px 16px;
     background: var(--bg-aside);
-    display: flex; 
+    display: flex;
     flex-flow: column;
     margin-top: 70px;
 }
@@ -82,7 +82,7 @@
 }
 
 /* //////////////
-реклама | adverty 
+реклама | adverty
 ////////////// */
 .aside .reklama
 {
@@ -129,4 +129,10 @@
 .aside.red article:first-of-type
 {
     margin-top: 0;
+}
+
+/* Головне */
+.article-top
+{
+  display: block;
 }
