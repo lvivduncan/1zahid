@@ -339,7 +339,7 @@ main figure picture
 }
 
 main figure figcaption,
-.figure-caption,
+.figure-caption
 {
     display: block;
     font-size: 13px;
