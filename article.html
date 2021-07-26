@@ -91,17 +91,12 @@
 
             </header>
 
-            <div class="content reverse">
-        
-                <!-- #article -- for article grid -->
-                <div class="main" id="article">
-
-                    <!-- id="article-picture" -->
+            <div id="article">
+                <div id="article-main">
                     <picture>
                         <img src="temp/block-single.jpg" alt="">
                     </picture>
 
-                    <!-- id="article-aside" -->
                     <aside>
                         <div class="share-buttons">
                             <a href="" class="facebook">
@@ -135,14 +130,17 @@
                             Рада ухвалила другий ключовий закон для земельної реформи
                         </h1>
 
-                        <time>Вівторок, 18 Травня 2021</time>
+                        <div class="meta">
+                            <time>Вівторок, 18 Травня 2021</time>
+                            <span>Іван Петренко</span>
+                        </div>
 
                         <p><strong> Верховна Рада на засіданні 18 травня підтримала у другому читанні та в цілому законопроєкт №2195, яким регулюється проведення електронних земельних аукціонів</strong></p>
                     </header>
 
-                    <!-- id="article-main" -->
                     <main>
 
+                        <!-- тег "фігур" юзати тільки тоді, коли потрібне обтікання -->
                         <figure>
                             <picture>
                                 <img src="temp/02.jpg" alt="">
@@ -178,13 +176,16 @@
 
                         <p>Верховна Рада на засіданні 18 травня підтримала у другому читанні та в цілому законопроєкт №2195, яким регулюється проведення електронних земельних аукціонів</p>
 
-                        <div class="video">
-                            <a href="">
-                                <picture>
-                                    <img src="temp/video-2.jpg" alt="">
-                                </picture>                            
+                        <!-- class="video" -->
+                        <p>
+                            <a href="/">
+                                <span class="picture">
+                                    <picture>
+                                        <img src="temp/video-2.jpg" alt="">
+                                    </picture>                                      
+                                </span>
                             </a>
-                        </div>
+                        </p>
 
                         <p>Законопроєктом "2195 передбачається продаж через електронні аукціони ділянок державної та комунальної власності або прав на них, а учасноком може бути фізична або юридична особа.</p>
 
@@ -193,23 +194,25 @@
                         </div>
 
                     </main>
-
                 </div>
-                <!-- #article -->
-
-                <aside class="sidebar aside inner-heading">
+                
+                <aside id="article-aside" class="aside inner-heading">
                     <div class="heading bg-white">
                         Новини
                     </div>    
 
                     <article>
                         <time>00:18</time>
-                        <h3 class="title-15"><a href="/" title="">У МОЗ розповіли, коли в Україну надійде наступна партія вакцини Pfizer/BioNTech</a></h3>
+                        <h3 class="title-15">
+                            <a href="/" title="">У МОЗ розповіли, коли в Україну надійде наступна партія вакцини Pfizer/BioNTech</a>
+                        </h3>
                     </article>
     
                     <article>
                         <time>00:33</time>
-                        <h3 class="title-15"><a href="/" title="">Рада ухвалила другий ключовий закон для земельної реформи</a></h3>
+                        <h3 class="title-15">
+                            <a href="/" title="">Рада ухвалила другий ключовий закон для земельної реформи</a>
+                        </h3>
                     </article>
     
                     <a href="" class="reklama">
@@ -218,17 +221,23 @@
     
                     <article>
                         <time>01:11</time>
-                        <h3 class="title-15"><a href="/" title="">Північна Македонія висилає російського дипломата</a></h3>
+                        <h3 class="title-15">
+                            <a href="/" title="">Північна Македонія висилає російського дипломата</a>
+                        </h3>
                     </article>
     
                     <article class="red">
                         <time>01:11</time>
-                        <h3 class="title-15"><a href="/" title="">Північна Македонія висилає російського дипломата</a></h3>
+                        <h3 class="title-15">
+                            <a href="/" title="">Північна Македонія висилає російського дипломата</a>
+                        </h3>
                     </article>
     
                     <article class="black">
                         <time>01:11</time>
-                        <h3 class="title-15"><a href="/" title="">Північна Македонія висилає російського дипломата</a></h3>
+                        <h3 class="title-15">
+                            <a href="/" title="">Північна Македонія висилає російського дипломата</a>
+                        </h3>
                     </article>
     
                     <!-- притиснено до низу і по центру -->
@@ -237,12 +246,7 @@
                     </a>
                 </aside>
 
-            </div>
-
-            <div class="content reverse">
-
-                <div class="main">
-
+                <div id="article-add">
                     <div style="margin: 20px 0; text-align: center;">
                         <a href="/" title=""><img src="temp/banner.jpg" alt=""></a>
                     </div>
@@ -300,12 +304,9 @@
 
                     <!-- TODO: button -->
 
-                    <!-- <div class="center"> -->
-                        <a href="" class="button center bottom">Більше статей</a>
-                    <!-- </div> -->
+                    <a href="/" class="button center bottom">Більше статей</a>
 
                 </div>
-                <div class="sidebar"></div>
             </div>
 
         </div>

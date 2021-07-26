@@ -284,9 +284,66 @@ article.mb-0
     margin: 0;
 }
 
+/* //////////////////////////////
+дата та автор у пості та сторінці
+////////////////////////////// */
+.meta
+{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
 
+.meta time
+{
+    margin: 0 10px 0 0;
+    line-height: normal;
+}
 
+.meta span
+{
+    font-size: 11px;
+    color: var(--gray-1);
+    text-transform: uppercase;
+    padding-left: 10px;
+    border-left: 1px solid var(--gray-1);
+    line-height: normal;
+}
 
+/* /////////////////////////////////
+вставка картинки з обтіканням справа
+///////////////////////////////// */
+main figure
+{
+    float: left;
+    width: 50%;
+    margin: 0 35px 60px 0; 
+    position: relative;
+    top: 8px;
+}
+
+@media(max-width:996px)
+{
+    main figure
+    {
+        float: none;
+        width: calc(100% - 40px);
+        margin: 0 20px 30px;
+    }
+}
+
+main figure picture
+{
+    display: block;
+    margin: 0 0 18px; 
+}
+
+main figure figcaption,
+main figure .figure-caption
+{
+    font-size: 13px;
+    font-weight: 300;
+}
 
 
 

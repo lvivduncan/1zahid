@@ -1,0 +1,66 @@
+#page
+{
+    /* display: grid; */
+    background: var(--white);
+}
+
+#page > picture
+{
+    /* margin: 0 0 20px; */
+    margin: 0 0 30px;
+    display: block;
+}
+
+#page > header
+{
+    padding: 0 20px;
+    margin: 0 0 50px;
+}
+
+/* date and author */
+/* #page > header .meta
+{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#page > header .meta time
+{
+    margin: 0 10px 0 0;
+    line-height: normal;
+}
+
+#page > header .meta span
+{
+    font-size: 11px;
+    color: var(--gray-1);
+    text-transform: uppercase;
+    padding-left: 10px;
+    border-left: 1px solid var(--gray-1);
+} */
+
+#page > header p
+{
+    margin: 0;
+}
+
+#page header h1
+{
+    margin: 0 0 16px;
+    line-height: 1;
+}
+
+@media(max-width:996px)
+{
+    /* заголовок */
+    #page header h1
+    {
+        font-size: 30px;
+    }
+}
+
+#page main
+{
+    padding: 0 20px;
+}
