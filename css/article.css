@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: 1fr 300px;
     grid-gap: 20px;
+
     grid-template-areas: 
         'article-main article-aside'
         'article-add empty';
@@ -22,10 +23,11 @@
     #article
     {
         grid-template-columns: 1fr;
+
         grid-template-areas: 
-        'article-main'
-        'article-add'
-        'article-aside';
+            'article-main'
+            'article-add'
+            'article-aside';
     }
 }
 
@@ -54,6 +56,7 @@
     #article-main
     {
         grid-template-columns: 1fr;
+        
         grid-template-areas: 
             'article-main-picture'
             'article-main-header'

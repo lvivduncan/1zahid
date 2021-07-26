@@ -1,51 +1,55 @@
+
+
 #page
 {
-    /* display: grid; */
-    background: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-gap: 0 20px;
+
+    grid-template-areas: 
+        'page-picture page-aside'
+        'page-header page-aside'
+        'page-main page-aside'
+        'page-add empty'
+}
+
+@media(max-width:776px)
+{
+    #page
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px)
+{
+    #page
+    {
+        grid-template-columns: 1fr;
+
+        grid-template-areas: 
+            'page-picture'
+            'page-header'
+            'page-main'
+            'page-add'
+            'page-aside';
+    }
 }
 
 #page > picture
 {
-    /* margin: 0 0 20px; */
-    margin: 0 0 30px;
-    display: block;
+    grid-area: page-picture;
 }
 
 #page > header
 {
-    padding: 0 20px;
-    margin: 0 0 50px;
+    grid-area: page-header;
+    padding: 20px;
+
+    background: var(--white);
 }
 
-/* date and author */
-/* #page > header .meta
-{
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
-}
-
-#page > header .meta time
-{
-    margin: 0 10px 0 0;
-    line-height: normal;
-}
-
-#page > header .meta span
-{
-    font-size: 11px;
-    color: var(--gray-1);
-    text-transform: uppercase;
-    padding-left: 10px;
-    border-left: 1px solid var(--gray-1);
-} */
-
-#page > header p
-{
-    margin: 0;
-}
-
-#page header h1
+#page > header h1
 {
     margin: 0 0 16px;
     line-height: 1;
@@ -53,14 +57,63 @@
 
 @media(max-width:996px)
 {
-    /* заголовок */
-    #page header h1
+    #page > header h1
     {
         font-size: 30px;
     }
 }
 
-#page main
+#page > header p
 {
+    margin: 0;
+}
+
+#page > main
+{
+    grid-area: page-main;
     padding: 0 20px;
+
+    background: var(--white);
+}
+
+#page > main p
+{
+    margin: 0 0 20px;
+}
+
+#page > aside
+{
+    grid-area: page-aside;
+}
+
+#page-add
+{
+    grid-area: page-add;
+}
+
+@media(max-width:996px)
+{
+    #page-add .block-3
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    #page-add article:nth-child(3)
+    {
+        display: none;
+    }
+}
+
+@media(max-width:776px)
+{
+    #page-add .block-3
+    {
+        grid-template-columns: 1fr;
+    }
+
+    #page-add article:nth-child(3),
+    #page-add article:nth-child(2)
+    {
+        display: none;
+    }
 }
