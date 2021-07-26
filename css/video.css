@@ -3,7 +3,20 @@
     background: var(--red);
 
     /* for button */
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
+}
+
+@media(max-width:776px)
+{
+    #video
+    {
+        margin-bottom: 0;
+    }
+
+    #video .content.reverse .main
+    {
+        /* margin-bottom: 100px; */
+    }
 }
 
 /* top streams for aside */

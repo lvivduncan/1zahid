@@ -99,6 +99,26 @@
     left: calc(50% - 100px);
 }
 
+/* inner center button */
+.button-inner
+{
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    margin: 30px 0;
+}
+
+.button-inner .button
+{
+    background: var(--white);
+    color: var(--red);
+    margin: auto;
+}
+
+.button-inner .button:hover
+{
+    background: var(--gray-3);
+}
 
 
 /* вирівнювання по центру */
