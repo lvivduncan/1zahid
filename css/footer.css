@@ -46,7 +46,7 @@
 
     grid-template-areas: 
         'logo nav nav'
-        'logo copy address';
+        'logo vertical address';
 }
 
 @media(max-width:1300px)
@@ -65,7 +65,7 @@
 
         grid-template-areas: 
             'logo nav'
-            'logo copy'
+            'logo vertical'
             'logo address';
     }
 }
@@ -79,7 +79,7 @@
         grid-template-areas: 
             'logo'
             'nav'
-            'copy'
+            'vertical'
             'address';
     }
 }
@@ -122,13 +122,68 @@
     #footer .nav a
     {
         display: block;
-        margin: 20px 0;
+        margin: 20px 0 0;
+    }
+}
+
+#vertical
+{
+    grid-area: vertical;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+
+@media(max-width:400px)
+{
+    #vertical
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+#vertical nav
+{
+    position: relative;
+    top: -5px;
+}
+
+@media(max-width:400px)
+{
+    #vertical nav
+    {
+        position: static;
+    }
+}
+
+#vertical ul,
+#vertical li
+{
+    display: block;
+}
+
+#vertical li a
+{
+    display: block;
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    margin: 0 0 10px;
+}
+
+@media(max-width:400px)
+{
+    #vertical li a
+    {
+        margin: 0 0 20px;
     }
 }
 
 #copy
 {
-    grid-area: copy;
+    /* grid-area: copy; */
     line-height: 15px;
 }
 
