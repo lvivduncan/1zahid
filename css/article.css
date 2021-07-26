@@ -73,9 +73,14 @@
     padding: 0 20px;
 }
 
-#article-main > picture
+#article-picture
 {
     grid-area: article-main-picture;
+}
+
+#article-picture span
+{
+    padding: 0 20px;
 }
 
 #article-main > header
@@ -105,7 +110,7 @@
 #article-main > aside
 {
     grid-area: article-main-aside;
-    padding: 0 0 0 30px;
+    padding: 0 0 0 20px;
 }
 
 @media(max-width:776px)
