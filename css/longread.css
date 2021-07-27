@@ -70,6 +70,15 @@ background longread
     background-size: cover!important;    
 }
 
+@media(max-width:776px)
+{
+    .bg-content
+    {
+        /* щоб текст не пєрдоліло */
+        min-height: 320px;
+    }
+}
+
 .bg-content picture,
 .bg-content video
 {
