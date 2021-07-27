@@ -10,15 +10,15 @@
         'article-add empty';
 }
 
-@media(max-width:996px)
+/* @media(max-width:996px)
 {
     #article
     {
         grid-template-columns: repeat(2,1fr);
     }
-}
+} */
 
-@media(max-width:776px)
+@media(max-width:996px)
 {
     #article
     {
