@@ -403,7 +403,23 @@ main figure figcaption,
     right: 0;
 }
 
+/* social video */
+@media(max-width:996px)
+{
+    .mobile-hide
+    {
+        display: none;
+    }    
+}
 
+
+@media(min-width:996px)
+{
+    .desktop-hide
+    {
+        display: none;
+    }    
+}
 
 
 /*
