@@ -179,10 +179,10 @@
     grid-area: article-add;
 }
 
-#article-add .button
+/* #article-add .button
 {
     margin: 20px auto 0
-}
+} */
 
 @media(max-width:996px)
 {
