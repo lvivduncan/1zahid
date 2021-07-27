@@ -75,7 +75,7 @@ background longread
     .bg-content
     {
         /* щоб текст не пєрдоліло */
-        min-height: 320px;
+        min-height: 420px;
     }
 }
 
