@@ -113,3 +113,18 @@ document.querySelectorAll('[video]') && document.querySelectorAll('[video]').for
         document.getElementById('search').classList.toggle('active');
     });
 }
+
+
+{
+    const iframe = document.querySelectorAll('iframe');
+
+    if (iframe.length > 0) {
+        iframe.forEach(item => {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'iframe-wrapper';
+            const iframe = item.cloneNode(true);
+            item.replaceWith(wrapper);
+            wrapper.append(iframe);
+        });
+    }
+}
