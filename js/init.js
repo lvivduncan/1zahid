@@ -99,10 +99,12 @@ document.querySelectorAll('[video]') && document.querySelectorAll('[video]').for
     // const wb = document.querySelector('*:not(#video) .wrapper-background');
     const wb = document.querySelector('.wrapper-background');
 
-    if(wb.offsetHeight > 1200 && wb.offsetHeight < 1800){
-        wb.classList.add('disabled');
-    } else {
-        wb.classList.remove('disabled');
+    if(wb !== null){
+        if(wb.offsetHeight > 1200 && wb.offsetHeight < 1800){
+            wb.classList.add('disabled');
+        } else {
+            wb.classList.remove('disabled');
+        }
     }
 }
 

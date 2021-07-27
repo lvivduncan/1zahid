@@ -29,6 +29,14 @@
     margin: 50px auto;
 }
 
+@media(max-width:700px)
+{
+    .block-think
+    {
+        width: 95%;
+    }
+}
+
 .block-think p:last-child
 {
     margin: 0;
@@ -170,12 +178,21 @@ background longread
 }
 
 /* текстовий контент у блоці з фото */
-.bg-content .block-think{
+.bg-content .block-think
+{
     margin-top: 230px;
     margin-bottom: 230px;
     color: var(--white);
     position: relative;
     z-index: 2;
+}
+
+@media(max-width:776px)
+{
+    .bg-content .block-think
+    {
+        margin: 0;
+    }
 }
 
 /* ////////
@@ -191,12 +208,21 @@ background longread
     grid-gap: 48px;
 }
 
-/* лівий блок */
-/* фото */
-/* .block-photo-text figure
+@media(max-width:1140px)
 {
+    .block-photo-text
+    {
+        width: 95%;
+    }
+}
 
-} */
+@media(max-width:996px)
+{
+    .block-photo-text
+    {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* опис під фото */
 .block-photo-text figcaption
@@ -225,6 +251,14 @@ background longread
     overflow: hidden;
 }
 
+@media(max-width:960px)
+{
+    .block-scroll
+    {
+        width: 95%;
+    }
+}
+
 .block-scroll-wrapper
 {
     display: grid;
@@ -241,6 +275,24 @@ background longread
     grid-gap: 50px;
     margin: 50px auto;
     width: 940px;
+}
+
+@media(max-width:960px)
+{
+    .block-skill
+    {
+        width: 300px;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:400px)
+{
+    .block-skill
+    {
+        width: 95%;
+        padding: 0 30px;
+    }
 }
 
 .block-skill div
@@ -285,6 +337,23 @@ background longread
     width: 940px;
 }
 
+@media(max-width:960px)
+{
+    .block-photo
+    {
+        width: 95%;
+        grid-gap: 20px;
+    }
+}
+
+@media(max-width:776px)
+{
+    .block-photo
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ///
 списки 
 /// */
@@ -293,6 +362,15 @@ background longread
 {
     width: 680px;
     margin: 20px auto;
+}
+
+@media(max-width:700px)
+{
+    #longread > ul,
+    #longread > ol
+    {
+        width: 95%;
+    }
 }
 
 #longread > ul li
