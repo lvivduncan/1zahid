@@ -181,6 +181,11 @@
     }
 }
 
+#vertical li a:hover
+{
+    text-decoration: underline;
+}
+
 #copy
 {
     /* grid-area: copy; */
