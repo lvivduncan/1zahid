@@ -84,6 +84,14 @@
     }
 }
 
+@media(max-width:399px)
+{
+    #hot-3 .desc
+    {
+        padding: 16px 10px 20px;
+    }
+}
+
 /* aside */
 #hot-aside
 {
@@ -113,6 +121,15 @@
         grid-template-columns: repeat(2,1fr);
     }
 }
+
+@media(max-width:399px)
+{
+    #hot-1-2 .block-2 .desc
+    {
+        padding: 16px 10px 20px;
+    }
+}
+
 
 /* 1 (klychko) */
 #hot-1
