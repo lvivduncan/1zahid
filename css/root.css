@@ -305,6 +305,9 @@ article.mb-0
 {
     /* padding: 20px; */
     padding: 16px 20px 20px;
+    
+    /* розпердолюємо довгі слова */
+    word-break: break-word;
 }
 
 .desc p:last-child
