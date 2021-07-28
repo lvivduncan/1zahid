@@ -136,26 +136,26 @@ picture source
 }
 
 /* лінки на сторінці */
-.main a
+main a
 {
     color: var(--blue);
     text-decoration: underline;
 }
 
-.main a:hover,
-.main a:focus
+main a:hover,
+main a:focus
 {
     color: var(--red);
     text-decoration: none;
 }
 
-.main ul,
-.main ol
+main ul,
+main ol
 {
     margin: 30px 0 30px 30px;
 }
 
-.main li
+main li
 {
     margin: 10px 0;
 }
