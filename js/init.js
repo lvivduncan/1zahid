@@ -116,7 +116,7 @@ document.querySelectorAll('[video]') && document.querySelectorAll('[video]').for
     });
 }
 
-
+// обгортка для іфреймів
 {
     const iframe = document.querySelectorAll('iframe');
 
@@ -129,4 +129,28 @@ document.querySelectorAll('[video]') && document.querySelectorAll('[video]').for
             wrapper.append(iframe);
         });
     }
+}
+
+// шарбатони
+{
+    document.querySelector('.share-buttons .facebook').addEventListener('click', e => {
+        e.preventDefault();
+        const url = 'https://facebook.com/sharer.php?display=popup&u=' + window.location.href;
+        const options = 'toolbar=0,status=0,resizable=1,width=626,height=436';
+        window.open(url, 'sharer', options);
+    });
+
+    document.querySelector('.share-buttons .twitter').addEventListener('click', e => {
+        e.preventDefault();
+        const url = 'https://twitter.com/intent/tweet?text=' + document.title + ' ' + window.location.href;
+        const options = 'toolbar=0,status=0,resizable=1,width=626,height=436';
+        window.open(url, 'twitter', options);
+    });
+    
+    document.querySelector('.share-buttons .telegram').addEventListener('click', e => {
+        e.preventDefault();
+        const url = 'https://telegram.me/share/url?url=' + window.location.href + '&text=' + document.title;
+        const options = 'toolbar=0,status=0,resizable=1,width=626,height=436';
+        window.open(url, 'telegram', options);
+    });
 }

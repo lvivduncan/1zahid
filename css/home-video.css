@@ -1,10 +1,11 @@
 .home-video
 {
     background: var(--red);
-    padding: 50px 0 130px;
+    /* padding: 50px 0 130px; */
+    padding: 50px 0 100px;
     /* додатковий відступ */
-    margin: 75px 0 0;
-    min-height: 1000px;
+    margin: 75px 0 50px;
+    /* min-height: 1000px; */
 }
 
 @media(max-width:996px) {
@@ -12,7 +13,7 @@
     {
         padding: 0 0 40px;
         margin: 20px 0 0;
-        min-height: 100px;
+        /* min-height: 100px; */
     }
 }
 

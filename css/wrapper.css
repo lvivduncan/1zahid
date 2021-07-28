@@ -21,7 +21,9 @@
 .wrapper-background
 {
     position: relative;
-    min-height: 920px;
+
+    /* закоментував для блоку відео на головній */
+    /* min-height: 920px; */
 }
 
 @media(max-width:996px)
