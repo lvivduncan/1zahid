@@ -123,6 +123,14 @@
     }
 }
 
+@media(max-width:400px)
+{
+    .vidget-hot a
+    {
+        padding: 0 10px;
+    }
+}
+
 .vidget-hot a:hover
 {
     color: var(--black);
