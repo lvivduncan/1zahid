@@ -24,6 +24,16 @@
     }
 }
 
+@media(max-width:400px)
+{
+    .vidget-hot
+    {
+        background: var(--white);
+        padding: 70px 0 10px;
+        margin: 0 0 20px;
+    }
+}
+
 .vidget-hot .marker
 {
     background: var(--red);
