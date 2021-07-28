@@ -129,7 +129,7 @@
         margin: 80px -20px 0;
         padding: 0 20px;
         flex-flow: column;
-        z-index: 3;
+        z-index: 4;
         background: var(--bg-main);
     }
 
