@@ -98,13 +98,11 @@
     grid-gap: 70px;
 }
 
-@media(max-width:1300px)
+@media(max-width:550px)
 {
     .vidget-datas
     {
-        /* justify-content: space-between; */
-        /* gap: 10px; */
-        /* flex-wrap: wrap; */
+        grid-gap: 30px
     }
 }
 
@@ -112,8 +110,6 @@
 {
     .vidget-datas
     {
-        /* display: grid; */
-        /* grid-template-columns: repeat(2,1fr); */
         grid-gap: 20px 10px;
         text-align: center;
     }    
