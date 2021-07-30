@@ -158,6 +158,35 @@ main li
     margin: 10px 0;
 }
 
+/* heading */
+main h1,
+main h2,
+main h3,
+main h4
+{
+    margin: 0 0 30px;
+    font-weight: 600;
+}
+
+main h1
+{
+    font-size: 28px;
+}
+
+main h2
+{
+    font-size: 25px;
+}
+
+main h3
+{
+    font-size: 22px;
+}
+
+main h4
+{
+    font-size: 18px;
+}
 
 /* ///////////////////////////////////////
 блок з мейном (зліва) і сайдбаром (справа)
