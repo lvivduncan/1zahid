@@ -13,14 +13,16 @@
 
         <link rel="shortcut icon" href="https://1zahid.info/tpl/images/icons/favicon.ico">
 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap" rel="stylesheet">
+
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
 <style amp-custom>
 *{
-    padding:0;
-    margin:0;
-    box-sizing:border-box;
-    font-family:sans-serif
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 :root
@@ -31,6 +33,8 @@
     --white: #fff;
     --gray-1: #5e5a5b;
     --bg-aside: #f0f0f2;
+    --border-category: #dde0e3;
+    --blue: #1570bd;
     --gap: 20px;
 }
 
@@ -208,12 +212,17 @@ amp-mega-menu div
     align-items: center;
     justify-content: center;
     margin-top: 5px;
+    height: 35px;
 }
 
 .logos a
 {
     margin: 0 5px;
     text-decoration: none;
+    display: inline-block;
+    height: 35px;
+    display: flex;
+    align-items: center;
 }
 
 .heading
@@ -230,6 +239,19 @@ amp-mega-menu div
     position: relative;
 }
 
+.heading::before
+{
+    content: '';
+    display: block;
+    width: 154px;
+    height: 20px;
+    position: absolute;
+    top: calc(50% - 10px);
+    right: 0;
+    z-index: 2;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJoAAAAUCAMAAABCm9SNAAAA8FBMVEUAAAD9/f3////p6evo6Ort7e/9/f3p6ev////+/v7u7u/w8PHo6Or////////////////+/v7+/v79/f3r6+3r6+3r6+38/Pz8/P329vf7+/z39/j09PX29vfv7/Dq6uv////+/v7+/v7////7+/v8/Pz////+/v79/f339/j09PXu7vD4+Pnu7vDu7vD29vb09PX////6+vv////6+vr+/v7+/v74+Pj9/f34+Pj09PX+/v76+vr29vfx8fLw8PHp6ev4+Pnv7/Dv7/Hp6ev9/f3////////09PX5+fn8/P39/f37+/v9/f309PX///8Oon9QAAAAT3RSTlMA9PsBAwmXDPfbIxMG/fTw7NO5qBoQBL1wZ15RPjcuF/jq5+Lb0MrAknVZT0w2Kycc3MezsKqhn4+PiIGAe3dkREM7MSHu1MO8oqB4eGtHuzIPeAAAAddJREFUSMeFltdywjAQRY1tMBhMNSb0XkMPoSQQQkkv/v+/yUTL085wV89nVkfr1bU0vqpt/fry3+1/xsyEA9dW+GWs6hjL64zeOtNekeuM3+dmVs4Hq11RUA8gzpEKrQGjnxQSTAEmYzAzc4XMWiMF3SDmlgr9IOaZ9koDpBvjTduhig0qWUTMXpOZATEhgMwsbjZAFQPUkLIOmJ1GTA0wT5rY+4TLzY7ITN+rr28nALOmAbGTgNmYihmirSrc7Bz30WHVttEGGl3aNdoEzCKomFEYML/cLBtBZg+eulSvcHTlizfPKmaK+prnZjEYGyt1WA9dqhSNronqRKpyFzbczAghs4UlMs0oFVqi8bapC2+AuTe5Wh+ZzWnbb4Akp1TnEdUZURcyAOkEudkQRq0rRkt8THUKMI5l+0aUm51QWNXpM5QAUytTnYODxlu2j9vczEVhVaOUmYBocYZUpxJGd9wQT+iUuZkFY6NEr4Q6QAqaHAkfHp0QdaHIxOg/i3Fs/3UJxhlgckE5jvsaXz1fHBCvC5DeJRg7KPSyFMdtwIQMbpZHZlu67p/yy8q8QzfJlZl0jJsdHPkgW1TRk984+lhmUhY3m8TlZC7giJTflyWZSbrc7A+MLp2jPHLO4wAAAABJRU5ErkJggg==');
+}
+
 .heading span
 {
     z-index: 3;
@@ -237,14 +259,7 @@ amp-mega-menu div
 
 .heading.bg-colored::before
 {
-    content: '';
-    display: block;
     width: 152px;
-    height: 20px;
-    position: absolute;
-    top: calc(50% - 10px);
-    right: 0;
-    z-index: 2;
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAAAUCAMAAABGbgSwAAABOFBMVEUAAAC8K0P6+vrd4ONYWVvd4OP8/PxYWVvd4OPe4ePk5+nr7e68K0NYWVv+/v68K0Pd4OPd4OPd4OPd4ONYWVu8K0Pc3uBZWlxZWVu7K0Pj4+S8K0NYWly7K0NaW128K0P7+/vd4OO8K0NYWVu8K0P09PS8K0Pd4ONYWVv///9YWVvv8PC8K0P///9YWVvd4ONYWVu8K0Pp6uu8K0NYWVvd4OPd4ONYWVu8K0Pk5ea8K0P///9YWVvd4ONYWVu8K0Pf4OC8K0NYWVvd4OO8K0P////d4OPd4ONZWVvT1NVYWVtYWVtYWVu8K0NYWVvz8/NYWVtYWVu8K0P+/v68K0Pv8PH////r7Oz///////////+8K0P////////c3+La29xZWVvd4ONaWFv////d4ONYWVu8K0P+/v/2+AyjAAAAY3RSTlMA5PLk5O7h4NRrGAX39vXh4LucTUA+MzInIx0bGQ4GBvX16tTTzcnGxsW7rKyrqqmcmpOPjIp9fHp0bmxsX15dVlBOQTQxJxAPCvrt7OzpyMi5ubi3tKShkIqGW1BMRzklEQo5p0KrAAABT0lEQVRIx92U11LCUBRFgxqqRmyIWMCu2HsXe+9deg3//wfMnMPLvTPZJAyTAfbzmnPW01LkfXYYLlL2EJJzq51GU/1eYoZdL11Ge4jmiYk5jKfLXisFsF9m3EWwNCFjPSWwIDFDOliv5PWHvJaY6UNeA4RMuJBXlpgR6BUWvY6Q1ysz/cjLw8wb8hokZPwZeHWPil5J5OW8J2YXee3wnVXkdcrMjA52JXpdI69IiJgT5LXGd7aR1x4zH8jrXPQKacCrHCDmEnnN851j5LXOzAbyOhS9fM4C2BkxN8jL7yPmAnm986995LWliFtEXgeE3KrAa7IaMOQ1za9iyGvZSsA2TQQsUDtgT3e1AzYnef3bEbBggwM2az5gCyYCNmUhYKlWDJjW2IB9WQiYV0NimfYOWLS5A5awErAfGwL2WEfA4sjr276AOcKSWJMGTKkA3XpiLMjXrDYAAAAASUVORK5CYII=');
 }
 
@@ -254,10 +269,136 @@ main
     margin: 0 var(--gap);
 }
 
+main article
+{
+    padding: 0 0 var(--gap);
+    border-bottom: 1px solid var(--border-category);
+    margin: var(--gap) var(--gap) 0;
+}
+
+main article:first-child
+{
+    padding-top: var(--gap);
+    margin-top: 0;
+}
+
+main article time
+{
+    display: block;
+    color: var(--gray-1);
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 0 0 10px;
+}
+
+main article h1
+{
+    line-height: 1.35;
+    margin: 0 0 6px;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+main article h1.red a
+{
+    color: var(--red);
+}
+
+main article h1 a
+{
+    color: var(--gray-1);
+    text-decoration: none;
+    transition: .5s;
+}
+
+main article amp-img
+{
+    margin: 0 0 10px;
+}
+
+main article p
+{
+    font-size: 15px;
+}
+
+.pagination
+{
+    margin: var(--gap);
+    text-align: center;
+    display: block;
+}
+
+.pagination li
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination li a
+{
+    display: inline-block;
+    padding: 5px 10px;
+    background: var(--red);
+    color: var(--white);
+    transition: .5s;
+    text-decoration: none;
+}
+
+.pagination li.active a
+{
+    background: var(--blue);
+    color: var(--white);
+    font-weight: bold;
+}
+
 aside
 {
     background: var(--bg-aside);
     padding: var(--gap);
+}
+
+aside article
+{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 13px;
+}
+
+aside time
+{
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--gray-1);
+}
+
+aside h1
+{
+    font-size: 15px;
+    line-height: 1.35;
+    padding-bottom: 13px;
+    margin-bottom: 13px;
+    border-bottom: 1px solid var(--border-category);
+}
+
+aside h1 a
+{
+    text-decoration: none;
+    transition: .5s;
+    color: var(--black);
+    font-weight: 400;
+}
+
+aside h1.red a
+{
+    color: var(--red);
+    font-weight: 900
+}
+
+aside h1.black a
+{
+    color: var(--black);
+    font-weight: 900
 }
 
 footer
@@ -304,24 +445,12 @@ footer
                         </span>
 
                         <div class="logos">
-                            <a href="/" title="">
-                                <amp-img
-                                alt="zahid-1"
-                                src="images/zahid-1.png"
-                                width="82"
-                                height="35"
-                                layout="responsive">
-                                </amp-img>
+                            <a href="#" title="">
+                                <amp-img alt="zahid-1" src="images/zahid-1.png" width="82" height="35"></amp-img>
                             </a>
-        
-                            <a href="/" title="">
-                                <amp-img
-                                alt="radio-1"
-                                src="images/radio-1.png"
-                                width="121"
-                                height="23"
-                                layout="responsive">
-                                </amp-img>
+
+                            <a href="#" title="">
+                                <amp-img alt="radio-1" src="images/radio-1.png" width="121" height="23"></amp-img>
                             </a>                                
                         </div>
 
@@ -336,13 +465,86 @@ footer
     </div>
 
     <main>
-        00
+        <article>
+            <time>2.06.2021</time>
+            <h1>
+                <a href="/" title="">У МОЗ розповіли, коли в Україну надійде наступна партія вакцини Pfizer/BioNTech</a>
+            </h1>
+            <p>Рада ухвалила другий ключовий закон для земельної реформи</p>
+        </article>
+
+        <article>
+            <time>2.06.2021</time>
+            <h1 class="red">
+                <a href="/" title="">У МОЗ розповіли, коли в Україну надійде наступна партія вакцини Pfizer/BioNTech</a>
+            </h1>
+            <p>Рада ухвалила другий ключовий закон для земельної реформи</p>
+        </article>
+
+        <article>
+            <time>2.06.2021</time>
+            <h1 class="red">
+                <a href="/" title="">У МОЗ розповіли, коли в Україну надійде наступна партія вакцини Pfizer/BioNTech</a>
+            </h1>
+            <amp-img alt="У МОЗ розповіли, коли в Україну надійде наступна партія вакцини Pfizer/BioNTech" src="temp/category.png" width="1.33" height="1" layout="responsive"></amp-img>
+            <p>Рада ухвалила другий ключовий закон для земельної реформи</p>
+        </article>
+
+        <article>
+            <time>2.06.2021</time>
+            <h1>
+                <a href="/" title="">У МОЗ розповіли, коли в Україну надійде наступна партія вакцини Pfizer/BioNTech</a>
+            </h1>
+            <p>Рада ухвалила другий ключовий закон для земельної реформи</p>
+        </article>
     </main>
 
-
+    <ol class="pagination">
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li class="disabled"><a href="#">...</a></li>
+        <li><a href="#">20</a></li>
+        <li><a href="#">21</a></li>
+    </ol>
     
-    <aside></aside>
-    <footer></footer>
+    <div class="heading">
+        <span>Новини</span>
+    </div>
+
+    <aside>
+        <article>
+            <time>00:18</time>
+            <h1>
+                <a href="/" title="">У МОЗ розповіли, коли в Україну надійде наступна партія вакцини Pfizer/BioNTech</a>
+            </h1>
+        </article>
+
+        <article>
+            <time>00:33</time>
+            <h1>
+                <a href="/" title="">Рада ухвалила другий ключовий закон для земельної реформи</a>
+            </h1>
+        </article>
+
+        <article>
+            <time>01:11</time>
+            <h1 class="red">
+                <a href="/" title="">Північна Македонія висилає російського дипломата</a>
+            </h1>
+        </article>
+
+        <article>
+            <time>01:11</time>
+            <h1 class="black">
+                <a href="/" title="">Північна Македонія висилає російського дипломата</a>
+            </h1>
+        </article>
+    </aside>
+
+    <footer>
+        
+    </footer>
 
 </body>
 </html>
