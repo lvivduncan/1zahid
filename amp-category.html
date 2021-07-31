@@ -1,111 +1,353 @@
 <!DOCTYPE html>
-<html ⚡ lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Sample document</title>
-    <link rel="canonical" href="./regular-html-version.html" />
-    <meta
-      name="viewport"
-      content="width=device-width,minimum-scale=1,initial-scale=1"
-    />
-    <style amp-custom>
-      h1 {
-        color: red;
-      }
-    </style>
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "NewsArticle",
-        "headline": "Article headline",
-        "image": ["thumbnail1.jpg"],
-        "datePublished": "2015-02-05T08:00:00+08:00"
-      }
-    </script>
-    <script
-      async
-      custom-element="amp-carousel"
-      src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"
-    ></script>
-    <script
-      async
-      custom-element="amp-ad"
-      src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"
-    ></script>
-    <style amp-boilerplate>
-      body {
-        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      }
-      @-webkit-keyframes -amp-start {
-        from {
-          visibility: hidden;
-        }
-        to {
-          visibility: visible;
-        }
-      }
-      @-moz-keyframes -amp-start {
-        from {
-          visibility: hidden;
-        }
-        to {
-          visibility: visible;
-        }
-      }
-      @-ms-keyframes -amp-start {
-        from {
-          visibility: hidden;
-        }
-        to {
-          visibility: visible;
-        }
-      }
-      @-o-keyframes -amp-start {
-        from {
-          visibility: hidden;
-        }
-        to {
-          visibility: visible;
-        }
-      }
-      @keyframes -amp-start {
-        from {
-          visibility: hidden;
-        }
-        to {
-          visibility: visible;
-        }
-      }
-    </style>
-    <noscript
-      ><style amp-boilerplate>
-        body {
-          -webkit-animation: none;
-          -moz-animation: none;
-          -ms-animation: none;
-          animation: none;
-        }
-      </style></noscript
-    >
+<html ⚡ lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>[amp]category :: Перший західний</title>
+
+        <link rel="canonical" href="./category.html">
+
+        <link rel="shortcut icon" href="https://1zahid.info/tpl/images/icons/favicon.ico">
+
+        <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+        <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<style amp-custom>
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:sans-serif
+}
+
+:root
+{
+    --bg-main: #f7f7f8;
+    --red: #bb2538;
+    --black: #000;
+    --white: #fff;
+    --gray-1: #5e5a5b;
+    --bg-aside: #f0f0f2;
+    --gap: 20px;
+}
+
+html,
+body
+{
+    height: 100%
+}
+
+body
+{
+    background: var(--bg-main);
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.logo
+{
+    background: url('data:image/png;base64,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');
+    width: 115px;
+    height: 45px;
+    background-size: 115px 45px;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.i-amphtml-mega-menu-mask
+{
+    background: transparent;
+}
+
+amp-mega-menu
+{
+    padding: 0 20px;
+}
+
+amp-mega-menu nav
+{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: transparent;
+}
+
+amp-mega-menu nav button
+{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%235e5a5b'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/%3E%3C/svg%3E");
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+amp-mega-menu nav button[aria-expanded="true"]
+{
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%235e5a5b'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/%3E%3C/svg%3E");
+}
+
+amp-mega-menu .i-amphtml-mega-menu-content
+{
+    background: var(--bg-main);
+    margin-top: var(--gap);
+    text-align: center;
+}
+
+amp-mega-menu div
+{
+    padding: 0 var(--gap);
+}
+
+.nav
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media(max-width:600px)
+{
+    .nav
+    {
+        display: block;
+    }
+}
+
+.nav li
+{
+    display: inline-block;
+}
+
+@media(max-width:600px)
+{
+    .nav li
+    {
+        display: block;
+        text-align: left;
+    }
+}
+
+.nav li a
+{
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#search
+{
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    transition: .5s;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 15px;
+    position: relative;
+    z-index: 4;
+    background-image: url("data:image/svg+xml,%3Csvg fill='%235e5a5b' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 288.136 288.136'%3E%3Cpath d='M253.094,35.437c-22.634-22.634-52.727-35.099-84.735-35.099s-62.102,12.465-84.735,35.099 c-38.632,38.632-45.319,97.294-20.067,142.865L9.496,232.364c-12.661,12.661-12.661,33.262,0,45.923 c6.133,6.134,14.287,9.511,22.961,9.511s16.828-3.377,22.961-9.511l53.821-53.821c17.824,10.141,38.057,15.539,59.12,15.539 c32.009,0,62.102-12.464,84.735-35.098C299.817,158.183,299.817,82.16,253.094,35.437z M231.882,183.694 c-16.968,16.967-39.527,26.311-63.522,26.311s-46.555-9.344-63.522-26.311c-35.025-35.026-35.025-92.019,0-127.044 c16.968-16.968,39.527-26.312,63.522-26.312s46.555,9.344,63.522,26.312C266.907,91.676,266.907,148.668,231.882,183.694z'/%3E%3C/svg%3E");
+}
+
+.social
+{
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.social .facebook, 
+.social .twitter, 
+.social .telegram, 
+.social .rss, 
+.social .instagram, 
+.social .youtube
+{
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    transition: .5s;
+}
+
+.social .youtube
+{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%235e5a5b' viewBox='0 0 16 16'%3E%3Cpath d='M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z'/%3E%3C/svg%3E");
+}
+
+.social .instagram
+{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%235e5a5b' viewBox='0 0 16 16'%3E%3Cpath d='M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z'/%3E%3C/svg%3E");
+}
+
+.social .facebook
+{
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' fill='%235e5a5b' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11,10h2.6l0.4-3H11V5.3c0-0.9,0.2-1.5,1.5-1.5H14V1.1c-0.3,0-1-0.1-2.1-0.1C9.6,1,8,2.4,8,5v2H5.5v3H8v8h3V10z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.social .telegram
+{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%235e5a5b' viewBox='0 0 300 300'%3E%3Cpath id='XMLID_497_' d='M5.299,144.645l69.126,25.8l26.756,86.047c1.712,5.511,8.451,7.548,12.924,3.891l38.532-31.412 c4.039-3.291,9.792-3.455,14.013-0.391l69.498,50.457c4.785,3.478,11.564,0.856,12.764-4.926L299.823,29.22 c1.31-6.316-4.896-11.585-10.91-9.259L5.218,129.402C-1.783,132.102-1.722,142.014,5.299,144.645z M96.869,156.711l135.098-83.207 c2.428-1.491,4.926,1.792,2.841,3.726L123.313,180.87c-3.919,3.648-6.447,8.53-7.163,13.829l-3.798,28.146 c-0.503,3.758-5.782,4.131-6.819,0.494l-14.607-51.325C89.253,166.16,91.691,159.907,96.869,156.711z'/%3E%3C/svg%3E");
+}
+
+.social .rss
+{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%235e5a5b' viewBox='0 0 124 124'%3E%3Ccircle cx='20.3' cy='103.749' r='20'/%3E%3Cpath d='M67,113.95c0,5.5,4.5,10,10,10s10-4.5,10-10c0-42.4-34.5-77-77-77c-5.5,0-10,4.5-10,10s4.5,10,10,10 C41.5,56.95,67,82.55,67,113.95z'/%3E%3Cpath d='M114,123.95c5.5,0,10-4.5,10-10c0-62.8-51.1-113.9-113.9-113.9c-5.5,0-10,4.5-10,10s4.5,10,10,10 c51.8,0,93.9,42.1,93.9,93.9C104,119.45,108.4,123.95,114,123.95z'/%3E%3C/svg%3E");
+}
+
+.logos
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.logos a
+{
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.heading
+{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--gray-1);
+    height: 70px;
+    margin: 0 var(--gap);
+
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.heading span
+{
+    z-index: 3;
+}
+
+.heading.bg-colored::before
+{
+    content: '';
+    display: block;
+    width: 152px;
+    height: 20px;
+    position: absolute;
+    top: calc(50% - 10px);
+    right: 0;
+    z-index: 2;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAAAUCAMAAABGbgSwAAABOFBMVEUAAAC8K0P6+vrd4ONYWVvd4OP8/PxYWVvd4OPe4ePk5+nr7e68K0NYWVv+/v68K0Pd4OPd4OPd4OPd4ONYWVu8K0Pc3uBZWlxZWVu7K0Pj4+S8K0NYWly7K0NaW128K0P7+/vd4OO8K0NYWVu8K0P09PS8K0Pd4ONYWVv///9YWVvv8PC8K0P///9YWVvd4ONYWVu8K0Pp6uu8K0NYWVvd4OPd4ONYWVu8K0Pk5ea8K0P///9YWVvd4ONYWVu8K0Pf4OC8K0NYWVvd4OO8K0P////d4OPd4ONZWVvT1NVYWVtYWVtYWVu8K0NYWVvz8/NYWVtYWVu8K0P+/v68K0Pv8PH////r7Oz///////////+8K0P////////c3+La29xZWVvd4ONaWFv////d4ONYWVu8K0P+/v/2+AyjAAAAY3RSTlMA5PLk5O7h4NRrGAX39vXh4LucTUA+MzInIx0bGQ4GBvX16tTTzcnGxsW7rKyrqqmcmpOPjIp9fHp0bmxsX15dVlBOQTQxJxAPCvrt7OzpyMi5ubi3tKShkIqGW1BMRzklEQo5p0KrAAABT0lEQVRIx92U11LCUBRFgxqqRmyIWMCu2HsXe+9deg3//wfMnMPLvTPZJAyTAfbzmnPW01LkfXYYLlL2EJJzq51GU/1eYoZdL11Ge4jmiYk5jKfLXisFsF9m3EWwNCFjPSWwIDFDOliv5PWHvJaY6UNeA4RMuJBXlpgR6BUWvY6Q1ysz/cjLw8wb8hokZPwZeHWPil5J5OW8J2YXee3wnVXkdcrMjA52JXpdI69IiJgT5LXGd7aR1x4zH8jrXPQKacCrHCDmEnnN851j5LXOzAbyOhS9fM4C2BkxN8jL7yPmAnm986995LWliFtEXgeE3KrAa7IaMOQ1za9iyGvZSsA2TQQsUDtgT3e1AzYnef3bEbBggwM2az5gCyYCNmUhYKlWDJjW2IB9WQiYV0NimfYOWLS5A5awErAfGwL2WEfA4sjr276AOcKSWJMGTKkA3XpiLMjXrDYAAAAASUVORK5CYII=');
+}
+
+main
+{
+    background: var(--white);
+    margin: 0 var(--gap);
+}
+
+aside
+{
+    background: var(--bg-aside);
+    padding: var(--gap);
+}
+
+footer
+{
+    padding: var(--gap);
+}
+
+        </style>
+
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-  </head>
-  <body>
-    <h1>Sample document</h1>
-    <p>
-      Some text
-      <amp-img src="sample.jpg" width="300" height="300"></amp-img>
-    </p>
-    <amp-ad
-      width="300"
-      height="250"
-      type="a9"
-      data-aax_size="300x250"
-      data-aax_pubname="test123"
-      data-aax_src="302"
-    >
-    </amp-ad>
-  </body>
+    <script async custom-element="amp-mega-menu" src="https://cdn.ampproject.org/v0/amp-mega-menu-0.1.js"></script>
+
+    </head>
+
+<body>
+
+    <a href="/" class="logo" title="Перший західний"></a>
+
+    <amp-mega-menu layout="fixed-height" height="80">
+        <nav>
+            <ul>
+                <li>
+                    <button role="button"></button>
+
+                    <div role="dialog">
+
+                        <ul class="nav">
+                            <li><a href="" class="active">Новини</a></li>
+                            <li><a href="/" title="">Спецтема</a></li>
+                            <li><a href="/" title="">Львівщина</a></li>
+                            <li><a href="/" title="">Влада</a></li>
+                            <li><a href="/" title="">Картина дня</a></li>
+                            <li><a href="/" title="">Відео</a></li>
+                            <li><a href="/" title="">Інтерв’ю/репортажі</a></li>
+                        </ul>
+
+                        <a href="#" id="search"></a>
+
+                        <span class="social">
+                            <a href="//www.youtube.com/channel/UCGVbKMWygms_c1mOj1uTZUA" class="youtube"></a>
+                            <a href="//www.instagram.com/1zahidtv/" class="instagram"></a>
+                            <a href="//www.facebook.com/1zahidTV/" class="facebook" title="facebook"></a>
+                            <a href="//t.me//persyjzahid" class="telegram" title="telegram"></a>
+                            <a href="/rss/export.xml" class="rss" title="rss"></a>
+                        </span>
+
+                        <div class="logos">
+                            <a href="/" title="">
+                                <amp-img
+                                alt="zahid-1"
+                                src="images/zahid-1.png"
+                                width="82"
+                                height="35"
+                                layout="responsive">
+                                </amp-img>
+                            </a>
+        
+                            <a href="/" title="">
+                                <amp-img
+                                alt="radio-1"
+                                src="images/radio-1.png"
+                                width="121"
+                                height="23"
+                                layout="responsive">
+                                </amp-img>
+                            </a>                                
+                        </div>
+
+                    </div>
+                </li>
+            </ul>
+        </nav> 
+    </amp-mega-menu>
+    
+    <div class="heading bg-colored">
+        <span>Область</span>
+    </div>
+
+    <main>
+        00
+    </main>
+
+
+    
+    <aside></aside>
+    <footer></footer>
+
+</body>
 </html>
