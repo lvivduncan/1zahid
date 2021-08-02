@@ -48,6 +48,10 @@
     --fb: #515eb3;
     --tw: #6ab8ff;
     --tg: #389ce9;
+
+    --gap: 20px;
+
+    /* TODO: replace all 20px and 10px */
 }
 
 html, body
@@ -64,6 +68,12 @@ body
     line-height: 1.4;
 
 }
+
+/* a
+{
+    color: var(--black);
+    text-decoration: none;
+} */
 
 p
 {
