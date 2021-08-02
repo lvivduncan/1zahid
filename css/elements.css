@@ -10,7 +10,7 @@
 #footer-nav ul
 {
     display: flex;
-    gap: 20px;
+    gap: var(--gap);
 }
 
 /* sub */
@@ -24,7 +24,6 @@
     display: inline-block;
 }
 
-/* margin: 0 20px; */
 #footer-nav li a
 {
     font-size: 14px;
@@ -156,13 +155,11 @@
     margin-bottom: auto;
 }
 
-
-/* соціконки (margin: 0 20px; width: 135px) */
 .social
 {
     display: inline-flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: var(--gap);
 }
 
 .social .facebook, 

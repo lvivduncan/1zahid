@@ -27,7 +27,7 @@
 
 #archive nav span
 {
-    padding: 0 10px;
+    padding: 0 var(--selfgap);
     font-size: 18px;
     font-weight: 700;
     color: var(--red);

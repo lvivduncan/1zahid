@@ -7,13 +7,13 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     /* grid-gap: 0 30px; */
-    grid-gap: 0 20px;
+    grid-gap: 0 var(--gap);
 }
 
 /* вкладений блок */
 .content .block-3
 {
-    grid-gap: 20px;
+    grid-gap: var(--gap);
 }
 
 /* TODO: .content .block-3*/
@@ -35,14 +35,12 @@
 }
 
 /* TODO: .content .block-3*/
-
 .block-3 article
 {
     background: var(--white);
     position: relative;
     z-index: 1;
 
-    /* margin: 0 0 20px; */
 }
 
 /* TODO: .content .block-3*/

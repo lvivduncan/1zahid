@@ -3,7 +3,7 @@
 {
     display: grid;
     grid-template-columns: 1fr 300px;
-    grid-gap: 20px;
+    grid-gap: var(--gap);
 
     grid-template-areas:
         'article-main article-aside'
@@ -42,7 +42,7 @@
     display: grid;
 
     grid-template-columns: 180px 1fr;
-    grid-gap: 20px;
+    grid-gap: var(--gap);
 
     grid-template-areas:
         'article-main-picture article-main-picture'
@@ -70,7 +70,7 @@
 #article-main header,
 #article-main main
 {
-    padding: 0 20px;
+    padding: 0 var(--gap);
 }
 
 #article-picture
@@ -80,7 +80,7 @@
 
 #article-picture span
 {
-    padding: 0 20px;
+    padding: 0 var(--gap);
 }
 
 #article-main > header
@@ -110,20 +110,20 @@
 #article-main > aside
 {
     grid-area: article-main-aside;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 var(--gap);
 }
 
 @media(max-width:776px)
 {
     #article-main > aside
     {
-        padding: 0 20px;
+        padding: 0 var(--gap);
         display: flex;
     }
 
     #article-main > aside .share-buttons
     {
-        margin: 20px 20px 0 0;
+        margin: var(--gap) var(--gap) 0 0;
     }
 }
 
@@ -160,7 +160,7 @@
 
 #article-main > main p
 {
-    margin: 0 0 20px;
+    margin: 0 0 var(--gap);
 }
 
 /* ////////////////////////
@@ -178,11 +178,6 @@
 {
     grid-area: article-add;
 }
-
-/* #article-add .button
-{
-    margin: 20px auto 0
-} */
 
 @media(max-width:996px)
 {

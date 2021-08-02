@@ -65,17 +65,17 @@
 .block-4 a:last-child .title-18
 {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
+    bottom: var(--gap);
+    left: var(--gap);
+    right: var(--gap);
     z-index: 2;
 }
 
 .block-4 a:last-child .heading
 {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: var(--gap);
+    left: var(--gap);
     color: var(--white);
     z-index: 2;
     height: auto;
@@ -85,7 +85,7 @@
 {
     color: var(--white);
     /* margin: 16px 18px 0; */
-    margin: 10px 0 0;
+    margin: var(--selfgap) 0 0;
     display: none;
 }
 
@@ -136,13 +136,13 @@
 
     .block-4 a:last-child .title-18
     {
-        bottom: 20px;
+        bottom: var(--gap);
     }
 
     /* прибрати відступи */
     .block-4 .desc
     {
-        padding: 20px 0 0;
+        padding: var(--gap) 0 0;
     }
 }
 

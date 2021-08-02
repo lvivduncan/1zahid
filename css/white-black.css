@@ -127,7 +127,7 @@
 {
     #white-block .desc
     {
-        padding: 16px 0 20px;
+        padding: 16px 0 var(--gap);
     }
 
     #white-block .block-3
@@ -155,7 +155,7 @@
 
     #white-block .block-3 article:nth-child(1) .desc
     {
-        padding: 16px 20px 20px;
+        padding: 16px var(--gap) var(--gap);
     }
     
 }

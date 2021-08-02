@@ -2,7 +2,7 @@
 .pagination
 {
     text-align: center;
-    margin: 20px 0;
+    margin: var(--gap) 0;
 }
 
 /* якщо потрібно винести за блок */
@@ -23,7 +23,7 @@
 .pagination li a
 {
     display: inline-block;
-    padding: 5px 10px;
+    padding: 5px var(--selfgap);
     background: var(--red);
     color: var(--white);
     transition: .5s;

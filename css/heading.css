@@ -46,9 +46,9 @@
     content: '';
     display: block;
     width: 152px;
-    height: 20px;
+    height: var(--gap);
     position: absolute;
-    top: calc(50% - 10px);
+    top: calc(50% - var(--selfgap));
     right: 0;
     z-index: 2;
 
@@ -63,9 +63,9 @@
     content: '';
     display: block;
     width: 154px;
-    height: 20px;
+    height: var(--gap);
     position: absolute;
-    top: calc(50% - 10px);
+    top: calc(50% - var(--selfgap));
     right: 0;
     z-index: 2;
 
@@ -80,9 +80,9 @@
     content: '';
     display: block;
     width: 154px;
-    height: 20px;
+    height: var(--gap);
     position: absolute;
-    top: calc(50% - 10px);
+    top: calc(50% - var(--selfgap));
     right: 0;
     z-index: 2;
 

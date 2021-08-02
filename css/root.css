@@ -50,6 +50,7 @@
     --tg: #389ce9;
 
     --gap: 20px;
+    --selfgap: 10px;
 
     /* TODO: replace all 20px and 10px */
 }
@@ -129,7 +130,7 @@ picture source
 {
     display: grid;
     grid-template-columns: 300px 1fr;
-    grid-gap: 20px;
+    grid-gap: var(--gap);
 }
 
 /* лівий сайдбар */
@@ -165,7 +166,7 @@ main ol
 
 main li
 {
-    margin: 10px 0;
+    margin: var(--selfgap) 0;
 }
 
 /* heading */
@@ -233,7 +234,7 @@ time
 {
     display: block;
     font-size: 11px;
-    line-height: 20px;
+    line-height: var(--gap);
     color: var(--gray-1);
     text-transform: uppercase;
 }
@@ -278,8 +279,8 @@ article.mb-0
 {
     content: '';
     display: block;
-    width: 20px;
-    height: 20px;
+    width: var(--gap);
+    height: var(--gap);
     position: absolute;
     top: calc(50% - 10px);
     left: calc(50% - 10px);
@@ -340,8 +341,8 @@ article.mb-0
 
 .desc
 {
-    /* padding: 20px; */
-    padding: 16px 20px 20px;
+    /* padding: var(--gap); */
+    padding: 16px var(--gap) var(--gap);
 
     /* розпердолюємо довгі слова */
     word-break: break-word;
@@ -359,12 +360,12 @@ article.mb-0
 {
     display: flex;
     align-items: center;
-    margin: 20px 0;
+    margin: var(--gap) 0;
 }
 
 .meta time
 {
-    margin: 0 10px 0 0;
+    margin: 0 var(--selfgap) 0 0;
     line-height: normal;
 }
 
@@ -373,7 +374,7 @@ article.mb-0
     font-size: 11px;
     color: var(--gray-1);
     text-transform: uppercase;
-    padding-left: 10px;
+    padding-left: var(--selfgap);
     border-left: 1px solid var(--gray-1);
     line-height: normal;
 }
@@ -396,7 +397,7 @@ main figure
     {
         float: none;
         width: calc(100% - 40px);
-        margin: 0 20px 30px;
+        margin: 0 var(--gap) 30px;
     }
 }
 
@@ -417,7 +418,7 @@ main figure figcaption,
 
 .date
 {
-    margin: 10px 0;
+    margin: var(--selfgap) 0;
 }
 
 /* iframe */
@@ -549,7 +550,7 @@ TODO: різні figcaption, тре уніфікувати
 /* temp */
 .debug
 {
-    margin: 20px 0;
+    margin: var(--gap) 0;
 }
 /* temp */
 

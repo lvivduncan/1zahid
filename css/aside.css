@@ -5,7 +5,7 @@
 /* сайдбар (хедінг над ним) */
 .aside
 {
-    padding: 30px 20px 30px 16px;
+    padding: 30px var(--gap) 30px 16px;
     background: var(--bg-aside);
     display: flex;
     flex-flow: column;
@@ -45,7 +45,7 @@
 .aside time
 {
     font-size: 12px;
-    line-height: 20px;
+    line-height: var(--gap);
     color: var(--gray-1);
 }
 
@@ -87,7 +87,7 @@
 .aside .reklama
 {
     display: block;
-    margin: 0 -20px 20px -16px;
+    margin: 0 -20px var(--gap) -16px;
 }
 
 /* ////////
@@ -97,7 +97,7 @@
 /* сайдбар (хедінг всередині) */
 .aside.inner-heading
 {
-    padding: 0 20px 30px 16px;
+    padding: 0 var(--gap) 30px 16px;
     margin-top: 0;
 }
 
@@ -117,7 +117,7 @@
 .aside.red
 {
     background: var(--pink);
-    padding: 0 20px 30px 16px;
+    padding: 0 var(--gap) 30px 16px;
     margin-top: 0;
 }
 

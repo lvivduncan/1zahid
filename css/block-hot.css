@@ -6,7 +6,7 @@
 #hot-block
 {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: var(--gap);
 
     grid-template-columns: 300px 1fr 300px;
 
@@ -88,7 +88,7 @@
 {
     #hot-3 .desc
     {
-        padding: 16px 10px 20px;
+        padding: 16px var(--selfgap) var(--gap);
     }
 
     #hot-3 .desc h1
@@ -109,7 +109,7 @@
     grid-area: hot-1-2;
 
     display: grid;
-    grid-gap: 20px;
+    grid-gap: var(--gap);
 }
 
 @media(max-width:996px) {
@@ -131,7 +131,7 @@
 {
     #hot-1-2 .block-2 .desc
     {
-        padding: 16px 10px 20px;
+        padding: 16px var(--selfgap) var(--gap);
     }
 
     #hot-1-2 .block-2 .desc h1

@@ -29,9 +29,9 @@
 {
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-gap: 20px;
+    grid-gap: var(--gap);
     border-top: 1px solid var(--border-pink);
-    padding: 20px 0 0;
+    padding: var(--gap) 0 0;
 }
 
 /* .streams-video
@@ -45,15 +45,15 @@
     position: relative;
     text-decoration: none;
     color: var(--white);
-    margin: 20px 0 0;
+    margin: var(--gap) 0 0;
 }
 
 .streams-video .title-18
 {
     position: absolute;
     bottom: 0;
-    left: 20px;
-    right: 20px;
+    left: var(--gap);
+    right: var(--gap);
     transition: .5s;
     margin: 0 0 5px;
 }
@@ -70,7 +70,7 @@
 {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-gap: 20px;
+    grid-gap: var(--gap);
     margin: 15px 0 50px;
 
     /* for button */
@@ -106,7 +106,7 @@
     color: var(--white);
     display: grid;
     grid-template-columns: 240px 1fr;
-    grid-gap: 20px;
+    grid-gap: var(--gap);
 }
 
 @media(max-width:1300px)

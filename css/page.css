@@ -1,7 +1,7 @@
 #page
 {
     background: var(--white);
-    padding: 0 20px;
+    padding: 0 var(--gap);
 }
 
 /* 
@@ -9,7 +9,7 @@
 {
     display: grid;
     grid-template-columns: 1fr 300px;
-    grid-gap: 0 20px;
+    grid-gap: 0 var(--gap);
 
     grid-template-areas:
         'page-picture page-aside'
@@ -51,7 +51,7 @@
 #page > header
 {
     grid-area: page-header;
-    padding: 20px;
+    padding: var(--gap);
 
     background: var(--white);
 }
@@ -78,14 +78,14 @@
 #page > main
 {
     grid-area: page-main;
-    padding: 0 20px;
+    padding: 0 var(--gap);
 
     background: var(--white);
 }
 
 #page > main p
 {
-    margin: 0 0 20px;
+    margin: 0 0 var(--gap);
 }
 
 #page > aside

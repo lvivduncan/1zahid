@@ -25,7 +25,7 @@
     height: 24px;
     position: absolute;
     top: calc(50% - 12px);
-    right: 10px;
+    right: var(--selfgap);
     cursor: pointer;
 
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%235e5a5b'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/%3E%3C/svg%3E");
@@ -53,7 +53,7 @@
     background-repeat: no-repeat;
 
     display: block;
-    margin: 20px 0 0;
+    margin: var(--gap) 0 0;
 }
 
 @media(max-width:1320px)
@@ -72,7 +72,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 0 20px;
+    gap: 0 var(--gap);
     height: 90px;
     margin: 18px 0 0;
     position: relative;
@@ -127,7 +127,7 @@
         width: calc(100% + 40px);
         height: auto;
         margin: 80px -20px 0;
-        padding: 0 20px 20px;
+        padding: 0 var(--gap) var(--gap);
         z-index: 4;
         background: var(--bg-main);
     }
@@ -173,7 +173,7 @@
     #header .social
     {
         order: 3;
-        margin-bottom: 20px;
+        margin-bottom: var(--gap);
     }
 }
 
@@ -200,7 +200,7 @@
 .nav ul
 {
     display: flex;
-    gap: 20px;
+    gap: var(--gap);
 }
 
 @media(max-width:1320px)
@@ -248,7 +248,7 @@
     .nav li a
     {
         display: inline-block;
-        padding: 10px 20px;
+        padding: var(--selfgap) var(--gap);
     }
 }
 
@@ -283,7 +283,7 @@
     #search-button
     {
         order: 2;
-        margin-bottom: 20px;
+        margin-bottom: var(--gap);
     }
 }
 
@@ -346,7 +346,7 @@
     #search form
     {
         width: calc(100% - 40px);
-        margin: 0 20px;
+        margin: 0 var(--gap);
     }
 }
 
@@ -367,7 +367,7 @@
 {
     #search input[type="search"]
     {
-        padding: 10px 10px 10px 30px;
+        padding: var(--selfgap) var(--selfgap) var(--selfgap) 30px;
     }
 }
 
@@ -384,7 +384,7 @@
 {
     position: absolute;
     top: calc(50% - 6px);
-    left: 10px;
+    left: var(--selfgap);
     width: 16px;
     height: 16px;
     z-index: 2;

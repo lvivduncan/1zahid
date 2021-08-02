@@ -56,7 +56,7 @@
 
 .levus-horizontal-scroll .left
 {
-    left: 10px;
+    left: var(--selfgap);
 }
 
 .levus-horizontal-scroll .left::before
@@ -70,7 +70,7 @@
 
 .levus-horizontal-scroll .right
 {
-    right: 10px;
+    right: var(--selfgap);
 }
 
 .levus-horizontal-scroll .right::before

@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 0 10px;
+    margin: 0 0 var(--selfgap);
     text-decoration: none;
     color: var(--white);
     width: 80px;
@@ -37,7 +37,7 @@
 
 .share-buttons a svg
 {
-    margin: 0 10px 0 0;
+    margin: 0 var(--selfgap) 0 0;
     fill: var(--white);
     width: 18px;
 }

@@ -3,7 +3,7 @@
 blockquote
 {
     text-align: center;
-    padding: 70px 10px 60px;
+    padding: 70px var(--selfgap) 60px;
     margin: 75px 0 70px;
     border-top: 1px solid var(--bg-hr);
     border-bottom: 1px solid var(--bg-hr);
@@ -82,7 +82,7 @@ blockquote::after
     grid-template-columns: 300px 1fr;
     grid-gap: 50px;
     width: 1080px;
-    padding: 50px 10px;
+    padding: 50px var(--selfgap);
     margin: 75px auto 70px;
     border-top: 1px solid var(--bg-hr);
     border-bottom: 1px solid var(--bg-hr);
@@ -95,7 +95,7 @@ blockquote::after
     .blockquote
     {
         width: 100%;
-        padding: 40px 10px 30px;
+        padding: 40px var(--selfgap) 30px;
     }
 }
 
@@ -198,7 +198,7 @@ blockquote::after
         order: 1;
         text-align: center;
         padding: 0;
-        margin: 0 0 20px;
+        margin: 0 0 var(--gap);
     }
 }
 
