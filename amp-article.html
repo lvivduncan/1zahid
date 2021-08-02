@@ -64,7 +64,7 @@ body
     display: block;
     position: absolute;
     top: var(--gap);
-    left: var(--gap);
+    left: var(--selfgap);
 }
 
 [aria-hidden="true"][open]
@@ -255,10 +255,20 @@ figcaption
     padding: var(--selfgap) 0;
 }
 
+#figure
+{
+    margin: 0 -20px var(--selfgap);
+}
+
+#figure figcaption
+{
+    padding: var(--selfgap) var(--gap);    
+}
+
 main
 {
     padding: 0 var(--gap) var(--gap);
-    margin: 0 var(--gap);
+    margin: 0 var(--selfgap);
     background: var(--white);
 }
 
@@ -467,7 +477,157 @@ blockquote em
     transition: .5s;
 }
 
+.heading
+{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--red);
+    height: 70px;
+    margin: 0 var(--selfgap);
 
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.heading span
+{
+    z-index: 3;
+}
+
+.heading::before
+{
+    content: '';
+    display: block;
+    width: 154px;
+    height: var(--gap);
+    position: absolute;
+    top: calc(50% - var(--selfgap));
+    right: 0;
+    z-index: 2;
+    width: 152px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAAAUCAMAAABGbgSwAAABOFBMVEUAAAC8K0P6+vrd4ONYWVvd4OP8/PxYWVvd4OPe4ePk5+nr7e68K0NYWVv+/v68K0Pd4OPd4OPd4OPd4ONYWVu8K0Pc3uBZWlxZWVu7K0Pj4+S8K0NYWly7K0NaW128K0P7+/vd4OO8K0NYWVu8K0P09PS8K0Pd4ONYWVv///9YWVvv8PC8K0P///9YWVvd4ONYWVu8K0Pp6uu8K0NYWVvd4OPd4ONYWVu8K0Pk5ea8K0P///9YWVvd4ONYWVu8K0Pf4OC8K0NYWVvd4OO8K0P////d4OPd4ONZWVvT1NVYWVtYWVtYWVu8K0NYWVvz8/NYWVtYWVu8K0P+/v68K0Pv8PH////r7Oz///////////+8K0P////////c3+La29xZWVvd4ONaWFv////d4ONYWVu8K0P+/v/2+AyjAAAAY3RSTlMA5PLk5O7h4NRrGAX39vXh4LucTUA+MzInIx0bGQ4GBvX16tTTzcnGxsW7rKyrqqmcmpOPjIp9fHp0bmxsX15dVlBOQTQxJxAPCvrt7OzpyMi5ubi3tKShkIqGW1BMRzklEQo5p0KrAAABT0lEQVRIx92U11LCUBRFgxqqRmyIWMCu2HsXe+9deg3//wfMnMPLvTPZJAyTAfbzmnPW01LkfXYYLlL2EJJzq51GU/1eYoZdL11Ge4jmiYk5jKfLXisFsF9m3EWwNCFjPSWwIDFDOliv5PWHvJaY6UNeA4RMuJBXlpgR6BUWvY6Q1ysz/cjLw8wb8hokZPwZeHWPil5J5OW8J2YXee3wnVXkdcrMjA52JXpdI69IiJgT5LXGd7aR1x4zH8jrXPQKacCrHCDmEnnN851j5LXOzAbyOhS9fM4C2BkxN8jL7yPmAnm986995LWliFtEXgeE3KrAa7IaMOQ1za9iyGvZSsA2TQQsUDtgT3e1AzYnef3bEbBggwM2az5gCyYCNmUhYKlWDJjW2IB9WQiYV0NimfYOWLS5A5awErAfGwL2WEfA4sjr276AOcKSWJMGTKkA3XpiLMjXrDYAAAAASUVORK5CYII=');
+}
+
+section
+{
+    padding: 0 0 var(--gap);
+    margin: 0 var(--selfgap);
+    background: var(--white);
+}
+
+section time
+{
+    display: block;
+    color: var(--gray-1);
+    text-transform: uppercase;
+    font-size: 11px;
+    margin: 0 var(--gap);
+}
+
+section h1
+{
+    line-height: 1.35;
+    margin: 0 var(--gap) 6px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+section h1.red a
+{
+    color: var(--red);
+}
+
+section h1 a
+{
+    color: var(--gray-1);
+    text-decoration: none;
+    transition: .5s;
+}
+
+section amp-img
+{
+    margin: 0 0 var(--selfgap);
+}
+
+aside
+{
+    background: var(--bg-aside);
+    padding: 0 var(--gap) var(--gap);
+    margin: var(--gap) var(--selfgap) 0;
+}
+
+aside .heading
+{
+    margin: 0;
+    color: var(--gray-1);
+}
+
+aside .heading::before
+{
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJoAAAAUCAMAAABCm9SNAAAA8FBMVEUAAAD9/f3////p6evo6Ort7e/9/f3p6ev////+/v7u7u/w8PHo6Or////////////////+/v7+/v79/f3r6+3r6+3r6+38/Pz8/P329vf7+/z39/j09PX29vfv7/Dq6uv////+/v7+/v7////7+/v8/Pz////+/v79/f339/j09PXu7vD4+Pnu7vDu7vD29vb09PX////6+vv////6+vr+/v7+/v74+Pj9/f34+Pj09PX+/v76+vr29vfx8fLw8PHp6ev4+Pnv7/Dv7/Hp6ev9/f3////////09PX5+fn8/P39/f37+/v9/f309PX///8Oon9QAAAAT3RSTlMA9PsBAwmXDPfbIxMG/fTw7NO5qBoQBL1wZ15RPjcuF/jq5+Lb0MrAknVZT0w2Kycc3MezsKqhn4+PiIGAe3dkREM7MSHu1MO8oqB4eGtHuzIPeAAAAddJREFUSMeFltdywjAQRY1tMBhMNSb0XkMPoSQQQkkv/v+/yUTL085wV89nVkfr1bU0vqpt/fry3+1/xsyEA9dW+GWs6hjL64zeOtNekeuM3+dmVs4Hq11RUA8gzpEKrQGjnxQSTAEmYzAzc4XMWiMF3SDmlgr9IOaZ9koDpBvjTduhig0qWUTMXpOZATEhgMwsbjZAFQPUkLIOmJ1GTA0wT5rY+4TLzY7ITN+rr28nALOmAbGTgNmYihmirSrc7Bz30WHVttEGGl3aNdoEzCKomFEYML/cLBtBZg+eulSvcHTlizfPKmaK+prnZjEYGyt1WA9dqhSNronqRKpyFzbczAghs4UlMs0oFVqi8bapC2+AuTe5Wh+ZzWnbb4Akp1TnEdUZURcyAOkEudkQRq0rRkt8THUKMI5l+0aUm51QWNXpM5QAUytTnYODxlu2j9vczEVhVaOUmYBocYZUpxJGd9wQT+iUuZkFY6NEr4Q6QAqaHAkfHp0QdaHIxOg/i3Fs/3UJxhlgckE5jvsaXz1fHBCvC5DeJRg7KPSyFMdtwIQMbpZHZlu67p/yy8q8QzfJlZl0jJsdHPkgW1TRk984+lhmUhY3m8TlZC7giJTflyWZSbrc7A+MLp2jPHLO4wAAAABJRU5ErkJggg==');
+}
+
+aside article
+{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 13px;
+}
+
+aside time
+{
+    font-size: 12px;
+    line-height: var(--gap);
+    color: var(--gray-1);
+}
+
+aside h1
+{
+    font-size: 15px;
+    line-height: 1.35;
+    padding-bottom: 13px;
+    margin-bottom: 13px;
+    border-bottom: 1px solid var(--border-category);
+}
+
+aside h1 a
+{
+    text-decoration: none;
+    transition: .5s;
+    color: var(--black);
+    font-weight: 400;
+}
+
+aside h1.red a
+{
+    color: var(--red);
+    font-weight: 900
+}
+
+aside h1.black a
+{
+    color: var(--black);
+    font-weight: 900
+}
+
+.button
+{
+    height: 40px;
+    width: 200px;
+    background: var(--red);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+}
 
 footer
 {
@@ -500,8 +660,6 @@ footer p
 
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 <script async custom-element="amp-mega-menu" src="https://cdn.ampproject.org/v0/amp-mega-menu-0.1.js"></script>
-<!-- <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script> -->
-<!-- <script async custom-element="amp-video-iframe" src="https://cdn.ampproject.org/v0/amp-video-iframe-0.1.js"></script> -->
 <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
 
 
@@ -554,12 +712,10 @@ footer p
         </nav> 
     </amp-mega-menu>
 
-
-
     <main>
 
-        <figure>
-            <amp-img alt="" src="temp/block-single.jpg" width="16" height="9" layout="responsive"></amp-img>
+        <figure id="figure">
+            <amp-img alt="" src="temp/600-300.png" width="600" height="300" layout="responsive"></amp-img>
             <figcaption>
                 тестовий капшон
             </figcaption>
@@ -602,7 +758,7 @@ footer p
         </div>
 
         <figure>
-            <amp-img alt="" src="temp/block-single.jpg" width="16" height="9" layout="responsive"></amp-img>
+            <amp-img alt="" src="temp/600-400.png" width="600" height="400" layout="responsive"></amp-img>
             <figcaption>
                 тестовий капшон
             </figcaption>
@@ -643,6 +799,63 @@ footer p
         </div>
 
     </main>
+
+    <a href="">
+        <!-- ads -->
+    </a>
+
+    <div class="heading">
+        <span>Читайте також</span>
+    </div>
+
+    <section>
+
+        <amp-img alt="Прокурор Києва про обшуки: вже встановлені збитки на 43 млн грн" src="temp/940-415.png" width="940" height="415" layout="responsive"></amp-img>
+
+        <h1>
+            <a href="/" title="">Прокурор Києва про обшуки: вже встановлені збитки на 43 млн грн</a>
+        </h1>
+        <time>Вівторок, 18 Травня 2021</time>
+        
+    </section>
+   
+    <aside>
+        <div class="heading">
+            <span>Новини</span>
+        </div>
+
+        <article>
+            <time>00:18</time>
+            <h1>
+                <a href="/" title="">У МОЗ розповіли, коли в Україну надійде наступна партія вакцини Pfizer/BioNTech</a>
+            </h1>
+        </article>
+
+        <article>
+            <time>00:33</time>
+            <h1>
+                <a href="/" title="">Рада ухвалила другий ключовий закон для земельної реформи</a>
+            </h1>
+        </article>
+
+        <article>
+            <time>01:11</time>
+            <h1 class="red">
+                <a href="/" title="">Північна Македонія висилає російського дипломата</a>
+            </h1>
+        </article>
+
+        <article>
+            <time>01:11</time>
+            <h1 class="black">
+                <a href="/" title="">Північна Македонія висилає російського дипломата</a>
+            </h1>
+        </article>
+
+        <a href="/" class="button">
+            Більше новин
+        </a>
+    </aside>
 
     <footer>
         <a href="/" class="logo" title="Перший західний"></a>
