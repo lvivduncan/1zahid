@@ -7,7 +7,7 @@
     <title>[amp]article :: Перший західний</title>
     <meta name="description" content="amp page category">
 
-    <link rel="canonical" href="./category.html">
+    <link rel="canonical" href="./article.html">
 
     <link rel="shortcut icon" href="https://1zahid.info/tpl/images/icons/favicon.ico">
 
@@ -39,9 +39,9 @@
     --gap: 20px;
     --selfgap: 10px;
 
-    --fb: #515eb3;
+/*     --fb: #515eb3;
     --tw: #6ab8ff;
-    --tg: #389ce9;
+    --tg: #389ce9; */
 }
 
 body
@@ -184,7 +184,15 @@ amp-mega-menu div
     gap: var(--gap);
 }
 
-.social .facebook, 
+amp-social-share.amp-social-share-facebook,
+amp-social-share.amp-social-share-linkedin,
+amp-social-share.amp-social-share-twitter
+{
+    display: block;
+    margin: 0 0 var(--selfgap);
+}
+
+/* .social .facebook, 
 .social .twitter, 
 .social .telegram, 
 .social .rss, 
@@ -220,7 +228,7 @@ amp-mega-menu div
 .social .rss
 {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%235e5a5b' viewBox='0 0 124 124'%3E%3Ccircle cx='20.3' cy='103.749' r='20'/%3E%3Cpath d='M67,113.95c0,5.5,4.5,10,10,10s10-4.5,10-10c0-42.4-34.5-77-77-77c-5.5,0-10,4.5-10,10s4.5,10,10,10 C41.5,56.95,67,82.55,67,113.95z'/%3E%3Cpath d='M114,123.95c5.5,0,10-4.5,10-10c0-62.8-51.1-113.9-113.9-113.9c-5.5,0-10,4.5-10,10s4.5,10,10,10 c51.8,0,93.9,42.1,93.9,93.9C104,119.45,108.4,123.95,114,123.95z'/%3E%3C/svg%3E");
-}
+} */
 
 .logos
 {
@@ -661,6 +669,8 @@ footer p
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 <script async custom-element="amp-mega-menu" src="https://cdn.ampproject.org/v0/amp-mega-menu-0.1.js"></script>
 <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+
 
 
 </head>
@@ -733,7 +743,7 @@ footer p
 
         <div id="main-aside">
             <div class="share-buttons">
-                <a href="" class="facebook">
+<!--                 <a href="" class="facebook">
                     <svg viewBox="0 0 20 20"><path d="M11,10h2.6l0.4-3H11V5.3c0-0.9,0.2-1.5,1.5-1.5H14V1.1c-0.3,0-1-0.1-2.1-0.1C9.6,1,8,2.4,8,5v2H5.5v3H8v8h3V10z"></path></svg>
                     <span>25</span>
                 </a>
@@ -744,7 +754,11 @@ footer p
                 <a href="" class="telegram">
                     <svg viewBox="0 0 300 300"><path id="XMLID_497_" d="M5.299,144.645l69.126,25.8l26.756,86.047c1.712,5.511,8.451,7.548,12.924,3.891l38.532-31.412 c4.039-3.291,9.792-3.455,14.013-0.391l69.498,50.457c4.785,3.478,11.564,0.856,12.764-4.926L299.823,29.22 c1.31-6.316-4.896-11.585-10.91-9.259L5.218,129.402C-1.783,132.102-1.722,142.014,5.299,144.645z M96.869,156.711l135.098-83.207 c2.428-1.491,4.926,1.792,2.841,3.726L123.313,180.87c-3.919,3.648-6.447,8.53-7.163,13.829l-3.798,28.146 c-0.503,3.758-5.782,4.131-6.819,0.494l-14.607-51.325C89.253,166.16,91.691,159.907,96.869,156.711z"></path></svg>
                     <span>12</span>
-                </a>
+                </a> -->
+
+                <amp-social-share type="facebook" aria-label="Share on Facebook" data-param-app_id="254325784911610"></amp-social-share>
+                <amp-social-share type="linkedin" aria-label="Share on LinkedIn"></amp-social-share>
+                <amp-social-share type="twitter" aria-label="Share on Twitter"></amp-social-share>
             </div>
 
             <h3>До теми</h3>
