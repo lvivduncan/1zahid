@@ -77,11 +77,15 @@
     }
 }
 
-#result article time
+#result article .time
 {
     grid-area: result-time;
+}
 
+#result article time
+{
     text-align: right;
+    display: block;
 }
 
 @media(max-width:776px)
@@ -89,13 +93,8 @@
     #result article time
     {
         text-align: left;
-        display: block;
+        display: inline-block;
         margin: 0 0 5px;
-    }
-
-    #result article time br
-    {
-        display: none;
     }
 }
 
