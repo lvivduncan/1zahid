@@ -528,11 +528,29 @@ main figure figcaption,
 }
 
 
+/* mobile table fix (must add js!) */
+table
+{
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+}
 
+tr,
+td
+{
+    padding: var(--selfgap);
+    border: 1px solid var(--gray-1);
+    vertical-align: center;
+}
 
-
-
-
+.levus-table-wrapper
+{
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
 
 
 
