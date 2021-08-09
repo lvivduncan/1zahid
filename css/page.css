@@ -4,8 +4,138 @@
     padding: var(--gap);
 }
 
+/* поле пошуку */
+#page input[type="search"]
+{
+    padding: var(--selfgap);
+    outline: none;
+    border: 1px solid var(--gray-3);
+    width: 320px;
+    max-width: 100%;
+    font-family: inherit;
+    transition: .5s;
+}
+
+@media(max-width:776px)
+{
+    #page input[type="search"]
+    {
+        width: 100%;
+    }
+}
+
+#page input[type="search"]:focus
+{
+    border-color: var(--blue);
+}
+
 /* результат пошуку */
 #result
 {
+    margin: var(--gap) 0;
+}
 
+#result article
+{
+    display: grid;
+    grid-template-columns: auto 220px 1fr;
+    grid-template-areas:
+        'result-time result-picture result-h1'
+        'result-time result-picture result-p';
+    grid-template-rows: auto 1fr;
+
+    grid-gap: 0 var(--gap);
+    padding: 0 0 var(--gap);
+    border-bottom: 1px solid var(--border-category);
+    margin: var(--gap) 0 0;
+}
+
+@media(max-width:776px)
+{
+    #result article
+    {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas:
+            'result-time result-time'
+            'result-picture result-h1'
+            'result-picture result-p';
+        grid-template-rows: repeat(3,auto);
+    }
+}
+
+@media(max-width:400px)
+{
+    #result article
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'result-time'
+            'result-picture'
+            'result-h1'
+            'result-p';
+        grid-template-rows: repeat(4,auto);
+    }
+}
+
+#result article time
+{
+    grid-area: result-time;
+
+    text-align: right;
+}
+
+@media(max-width:776px)
+{
+    #result article time
+    {
+        text-align: left;
+        display: block;
+        margin: 0 0 5px;
+    }
+
+    #result article time br
+    {
+        display: none;
+    }
+}
+
+#result article picture
+{
+    grid-area: result-picture;
+}
+
+@media(max-width:400px)
+{
+    #result article picture
+    {
+        display: block;
+        margin: 0 0 var(--selfgap);
+    }
+}
+
+#result article h1
+{
+    grid-area: result-h1;
+
+    margin: 0 0 5px;
+}
+
+@media(max-width:400px)
+{
+    #result article h1
+    {
+        margin: 0 0 var(--selfgap);
+    }
+}
+
+#result article p
+{
+    grid-area: result-p;
+
+    margin: 0;
+}
+
+#result article p
+{
+    font-size: 15px;
 }
