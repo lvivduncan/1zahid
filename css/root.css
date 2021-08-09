@@ -546,6 +546,12 @@ td
     width: auto!important;
 }
 
+tr p,
+td p
+{
+    margin: 0!important;
+}
+
 .levus-table-wrapper
 {
     width: 100%;
