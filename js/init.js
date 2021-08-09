@@ -130,8 +130,8 @@ document.querySelectorAll('[video]') && document.querySelectorAll('[video]').for
         });
     }
 }
-
-// обгортка для іфреймів
+/* 
+// обгортка для таблиць
 {
     const table = document.querySelectorAll('table');
 
@@ -145,7 +145,7 @@ document.querySelectorAll('[video]') && document.querySelectorAll('[video]').for
       });
     }
 }
-
+ */
 // шарбатони
 {
     const fb = document.querySelector('.share-buttons .facebook');

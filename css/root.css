@@ -531,8 +531,8 @@ main figure figcaption,
 /* mobile table fix (must add js!) */
 table
 {
-    width: 100%;
-    max-width: 100%;
+    width: 100%!important;
+    max-width: 100%!important;
     border-collapse: collapse;
 }
 
@@ -542,6 +542,8 @@ td
     padding: var(--selfgap);
     border: 1px solid var(--gray-1);
     vertical-align: center;
+    height: auto!important;
+    width: auto!important;
 }
 
 .levus-table-wrapper
