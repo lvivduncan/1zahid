@@ -99,14 +99,14 @@
     }
 }
 
-#result article picture
+#result article .img
 {
     grid-area: result-picture;
 }
 
 @media(max-width:400px)
 {
-    #result article picture
+    #result article .img
     {
         display: block;
         margin: 0 0 var(--selfgap);
