@@ -583,3 +583,13 @@ background longread
         width: 95%;
     }
 }
+
+.grid-4-think ul,
+.grid-3-think ul,
+.grid-2-think ul,
+.grid-4-think ol,
+.grid-3-think ol,
+.grid-2-think ol
+{
+    width: auto;
+}
