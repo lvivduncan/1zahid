@@ -591,5 +591,5 @@ background longread
 .grid-3-think ol,
 .grid-2-think ol
 {
-    width: auto;
+    width: auto!important;
 }
