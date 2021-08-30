@@ -511,7 +511,8 @@ background longread
 
 .grid-4-think
 {
-    width: 680px;
+    /* width: 680px; */
+    width: 1260px;
     /* margin: 50px auto; */
     margin: var(--gap) auto;
     display: grid;
@@ -537,7 +538,8 @@ background longread
 
 .grid-3-think
 {
-    width: 680px;
+    /* width: 680px; */
+    width: 1260px;
     /* margin: 50px auto; */
     margin: var(--gap) auto;
     display: grid;
@@ -555,7 +557,8 @@ background longread
 
 .grid-2-think
 {
-    width: 680px;
+    /* width: 680px; */
+    width: 1260px;
     /* margin: 50px auto; */
     margin: var(--gap) auto;
     display: grid;
@@ -571,7 +574,7 @@ background longread
     }    
 }
 
-@media (max-width: 700px)
+@media (max-width: 1280px)
 {
     .grid-4-think,
     .grid-3-think,
