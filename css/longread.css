@@ -594,17 +594,10 @@ background longread
     width: auto!important;
 }
 
-.grid-4-think h2,
-.grid-4-think h3,
-.grid-4-think h4,
 
-.grid-3-think h2,
-.grid-3-think h3,
-.grid-3-think h4,
-
-.grid-2-think h2,
-.grid-2-think h3,
-.grid-2-think h4
+#longread h2,
+#longread h3,
+#longread h4
 {
     margin: 0 0 30px;
 }
