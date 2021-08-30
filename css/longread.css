@@ -7,6 +7,17 @@
     background: var(--white);
 }
 
+#longread a
+{
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+#longread a:hover
+{
+    text-decoration: none;
+}
+
 /* перелік усіх блоків */
 .block-think,
 .bg-content-white,
@@ -25,8 +36,8 @@
 .block-think
 {
     width: 680px;
-    /* margin: var(--gap) auto; */
-    margin: 50px auto;
+    margin: var(--gap) auto;
+    /* margin: 50px auto; */
 }
 
 @media(max-width:700px)
@@ -210,8 +221,8 @@ background longread
 .block-photo-text
 {
     width: 1100px;
-    /* margin: var(--gap) auto; */
-    margin: 50px auto;
+    margin: var(--gap) auto;
+    /* margin: 50px auto; */
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 48px;
@@ -255,8 +266,8 @@ background longread
 .block-scroll
 {
     width: 940px;
-    /* margin: var(--gap) auto; */
-    margin: 50px auto;
+    margin: var(--gap) auto;
+    /* margin: 50px auto; */
     overflow: hidden;
 }
 
@@ -282,7 +293,8 @@ background longread
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 50px;
-    margin: 50px auto;
+    /* margin: 50px auto; */
+    margin: var(--gap) auto;
     width: 940px;
 }
 
@@ -342,7 +354,8 @@ background longread
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 50px;
-    margin: 50px auto;
+    /* margin: 50px auto; */
+    margin: var(--gap) auto;
     width: 940px;
 }
 
@@ -366,8 +379,8 @@ background longread
 /* ///
 списки 
 /// */
-#longread > ul,
-#longread > ol
+#longread ul,
+#longread ol
 {
     width: 680px;
     margin: var(--gap) auto;
@@ -375,21 +388,21 @@ background longread
 
 @media(max-width:700px)
 {
-    #longread > ul,
-    #longread > ol
+    #longread ul,
+    #longread ol
     {
         width: 95%;
     }
 }
 
-#longread > ul li
+#longread ul li
 {
     margin: var(--selfgap) 0;
     display: block;
     position: relative;
 }
 
-#longread > ul li::before
+#longread ul li::before
 {
     content: '';
     display: inline-block;
@@ -401,19 +414,19 @@ background longread
     left: -34px;
 }
 
-#longread > ol
+#longread ol
 {
     counter-reset: cnt;
 }
   
-#longread > ol li
+#longread ol li
 {
     margin: var(--selfgap) 0;
     list-style: none;
     position: relative;
 }
   
-#longread > ol li:before
+#longread ol li:before
 {
     counter-increment: cnt;
     content: counter(cnt);
@@ -498,7 +511,8 @@ background longread
 .grid-4-think
 {
     width: 680px;
-    margin: 50px auto;
+    /* margin: 50px auto; */
+    margin: var(--gap) auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: var(--gap);
@@ -523,7 +537,8 @@ background longread
 .grid-3-think
 {
     width: 680px;
-    margin: 50px auto;
+    /* margin: 50px auto; */
+    margin: var(--gap) auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: var(--gap);
@@ -540,7 +555,8 @@ background longread
 .grid-2-think
 {
     width: 680px;
-    margin: 50px auto;
+    /* margin: 50px auto; */
+    margin: var(--gap) auto;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: var(--gap);    
