@@ -11,6 +11,8 @@
 
     left: -100%;
     grid-template-columns: repeat(20,100%);
+    width: auto!important;
+    margin: 0!important;
 }
 
 .to-left
@@ -25,6 +27,7 @@
 .levus-horizontal-scroll li
 {
     display: block;
+    margin: 0!important;
 }
 
 .levus-horizontal-scroll img,
