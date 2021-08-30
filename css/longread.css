@@ -397,7 +397,7 @@ background longread
 
 #longread ul li
 {
-    margin: var(--selfgap) 0;
+    margin: var(--selfgap) 0 var(--selfgap) calc(var(--gap) + var(--selfgap));
     display: block;
     position: relative;
 }
@@ -411,7 +411,7 @@ background longread
     background: var(--red);
     position: absolute;
     top: 13px;
-    left: -34px;
+    left: -25px;
 }
 
 #longread ol
@@ -421,7 +421,8 @@ background longread
   
 #longread ol li
 {
-    margin: var(--selfgap) 0;
+    /* margin: var(--selfgap) 0; */
+    margin: var(--selfgap) 0 var(--selfgap) calc(var(--gap) + var(--selfgap));
     list-style: none;
     position: relative;
 }
@@ -436,7 +437,7 @@ background longread
     color: var(--red);
     position: absolute;
     top: 2px;
-    left: -34px;
+    left: -25px;
 }
 
 
