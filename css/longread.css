@@ -200,8 +200,10 @@ background longread
 /* текстовий контент у блоці з фото */
 .bg-content .block-think
 {
-    margin-top: 230px;
-    margin-bottom: 230px;
+    /* margin-top: 230px; */
+    margin-top: 80px;
+    /* margin-bottom: 230px; */
+    margin-bottom: 80px;
     color: var(--white);
     position: relative;
     z-index: 2;
