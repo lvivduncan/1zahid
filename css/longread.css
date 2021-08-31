@@ -204,7 +204,7 @@ background longread
     margin-top: 80px;
     /* margin-bottom: 230px; */
     margin-bottom: 80px;
-    color: var(--white);
+    /* color: var(--white); */
     position: relative;
     z-index: 2;
 }
