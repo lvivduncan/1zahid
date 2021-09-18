@@ -11,12 +11,13 @@
 {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     margin: 0 0 var(--selfgap);
     text-decoration: none;
     color: var(--white);
     width: 80px;
     height: 40px;
+    padding-left: 10px;
     transition: .5s;
 }
 
