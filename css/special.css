@@ -1,0 +1,13 @@
+#special
+{
+    padding: 0 0 40px;
+    margin: auto;
+    background: var(--white);
+}
+
+#special h2, 
+#special h3, 
+#special h4
+{
+    margin: 0 0 30px;
+}
