@@ -169,6 +169,14 @@ background longread
     z-index: 2;
 }
 
+@media(max-width:550px)
+{
+    .title .title-48
+    {
+        font-size: 42px;
+    }
+}
+
 .title .title-48::after
 {
     content: '';
