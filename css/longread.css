@@ -452,6 +452,7 @@ background longread
 
 
 /* 25-08-2021 */
+/* 12-10-2021 */
 .bg-opacity-black:after
 {
     position: absolute;
@@ -459,7 +460,8 @@ background longread
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0,0,0,var(--opacity, .3));
+    /* background-color: rgba(0,0,0,var(--opacity, .3)); */
+    background-color: rgba(0,0,0,var(--opacity, .5));
     content: '';
     display: block;
 }
