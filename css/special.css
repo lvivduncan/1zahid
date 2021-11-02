@@ -24,3 +24,20 @@
 {
     margin: 0 5px;
 }
+
+/* розтягуємо картинку ширше */
+#special [data-embed]
+{
+    margin-left: -200px;
+    margin-right: -200px;
+    margin-bottom: var(--gap);
+}
+
+@media(max-width:1140px)
+{
+    #special [data-embed]
+    {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
